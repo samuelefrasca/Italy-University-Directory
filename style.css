@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: orangered;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #fff;
+    text-align: center;;
+}
+
+table {
+    border: 1px solid black;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+button {
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    border: white solid 1px;
+    border-radius: 25px;
+    cursor: pointer;
+}
