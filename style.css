@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: orangered;
-    color: white;
+    background-color: #51dbf0;
+    color: #000;
 }
 
 .container {
@@ -20,7 +20,6 @@ h3 {
 }
 
 .title {
-    color: #fff;
     text-align: center;;
 }
 
@@ -36,9 +35,12 @@ th, td {
 a {
     cursor: pointer;
     text-decoration: none;
-    color: white;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+a:visited {
+    color: #000;
 }
