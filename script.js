@@ -275,6 +275,63 @@ const conservatori = [
     { nome: "Conservatorio statale di musica di Vicenza \"Arrigo Pedrollo\"", citta: "Vicenza", regione: "Veneto", studenti: 424, link: "https://www.consvi.it/" }
 ];
 
+const abastatali = [
+  // ABRUZZO
+  { nome: "Accademia di Belle Arti dell'Aquila", citta: "L'Aquila", regione: "Abruzzo", studenti: 484, link: "https://www.abaq.it/" },
+
+  // CALABRIA
+  { nome: "Accademia di Belle Arti di Catanzaro", citta: "Catanzaro", regione: "Calabria", studenti: 424, link: "https://www.abacatanzaro.it/" },
+  { nome: "Accademia di Belle Arti di Reggio Calabria", citta: "Reggio Calabria", regione: "Calabria", studenti: 550, link: "https://www.abarc.it/" },
+
+  // CAMPANIA
+  { nome: "Accademia di Belle Arti di Napoli", citta: "Napoli", regione: "Campania", studenti: 4101, link: "https://www.abana.it/" },
+
+  // EMILIA-ROMAGNA
+  { nome: "Accademia di Belle Arti di Bologna", citta: "Bologna", regione: "Emilia-Romagna", studenti: 2184, link: "https://www.ababo.it/" },
+  { nome: "Accademia di Belle Arti di Ravenna", citta: "Ravenna", regione: "Emilia-Romagna", studenti: 187, link: "https://www.abaravenna.it/" },
+
+  // LAZIO
+  { nome: "Accademia di Belle Arti di Roma", citta: "Roma", regione: "Lazio", studenti: 3102, link: "https://abaroma.it/" },
+  { nome: "Accademia di Belle Arti di Frosinone", citta: "Frosinone", regione: "Lazio", studenti: 639, link: "https://www.accademiabellearti.fr.it/" },
+
+  // LIGURIA
+  { nome: "Accademia Ligustica di Belle Arti di Genova", citta: "Genova", regione: "Liguria", studenti: 638, link: "https://www.accademialigustica.it/" },
+
+  // LOMBARDIA
+  { nome: "Accademia di Belle Arti di Brera", citta: "Milano", regione: "Lombardia", studenti: 4263, link: "https://www.accademiadibrera.milano.it/" },
+  { nome: "Politecnico delle Arti di Bergamo", citta: "Bergamo", regione: "Lombardia", studenti: 285, link: "https://accademiabellearti.bg.it/" },
+
+  // MARCHE
+  { nome: "Accademia di Belle Arti di Macerata", citta: "Macerata", regione: "Marche", studenti: 1371, link: "https://abamc.it/" },
+  { nome: "Accademia di Belle Arti di Urbino", citta: "Urbino", regione: "Marche", studenti: 428, link: "https://www.accademiadiurbino.it/" },
+
+  // PIEMONTE
+  { nome: "Accademia Albertina di Belle Arti di Torino", citta: "Torino", regione: "Piemonte", studenti: 1634, link: "https://albertina-academy.it/" },
+
+  // PUGLIA
+  { nome: "Accademia di Belle Arti di Bari", citta: "Bari", regione: "Puglia", studenti: 1210, link: "https://www.accademiabelleartiba.it/" },
+  { nome: "Accademia di Belle Arti di Foggia", citta: "Foggia", regione: "Puglia", studenti: 796, link: "https://www.abafg.it/" },
+  { nome: "Accademia di Belle Arti di Lecce", citta: "Lecce", regione: "Puglia", studenti: 822, link: "https://www.accademialecce.edu.it/" },
+
+  // SARDEGNA
+  { nome: "Accademia di Belle Arti \"Mario Sironi\" di Sassari", citta: "Sassari", regione: "Sardegna", studenti: 594, link: "https://www.accademiasironi.it/" },
+
+  // SICILIA
+  { nome: "Accademia di Belle Arti di Catania", citta: "Catania", regione: "Sicilia", studenti: 2453, link: "https://www.abacatania.it/" },
+  { nome: "Accademia di Belle Arti di Palermo", citta: "Palermo", regione: "Sicilia", studenti: 1526, link: "https://www.accademiadipalermo.it/" },
+
+  // TOSCANA
+  { nome: "Accademia di Belle Arti di Carrara", citta: "Carrara", regione: "Toscana", studenti: 1153, link: "https://accademiacarrara.it/" },
+  { nome: "Accademia di Belle Arti di Firenze", citta: "Firenze", regione: "Toscana", studenti: 2103, link: "https://www.accademia.firenze.it/" },
+
+  // UMBRIA
+  { nome: "Accademia di Belle Arti \"Pietro Vannucci\" di Perugia", citta: "Perugia", regione: "Umbria", studenti: 644, link: "https://www.abaperugia.com/" },
+
+  // VENETO
+  { nome: "Accademia di Belle Arti di Venezia", citta: "Venezia", regione: "Veneto", studenti: 1879, link: "https://accademiavenezia.it/" },
+  { nome: "Accademia di Belle Arti di Verona", citta: "Verona", regione: "Veneto", studenti: 786, link: "https://accademiabelleartiverona.it/" },
+];
+
 const corpoTabella = document.getElementById("tabellauni");
 
 function renderizzaTabella(lista) {
@@ -352,6 +409,19 @@ function ordinaPerRegioneConservatori() {
     }
 }
 
+function ordinaPerRegioneAbastatali() {
+    if (ordineregione) {
+        renderizzaTabella(abastatali.toReversed());
+        ordineregione = false;
+        ordinestudenti = false;
+    }
+    else {
+        renderizzaTabella(abastatali);
+        ordineregione = true;
+        ordinestudenti = false;
+    }
+}
+
 // ORDINE PER STUDENTI
 
 var ordinestudenti
@@ -406,6 +476,22 @@ function ordinaPerStudentiPrivate() {
 
 function ordinaPerStudentiConservatori() {
     let copiauniversita = [...conservatori];
+    if (ordinestudenti) {
+        copiauniversita.sort((a, b) => a.studenti - b.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = false;
+        ordineregione = false;
+    }
+    else {
+        copiauniversita.sort((a, b) => b.studenti - a.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = true;
+        ordineregione = false;
+    }
+}
+
+function ordinaPerStudentiAbastatali() {
+    let copiauniversita = [...abastatali];
     if (ordinestudenti) {
         copiauniversita.sort((a, b) => a.studenti - b.studenti);
         renderizzaTabella(copiauniversita);

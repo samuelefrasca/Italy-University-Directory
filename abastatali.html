@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IUD - Scuole superiori</title>
+    <title>IUD - Accademie di Belle Arti</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="iud_icon.ico" type="image/x-icon">
 </head>
@@ -13,12 +13,12 @@
     <div class="container">
         <header>
             <h1 class="title">Italy University Directory</h1>
-            <h2 class="subtitle">Scuole superiori</h2>
+            <h2 class="subtitle">Accademie di Belle Arti statali</h2>
             <div class="altreuni">
                 <h3>Vedi anche: </h3>
                 <a class="reflink" href="index.html">Università statali</a><br>
+                <a class="reflink" href="superiori.html">Scuole superiori</a><br>
                 <a class="reflink" href="private.html">Università private</a><br>
-                <a class="reflink" href="abastatali.html">Accademie di Belle Arti statali</a><br>
                 <a class="reflink" href="conservatori.html">Conservatori statali</a>
             </div>
         </header>
@@ -28,8 +28,8 @@
                     <th></th>
                     <th>Università</th>
                     <th>Città</th>
-                    <th><a onclick="ordinaPerRegioneSuperiori()">Regione</a></th>
-                    <th><a onclick="ordinaPerStudentiSuperiori()">Studenti</a></th>
+                    <th><a onclick="ordinaPerRegioneAbastatali()">Regione</a></th>
+                    <th><a onclick="ordinaPerStudentiAbastatali()">Studenti</a></th>
                 </tr>
             </thead>
             <tbody id="tabellauni"></tbody>
@@ -38,7 +38,7 @@
         <script>
             ordineregione = false;
             ordinestudenti = false;
-            ordinaPerRegioneSuperiori();
+            ordinaPerRegioneAbastatali();
         </script>
     </div>
 </body>
