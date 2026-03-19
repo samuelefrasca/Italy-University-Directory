@@ -1,4 +1,4 @@
-const universita = [
+const statali = [
     // ABRUZZO
     { nome: "Università degli Studi \"Gabriele d'Annunzio\" di Chieti-Pescara", citta: "Chieti - Pescara", regione: "Abruzzo", studenti: 21097, link: "https://www.unich.it/" },
     { nome: "Università degli Studi dell'Aquila", citta: "L'Aquila", regione: "Abruzzo", studenti: 16613, link: "https://www.univaq.it/" },
@@ -121,7 +121,7 @@ const superiori = [
     { nome: "Scuola Superiore Sant'Anna", citta: "Pisa", regione: "Toscana", studenti: 659, link: "https://www.santannapisa.it/it" },
 ];
 
-const nonstatali = [
+const private = [
     // CALABRIA
     { nome: 'Università per Stranieri "Dante Alighieri"', citta: "Reggio Calabria", regione: "Calabria", studenti: 444, link: "https://www.unidarc.it/" },
 
@@ -161,6 +161,120 @@ const nonstatali = [
     { nome: 'Università della Valle d’Aosta', citta: "Aosta", regione: "Valle d’Aosta", studenti: 1032, link: "https://www.univda.it/" },
 ];
 
+const conservatori = [
+    // ABRUZZO
+    { nome: "Conservatorio statale di musica dell'Aquila \"Alfredo Casella\"", citta: "L'Aquila", regione: "Abruzzo", studenti: 475, link: "https://www.consaq.it/" },
+    { nome: "Conservatorio statale di musica di Pescara \"Luisa d'Annunzio\"", citta: "Pescara", regione: "Abruzzo", studenti: 513, link: "https://www.conservatoriopescara.it/" },
+    { nome: "Conservatorio statale di musica di Teramo \"Gaetano Braga\"", citta: "Teramo", regione: "Abruzzo", studenti: 247, link: "https://www.conservatoriobraga.it/" },
+
+    // BASILICATA
+    { nome: "Conservatorio statale di musica di Matera \"Egidio Romualdo Duni\"", citta: "Matera", regione: "Basilicata", studenti: 390, link: "http://www.conservatoriomatera.it/" },
+    { nome: "Conservatorio statale di musica di Potenza \"Gesualdo da Venosa\"", citta: "Potenza", regione: "Basilicata", studenti: 270, link: "https://www.conservatoriopotenza.it/" },
+
+    // CALABRIA
+    { nome: "Conservatorio statale di musica di Cosenza \"Stanislao Giacomantonio\"", citta: "Cosenza", regione: "Calabria", studenti: 667, link: "https://www.conservatoriocosenza.it/" },
+    { nome: "Conservatorio statale di musica di Nocera Terinese (CZ) \"Pyotr Ilyich Tchaikovsky\"", citta: "Nocera Terinese (CZ)", regione: "Calabria", studenti: 664, link: "https://www.conscz.it/" },
+    { nome: "Conservatorio statale di musica di Reggio Calabria \"Francesco Cilea\"", citta: "Reggio Calabria", regione: "Calabria", studenti: 331, link: "https://www.conservatoriocilea.it/" },
+    { nome: "Conservatorio statale di musica di Vibo Valentia \"Fausto Torrefranca\"", citta: "Vibo Valentia", regione: "Calabria", studenti: 371, link: "https://www.conservatoriovibo.it/" },
+
+    // CAMPANIA
+    { nome: "Conservatorio statale di musica di Avellino \"Domenico Cimarosa\"", citta: "Avellino", regione: "Campania", studenti: 844, link: "https://conservatoriocimarosa.org/" },
+    { nome: "Conservatorio statale di musica di Benevento \"Nicola Sala\"", citta: "Benevento", regione: "Campania", studenti: 776, link: "https://www.conservatorionicolasala.eu/" },
+    { nome: "Conservatorio statale di musica di Napoli \"S. Pietro a Majella\"", citta: "Napoli", regione: "Campania", studenti: 864, link: "https://www.sanpietroamajella.it/" },
+    { nome: "Conservatorio statale di musica di Salerno \"Giuseppe Martucci\"", citta: "Salerno", regione: "Campania", studenti: 1078, link: "https://www.consalerno.it/" },
+
+    // EMILIA-ROMAGNA
+    { nome: "Conservatorio statale di musica di Bologna \"Giovan Battista Martini\"", citta: "Bologna", regione: "Emilia-Romagna", studenti: 711, link: "https://www.consbo.it/" },
+    { nome: "Conservatorio statale di musica di Cesena e Rimini \"Bruno Maderna-Giovanni Lettimi\"", citta: "Cesena - Rimini", regione: "Emilia-Romagna", studenti: 306, link: "https://www.madernalettimi.it/" },
+    { nome: "Conservatorio statale di musica di Ferrara \"Girolamo Frescobaldi\"", citta: "Ferrara", regione: "Emilia-Romagna", studenti: 251, link: "https://www.consfe.it/" },
+    { nome: "Conservatorio statale di musica di Modena e Carpi (MO) \"Orazio Vecchi - Antonio Tonelli\"", citta: "Modena - Carpi (MO)", regione: "Emilia-Romagna", studenti: 188, link: "https://www.vecchitonelli.it/" },
+    { nome: "Conservatorio statale di musica di Parma \"Arrigo Boito\"", citta: "Parma", regione: "Emilia-Romagna", studenti: 735, link: "https://www.conservatorio.pr.it/" },
+    { nome: "Conservatorio statale di musica di Piacenza \"Giuseppe Nicolini\"", citta: "Piacenza", regione: "Emilia-Romagna", studenti: 314, link: "https://www.conservatorionicolini.com/" },
+    { nome: "Conservatorio statale di musica di Ravenna \"Giuseppe Verdi\"", citta: "Ravenna", regione: "Emilia-Romagna", studenti: 195, link: "https://www.verdiravenna.it/" },
+    { nome: "Conservatorio statale di musica di Reggio Emilia e Castelnuovo né Monti (RE) \"Achille Peri e Claudio Merulo\"", citta: "Reggio Emilia - Castelnovo ne' Monti (RE)", regione: "Emilia-Romagna", studenti: 217, link: "https://www.consperimerulo.it/" },
+
+    // FRIULI-VENEZIA GIULIA
+    { nome: "Conservatorio statale di musica di Trieste \"Giuseppe Tartini\"", citta: "Trieste", regione: "Friuli-Venezia Giulia", studenti: 496, link: "https://www.conts.it/" },
+    { nome: "Conservatorio statale di musica di Udine \"Jacopo Tomadini\"", citta: "Udine", regione: "Friuli-Venezia Giulia", studenti: 236, link: "https://www.conservatorio.udine.it/" },
+
+    // LAZIO
+    { nome: "Conservatorio statale di musica di Frosinone \"Licinio Refice\"", citta: "Frosinone", regione: "Lazio", studenti: 524, link: "https://www.conservatorio-frosinone.it/" },
+    { nome: "Conservatorio statale di musica di Latina \"Ottorino Respighi\"", citta: "Latina", regione: "Lazio", studenti: 318, link: "https://www.conslatina.it/" },
+    { nome: "Conservatorio statale di musica di Roma \"Santa Cecilia\"", citta: "Roma", regione: "Lazio", studenti: 1378, link: "https://www.conservatoriosantacecilia.it/" },
+
+    // LIGURIA
+    { nome: "Conservatorio statale di musica di Genova \"Nicolò Paganini\"", citta: "Genova", regione: "Liguria", studenti: 318, link: "https://www.conspaganini.it/" },
+    { nome: "Conservatorio statale di musica di La Spezia \"Giacomo Puccini\"", citta: "La Spezia", regione: "Liguria", studenti: 235, link: "https://conssp.it/" },
+
+    // LOMBARDIA
+    { nome: "Conservatorio statale di musica di Brescia \"Luca Marenzio\"", citta: "Brescia - Darfo Boario Terme (BS)", regione: "Lombardia", studenti: 454, link: "https://www.consbs.it/" },
+    { nome: "Conservatorio statale di musica di Como \"Giuseppe Verdi\"", citta: "Como", regione: "Lombardia", studenti: 311, link: "https://www.conservatoriocomo.it/" },
+    { nome: "Conservatorio statale di musica di Cremona \"Claudio Monteverdi\"", citta: "Cremona", regione: "Lombardia", studenti: 95, link: "https://www.conscremona.it/" },
+    { nome: "Conservatorio statale di musica di Gallarate (VA) \"Giacomo Puccini\"", citta: "Gallarate (VA)", regione: "Lombardia", studenti: 119, link: "https://issmpuccinigallarate.it/" },
+    { nome: "Conservatorio statale di musica di Mantova \"Lucio Campiani\"", citta: "Mantova", regione: "Lombardia", studenti: 219, link: "https://www.conservatoriomantova.com/it/home" },
+    { nome: "Conservatorio statale di musica di Milano \"Giuseppe Verdi\"", citta: "Milano", regione: "Lombardia", studenti: 1193, link: "https://www.consmilano.it/" },
+    { nome: "Conservatorio statale di musica di Pavia \"Franco Vittadini\"", citta: "Pavia", regione: "Lombardia", studenti: 222, link: "https://conspv.it/" },
+    { nome: "Politecnico delle Arti statale di Bergamo \"Gaetano Donizetti - Giacomo Carrara\" (sezione musicale)", citta: "Bergamo", regione: "Lombardia", studenti: 296, link: "https://www.consbg.it/" },
+
+    // MARCHE
+    { nome: "Conservatorio statale di musica di Fermo \"Giovambattista Pergolesi\"", citta: "Fermo", regione: "Marche", studenti: 268, link: "https://conservatorio.net/" },
+    { nome: "Conservatorio statale di musica di Pesaro \"Gioachino Rossini\"", citta: "Pesaro", regione: "Marche", studenti: 360, link: "https://www.conservatoriorossini.it/" },
+
+    // MOLISE
+    { nome: "Conservatorio statale di musica di Campobasso \"Lorenzo Perosi\"", citta: "Campobasso", regione: "Molise", studenti: 275, link: "https://www.conservatorioperosi.it/" },
+
+    // PIEMONTE
+    { nome: "Conservatorio statale di musica di Alessandria \"Antonio Vivaldi\"", citta: "Alessandria", regione: "Piemonte", studenti: 287, link: "https://www.conservatoriovivaldi.it/" },
+    { nome: "Conservatorio statale di musica di Cuneo \"Giorgio Federico Ghedini\"", citta: "Cuneo", regione: "Piemonte", studenti: 289, link: "https://www.conservatoriocuneo.it/" },
+    { nome: "Conservatorio statale di musica di Novara \"Guido Cantelli\"", citta: "Novara", regione: "Piemonte", studenti: 314, link: "https://consno.it/" },
+    { nome: "Conservatorio statale di musica di Torino \"Giuseppe Verdi\"", citta: "Torino", regione: "Piemonte", studenti: 622, link: "https://www.conservatoriotorino.eu/" },
+
+    // PUGLIA
+    { nome: "Conservatorio statale di musica di Bari \"Niccolò Piccinni\"", citta: "Bari", regione: "Puglia", studenti: 656, link: "https://www.conservatoriopiccinni.it/" },
+    { nome: "Conservatorio statale di musica di Foggia \"Umberto Giordano\"", citta: "Foggia - Rodi Garganico (FG)", regione: "Puglia", studenti: 496, link: "https://www.conservatoriofoggia.it/" },
+    { nome: "Conservatorio statale di musica di Lecce \"Tito Schipa\"", citta: "Lecce - Ceglie Messapica (BR)", regione: "Puglia", studenti: 469, link: "https://www.conservatoriolecce.it/" },
+    { nome: "Conservatorio statale di musica di Monopoli (BA) \"Nino Rota\"", citta: "Monopoli (BA)", regione: "Puglia", studenti: 374, link: "https://www.conservatoriodimonopoli.org/" },
+    { nome: "Conservatorio statale di musica di Taranto \"Giovanni Paisiello\"", citta: "Taranto", regione: "Puglia", studenti: 233, link: "https://www.paisiello.it/" },
+
+    // SARDEGNA
+    { nome: "Conservatorio di musica statale di Cagliari \"Pierluigi da Palestrina\"", citta: "Cagliari", regione: "Sardegna", studenti: 429, link: "https://www.conservatoriocagliari.it/" },
+    { nome: "Conservatorio di musica statale di Sassari \"Luigi Canepa\"", citta: "Sassari", regione: "Sardegna", studenti: 284, link: "https://www.conservatorio.sassari.it/" },
+
+    // SICILIA
+    { nome: "Conservatorio statale di musica di Caltanissetta \"Vincenzo Bellini\"", citta: "Caltanissetta", regione: "Sicilia", studenti: 405, link: "https://www.issmbellini.cl.it/" },
+    { nome: "Conservatorio statale di musica di Catania \"Vincenzo Bellini\"", citta: "Catania", regione: "Sicilia", studenti: 579, link: "https://www.conservatoriocatania.it/" },
+    { nome: "Conservatorio statale di musica di Messina \"Arcangelo Corelli\"", citta: "Messina", regione: "Sicilia", studenti: 538, link: "https://www.consme.it/" },
+    { nome: "Conservatorio statale di musica di Palermo \"Alessandro Scarlatti\"", citta: "Palermo", regione: "Sicilia", studenti: 772, link: "https://www.conservatoriopalermo.it/" },
+    { nome: "Conservatorio statale di musica di Ribera (AG) \"Arturo Toscanini\"", citta: "Ribera (AG)", regione: "Sicilia", studenti: 284, link: "https://www.conservatoriotoscanini.it/" },
+    { nome: "Conservatorio statale di musica di Trapani \"Antonio Scontrino\"", citta: "Trapani", regione: "Sicilia", studenti: 299, link: "https://www.constp.it/" },
+
+    // TOSCANA
+    { nome: "Conservatorio statale di musica di Firenze \"Luigi Cherubini\"", citta: "Firenze", regione: "Toscana", studenti: 762, link: "https://www.consfi.it/" },
+    { nome: "Conservatorio statale di musica di Livorno \"Pietro Mascagni\"", citta: "Livorno", regione: "Toscana", studenti: 186, link: "https://www.consli.it/" },
+    { nome: "Conservatorio statale di musica di Lucca \"Luigi Boccherini\"", citta: "Lucca", regione: "Toscana", studenti: 243, link: "https://www.boccherini.it/" },
+    { nome: "Conservatorio statale di musica di Siena \"Rinaldo Franci\"", citta: "Siena", regione: "Toscana", studenti: 157, link: "https://www.conservatoriosiena.it/" },
+
+    // TRENTINO-ALTO ADIGE
+    { nome: "Conservatorio statale di musica / Hochschule für Musik di Bolzano / Bozen \"Claudio Monteverdi\"", citta: "Bolzano", regione: "Trentino-Alto Adige", studenti: 332, link: "https://cons.bz.it/it/" },
+    { nome: "Conservatorio statale di musica di Trento \"Francesco Antonio Bonporti\"", citta: "Trento - Riva del Garda (TN)", regione: "Trentino-Alto Adige", studenti: 362, link: "https://www.conservatorio.tn.it/" },
+
+    // UMBRIA
+    { nome: "Conservatorio statale di musica di Perugia \"Francesco Morlacchi\"", citta: "Perugia", regione: "Umbria", studenti: 427, link: "https://www.conservatorioperugia.it/" },
+    { nome: "Conservatorio statale di musica di Terni \"Giulio Briccialdi\"", citta: "Terni", regione: "Umbria", studenti: 187, link: "https://www.briccialditerni.it/" },
+    
+    // VALLE D'AOSTA
+    { nome: "Istituto superiore pareggiato di studi musicali della Valle d'Aosta / Conservatoire de la Vallée d'Aoste", citta: "Aosta", regione: "Valle d'Aosta", studenti: 89, link: "https://www.consaosta.it/" },
+    
+    // VENETO
+    { nome: "Conservatorio statale di musica di Adria (RO) \"Antonio Buzzolla\"", citta: "Adria (RO)", regione: "Veneto", studenti: 148, link: "https://www.conservatorioadria.it/" },
+    { nome: "Conservatorio statale di musica di Castelfranco Veneto (TV) \"Agostino Steffani\"", citta: "Castelfranco Veneto (TV)", regione: "Veneto", studenti: 379, link: "https://conscfv.it/" },
+    { nome: "Conservatorio statale di musica di Padova \"Cesare Pollini\"", citta: "Padova", regione: "Veneto", studenti: 618, link: "https://www.conservatoriopollini.it/" },
+    { nome: "Conservatorio statale di musica di Rovigo \"Francesco Venezze\"", citta: "Rovigo", regione: "Veneto", studenti: 532, link: "https://www.conservatoriorovigo.it/" },
+    { nome: "Conservatorio statale di musica di Venezia \"Benedetto Marcello\"", citta: "Venezia", regione: "Veneto", studenti: 353, link: "https://www.conservatoriovenezia.net/" },
+    { nome: "Conservatorio statale di musica di Verona \"Evaristo Felice Dall'Abaco\"", citta: "Verona", regione: "Veneto", studenti: 440, link: "https://www.conservatorioverona.it/" },
+    { nome: "Conservatorio statale di musica di Vicenza \"Arrigo Pedrollo\"", citta: "Vicenza", regione: "Veneto", studenti: 424, link: "https://www.consvi.it/" }
+];
+
 const corpoTabella = document.getElementById("tabellauni");
 
 function renderizzaTabella(lista) {
@@ -181,32 +295,127 @@ function renderizzaTabella(lista) {
     }
 }
 
-function ordinaPerRegione() {
-    renderizzaTabella(universita);
+
+// ORDINE PER REGIONE
+
+var ordineregione
+
+function ordinaPerRegioneStatali() {
+    if (ordineregione) {
+        renderizzaTabella(statali.toReversed());
+        ordineregione = false;
+        ordinestudenti = false;
+    }
+    else {
+        renderizzaTabella(statali);
+        ordineregione = true;
+        ordinestudenti = false;
+    }
 }
 
 function ordinaPerRegioneSuperiori() {
-    renderizzaTabella(superiori);
+    if (ordineregione) {
+        renderizzaTabella(superiori.toReversed());
+        ordineregione = false;
+        ordinestudenti = false;
+    }
+    else {
+        renderizzaTabella(superiori);
+        ordineregione = true;
+        ordinestudenti = false;
+    }
 }
 
 function ordinaPerRegionePrivate() {
-    renderizzaTabella(nonstatali);
+    if (ordineregione) {
+        renderizzaTabella(private.toReversed());
+        ordineregione = false;
+        ordinestudenti = false;
+    }
+    else {
+        renderizzaTabella(private);
+        ordineregione = true;
+        ordinestudenti = false;
+    }
 }
 
-function ordinaPerStudenti() {
-    let copiauniversita = [...universita]
-    copiauniversita.sort((a, b) => b.studenti - a.studenti);
-    renderizzaTabella(copiauniversita);
+function ordinaPerRegioneConservatori() {
+    if (ordineregione) {
+        renderizzaTabella(conservatori.toReversed());
+        ordineregione = false;
+        ordinestudenti = false;
+    }
+    else {
+        renderizzaTabella(conservatori);
+        ordineregione = true;
+        ordinestudenti = false;
+    }
+}
+
+// ORDINE PER STUDENTI
+
+var ordinestudenti
+
+function ordinaPerStudentiStatali() {
+    let copiauniversita = [...statali];
+    if (ordinestudenti) {
+        copiauniversita.sort((a, b) => a.studenti - b.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = false;
+        ordineregione = false;
+    }
+    else {
+        copiauniversita.sort((a, b) => b.studenti - a.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = true;
+        ordineregione = false;
+    }
 }
 
 function ordinaPerStudentiSuperiori() {
-    let copiauniversita = [...superiori]
-    copiauniversita.sort((a, b) => b.studenti - a.studenti);
-    renderizzaTabella(copiauniversita);
+    let copiauniversita = [...superiori];
+    if (ordinestudenti) {
+        copiauniversita.sort((a, b) => a.studenti - b.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = false;
+        ordineregione = false;
+    }
+    else {
+        copiauniversita.sort((a, b) => b.studenti - a.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = true;
+        ordineregione = false;
+    }
 }
 
 function ordinaPerStudentiPrivate() {
-    let copiauniversita = [...nonstatali]
-    copiauniversita.sort((a, b) => b.studenti - a.studenti);
-    renderizzaTabella(copiauniversita);
+    let copiauniversita = [...private];
+    if (ordinestudenti) {
+        copiauniversita.sort((a, b) => a.studenti - b.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = false;
+        ordineregione = false;
+    }
+    else {
+        copiauniversita.sort((a, b) => b.studenti - a.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = true;
+        ordineregione = false;
+    }
+}
+
+function ordinaPerStudentiConservatori() {
+    let copiauniversita = [...conservatori];
+    if (ordinestudenti) {
+        copiauniversita.sort((a, b) => a.studenti - b.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = false;
+        ordineregione = false;
+    }
+    else {
+        copiauniversita.sort((a, b) => b.studenti - a.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = true;
+        ordineregione = false;
+    }
 }

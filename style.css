@@ -78,6 +78,8 @@ th {
     border-radius: 5px;
     border: 1px solid #000044;
     background-color: #eee;
+    -webkit-user-select: none; /* Aggiunge compatibilità per i browser Apple/Safari per il comando user-select seguente */
+    user-select: none;
 }
 
 tr:hover {

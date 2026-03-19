@@ -17,7 +17,8 @@
             <div class="altreuni">
                 <h3>Vedi anche: </h3>
                 <a class="reflink" href="superiori.html">Scuole superiori</a><br>
-                <a class="reflink" href="private.html">Università private</a>
+                <a class="reflink" href="private.html">Università private</a><br>
+                <a class="reflink" href="conservatori.html">Conservatori statali</a>
             </div>
         </header>
         <table>
@@ -26,15 +27,17 @@
                     <th></th>
                     <th>Università</th>
                     <th>Città</th>
-                    <th><a onclick="ordinaPerRegione()">Regione</a></th>
-                    <th><a onclick="ordinaPerStudenti()">Studenti</a></th>
+                    <th><a onclick="ordinaPerRegioneStatali()">Regione</a></th>
+                    <th><a onclick="ordinaPerStudentiStatali()">Studenti</a></th>
                 </tr>
             </thead>
             <tbody id="tabellauni"></tbody>
         </table>
         <script src="script.js"></script>
         <script>
-            ordinaPerRegione();
+            ordineregione = false;
+            ordinestudenti = false;
+            ordinaPerRegioneStatali();
         </script>
     </div>
 </body>
