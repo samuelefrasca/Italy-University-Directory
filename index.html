@@ -10,37 +10,47 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <div class="container">
             <h1 class="title">Italy University Directory</h1>
             <h2 class="subtitle">Università statali</h2>
-            <div class="altreuni">
-                <h3>Vedi anche: </h3>
-                <a class="reflink" href="superiori.html">Scuole superiori</a><br>
-                <a class="reflink" href="private.html">Università private</a><br>
-                <a class="reflink" href="abastatali.html">Accademie di Belle Arti statali</a><br>
-                <a class="reflink" href="conservatori.html">Conservatori statali</a>
-            </div>
-        </header>
-        <table>
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Università</th>
-                    <th>Città</th>
-                    <th><a onclick="ordinaPerRegioneStatali()">Regione</a></th>
-                    <th><a onclick="ordinaPerStudentiStatali()">Studenti</a></th>
-                </tr>
-            </thead>
-            <tbody id="tabellauni"></tbody>
-        </table>
-        <script src="script.js"></script>
-        <script>
-            ordineregione = false;
-            ordinestudenti = false;
-            ordinaPerRegioneStatali();
-        </script>
-    </div>
+            <nav class="altreuni">
+                <h3>Vedi anche</h3>
+                <ul>
+                    <li><a class="reflink" href="superiori.html">Scuole superiori</a></li>
+                    <li><a class="reflink" href="private.html">Università private</a></li>
+                    <li><a class="reflink" href="abastatali.html">Accademie di Belle Arti statali</a></li>
+                    <li><a class="reflink" href="conservatori.html">Conservatori statali</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Università</th>
+                        <th>Città</th>
+                        <th><a onclick="ordinaPerRegioneStatali()">Regione</a></th>
+                        <th><a onclick="ordinaPerStudentiStatali()">Studenti</a></th>
+                    </tr>
+                </thead>
+                <tbody id="tabellauni"></tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 - Samuele Frasca</p>
+        <p><a href="https://github.com/samuelefrasca" class="a_footer">GitHub</a></p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        ordineregione = false;
+        ordinestudenti = false;
+        ordinaPerRegioneStatali();
+    </script>
 </body>
 
 </html>
