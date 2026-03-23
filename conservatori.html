@@ -15,26 +15,28 @@
             <h1 class="title">Italy University Directory</h1>
             <h2 class="subtitle">Conservatori statali</h2>
             <nav class="altreuni">
-                <h3>Vedi anche: </h3>
+                <h3>Vedi anche</h3>
                 <ul>
-                    <li><a class="reflink" href="index.html">Università statali</a></li>
-                    <li><a class="reflink" href="superiori.html">Scuole superiori</a></li>
-                    <li><a class="reflink" href="private.html">Università private</a></li>
-                    <li><a class="reflink" href="abastatali.html">Accademie di Belle Arti statali</a></li>
+                    <li><a class="reflink select-none" href="index.html">Università statali</a></li>
+                    <li><a class="reflink select-none" href="superiori.html">Scuole superiori</a></li>
+                    <li><a class="reflink select-none" href="private.html">Università private</a></li>
+                    <li><a class="reflink select-none" href="abastatali.html">Accademie di Belle Arti statali</a></li>
+                    <li><span class="reflink select-none active">Conservatori statali</span></li>
+                    <li><a class="reflink select-none" href="afamprivati.html">AFAM Privati</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="container">
+        <div class="container table-responsive">
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th>Università</th>
-                        <th>Città</th>
-                        <th><a onclick="ordinaPerRegioneConservatori()">Regione</a></th>
-                        <th><a onclick="ordinaPerStudentiConservatori()">Studenti</a></th>
+                        <th class="select-none"></th>
+                        <th class="select-none">Università</th>
+                        <th class="select-none">Città</th>
+                        <th class="select-none"><a onclick="ordinaPerRegioneConservatori()">Regione</a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudentiConservatori()">Studenti</a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni"></tbody>

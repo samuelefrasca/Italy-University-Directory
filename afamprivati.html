@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IUD - Scuole superiori</title>
+    <title>IUD - AFAM privati</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="iud_icon.ico" type="image/x-icon">
 </head>
@@ -13,16 +13,16 @@
     <header>
         <div class="container">
             <h1 class="title">Italy University Directory</h1>
-            <h2 class="subtitle">Scuole superiori</h2>
+            <h2 class="subtitle">AFAM privati</h2>
             <nav class="altreuni">
                 <h3>Vedi anche</h3>
                 <ul>
                     <li><a class="reflink select-none" href="index.html">Università statali</a></li>
-                    <li><span class="reflink select-none active">Scuole superiori</span></li>
+                    <li><a class="reflink select-none" href="superiori.html">Scuole superiori</a></li>
                     <li><a class="reflink select-none" href="private.html">Università private</a></li>
                     <li><a class="reflink select-none" href="abastatali.html">Accademie di Belle Arti statali</a></li>
                     <li><a class="reflink select-none" href="conservatori.html">Conservatori statali</a></li>
-                    <li><a class="reflink select-none" href="afamprivati.html">AFAM Privati</a></li>
+                    <li><span class="reflink select-none active">AFAM Privati</span></li>
                 </ul>
             </nav>
         </div>
@@ -35,8 +35,8 @@
                         <th class="select-none"></th>
                         <th class="select-none">Università</th>
                         <th class="select-none">Città</th>
-                        <th class="select-none"><a onclick="ordinaPerRegioneSuperiori()">Regione</a></th>
-                        <th class="select-none"><a onclick="ordinaPerStudentiSuperiori()">Studenti</a></th>
+                        <th class="select-none"><a onclick="ordinaPerRegioneAfamPrivati()">Regione</a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudentiAfamPrivati()">Studenti</a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni"></tbody>
@@ -51,7 +51,7 @@
     <script>
         ordineregione = false;
         ordinestudenti = false;
-        ordinaPerRegioneSuperiori();
+        ordinaPerRegioneAfamPrivati();
     </script>
 </body>
 

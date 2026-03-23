@@ -17,24 +17,26 @@
             <nav class="altreuni">
                 <h3>Vedi anche</h3>
                 <ul>
-                    <li><a class="reflink" href="superiori.html">Scuole superiori</a></li>
-                    <li><a class="reflink" href="private.html">Università private</a></li>
-                    <li><a class="reflink" href="abastatali.html">Accademie di Belle Arti statali</a></li>
-                    <li><a class="reflink" href="conservatori.html">Conservatori statali</a></li>
+                    <li><span class="reflink select-none active">Università statali</span></li>
+                    <li><a class="reflink select-none" href="superiori.html">Scuole superiori</a></li>
+                    <li><a class="reflink select-none" href="private.html">Università private</a></li>
+                    <li><a class="reflink select-none" href="abastatali.html">Accademie di Belle Arti statali</a></li>
+                    <li><a class="reflink select-none" href="conservatori.html">Conservatori statali</a></li>
+                    <li><a class="reflink select-none" href="afamprivati.html">AFAM Privati</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <div class="container">
+        <div class="container table-responsive">
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th>Università</th>
-                        <th>Città</th>
-                        <th><a onclick="ordinaPerRegioneStatali()">Regione</a></th>
-                        <th><a onclick="ordinaPerStudentiStatali()">Studenti</a></th>
+                        <th class="select-none"></th>
+                        <th class="select-none">Università</th>
+                        <th class="select-none">Città</th>
+                        <th class="select-none"><a onclick="ordinaPerRegioneStatali()">Regione</a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudentiStatali()">Studenti</a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni"></tbody>

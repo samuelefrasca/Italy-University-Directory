@@ -332,6 +332,77 @@ const abastatali = [
   { nome: "Accademia di Belle Arti di Verona", citta: "Verona", regione: "Veneto", studenti: 786, link: "https://accademiabelleartiverona.it/" },
 ];
 
+const afamprivati = [
+  // BASILICATA
+  { nome: "Istituto del Design", citta: "Matera", regione: "Basilicata", studenti: 58, link: "https://www.istitutodeldesign.it/" },
+
+  // CAMPANIA
+  { nome: "Accademia della Moda. Institute of Universal Art and Design (IUAD)", citta: "Napoli", regione: "Campania", studenti: 1279, link: "https://www.accademiamoda.it/" },
+
+  // EMILIA-ROMAGNA
+  { nome: "Libera Accademia di Belle Arti (LABA)", citta: "Brescia", regione: "Lombardia", studenti: 2546, link: "https://www.laba.edu/" },
+  { nome: "The Bernstein School of Musical Theater", citta: "Bologna", regione: "Emilia-Romagna", studenti: 128, link: "https://www.bsmt.it/" },
+
+  // FRIULI-VENEZIA GIULIA
+  { nome: "Accademia di Belle Arti G.B. Tiepolo", citta: "Udine", regione: "Friuli-Venezia Giulia", studenti: 549, link: "https://www.abaud.it/" },
+
+  // LAZIO
+  { nome: "Accademia Costume & Moda", citta: "Roma", regione: "Lazio", studenti: 485, link: "https://www.accademiacostumeemoda.it/" },
+  { nome: "Accademia Internazionale di Teatro", citta: "Roma", regione: "Lazio", studenti: 112, link: "https://www.scuoladiteatro.it/" },
+  { nome: "Accademia Italiana", citta: "Roma", regione: "Lazio", studenti: 743, link: "https://www.accademiaitaliana.com/" },
+  { nome: "Accademia del Lusso", citta: "Milano", regione: "Lombardia", studenti: 233, link: "https://www.accademiadellusso.com/" },
+  { nome: "Accademia Nazionale delle Arti e Nuove Tecnologie (AANT)", citta: "Roma", regione: "Lazio", studenti: 580, link: "https://www.accademiadellearti.it/" },
+  { nome: "Istituto Pantheon Design & Technology", citta: "Roma", regione: "Lazio", studenti: 362, link: "https://istitutopantheon.it/" },
+  { nome: "Quasar Institute for Advanced Design", citta: "Roma", regione: "Lazio", studenti: 202, link: "https://quasarinstitute.it/" },
+  { nome: "Saint Louis College of Music", citta: "Roma", regione: "Lazio", studenti: 665, link: "https://www.saintlouis.eu/" },
+  { nome: "Rome University of Fine Arts (RUFA)", citta: "Roma", regione: "Lazio", studenti: 1241, link: "https://www.unirufa.it/" },
+  { nome: "Accademia di Belle Arti Lorenzo da Viterbo", citta: "Viterbo", regione: "Lazio", studenti: 137, link: "https://www.abav.it/" },
+
+  // LIGURIA
+  { nome: "Accademia di Belle Arti Isadora Duncan", citta: "Sanremo (IM)", regione: "Liguria", studenti: 279, link: "https://www.accademiabelleartisanremo.it/" },
+
+  // LOMBARDIA
+  { nome: "Accademia di Belle Arti ACME", citta: "Milano", regione: "Lombardia", studenti: 166, link: "https://www.acmemilano.it/" },
+  { nome: "Accademia Aldo Galli", citta: "Como", regione: "Lombardia", studenti: 82, link: "https://www.accademiagalli.it/" },
+  { nome: "Accademia SantaGiulia", citta: "Brescia", regione: "Lombardia", studenti: 966, link: "https://www.accademiasantagiulia.it/" },
+  { nome: "Accademia Teatro alla Scala", citta: "Milano", regione: "Lombardia", studenti: 73, link: "https://www.accademialascala.it/" },
+  { nome: "Civica Scuola di Musica Claudio Abbado", citta: "Milano", regione: "Lombardia", studenti: 554, link: "https://musica.fondazionemilano.eu/" },
+  { nome: "Civica Scuola di Teatro Paolo Grassi", citta: "Milano", regione: "Lombardia", studenti: 113, link: "https://teatro.fondazionemilano.eu/" },
+  { nome: "Istituto Europeo di Design (IED)", citta: "Milano", regione: "Lombardia", studenti: 4923, link: "https://www.ied.it/milano" },
+  { nome: "SAE Institute", citta: "Milano", regione: "Lombardia", studenti: 323, link: "https://www.sae.edu/ita/" },
+  { nome: "CPM Music Institute", citta: "Milano", regione: "Lombardia", studenti: 278, link: "https://www.cpm.it/" },
+  { nome: "Nuova Accademia di Belle Arti (NABA)", citta: "Milano", regione: "Lombardia", studenti: 6274, link: "https://www.naba.it/" },
+  { nome: "Istituto Marangoni", citta: "Milano", regione: "Lombardia", studenti: 1796, link: "https://www.istitutomarangoni.com/" },
+  { nome: "Raffles Milano", citta: "Milano", regione: "Lombardia", studenti: 48, link: "https://www.rafflesmilano.it/" },
+  { nome: "Istituto Secoli", citta: "Milano", regione: "Lombardia", studenti: 86, link: "https://www.istitutosecoli.it/" },
+
+  // MARCHE
+  { nome: "Istituto Poliarte", citta: "Ancona", regione: "Marche", studenti: 192, link: "https://www.poliarte.it/" },
+
+  // PIEMONTE
+  { nome: "Accademia di Belle Arti di Cuneo", citta: "Cuneo", regione: "Piemonte", studenti: 1306, link: "https://accademiabellearticuneo.it/" },
+  { nome: "Istituto d'Arte Applicata e Design (IAAD)", citta: "Torino", regione: "Piemonte", studenti: 579, link: "https://www.iaad.it/" },
+  { nome: "Scuola del Teatro Musicale (STM)", citta: "Novara", regione: "Piemonte", studenti: 105, link: "https://www.scuolateatromusicale.it/" },
+
+  // SICILIA
+  { nome: "Accademia di Belle Arti Rosario Gagliardi (MADE)", citta: "Siracusa", regione: "Sicilia", studenti: 96, link: "https://www.madeprogram.it/" },
+  { nome: "Accademia di Design e Comunicazione Visiva (ABADIR)", citta: "Sant'Agata li Battiati (CT)", regione: "Sicilia", studenti: 78, link: "https://www.abadir.net/" },
+
+  // TOSCANA
+  { nome: "Istituto Modartech", citta: "Pontedera (PI)", regione: "Toscana", studenti: 369, link: "https://www.modartech.com/" },
+  { nome: "Scuola di Musica di Fiesole", citta: "Fiesole (FI)", regione: "Toscana", studenti: 179, link: "https://www.scuolamusicafiesole.it/" },
+  { nome: "Accademia Nazionale del Jazz (Siena Jazz)", citta: "Siena", regione: "Toscana", studenti: 137, link: "https://www.sienajazz.it/" },
+
+  // TRENTINO-ALTO ADIGE
+  { nome: "Trentino Art Academy", citta: "Trento", regione: "Trentino-Alto Adige", studenti: 90, link: "https://www.trentinoartacademy.it/" },
+
+  // UMBRIA
+  { nome: "Istituto Italiano Design", citta: "Perugia", regione: "Umbria", studenti: 45, link: "https://istitutoitalianodesign.com/" },
+
+  // VENETO
+  { nome: "Scuola Italiana Design (SID)", citta: "Padova", regione: "Veneto", studenti: 179, link: "https://www.scuolaitalianadesign.com/" },
+];
+
 const corpoTabella = document.getElementById("tabellauni");
 
 function renderizzaTabella(lista) {
@@ -342,7 +413,7 @@ function renderizzaTabella(lista) {
         let nolink = uni.link ? "" : "onclick='alert(\"Sito non trovato\"); return false;'";
         let riga = `<tr>
             <td>${n}</td>
-            <td><a class="uni" href="${link}" ${nolink}>${uni.nome}</a></td>
+            <td><a class="uni" href="${link}" ${nolink} target="_blank">${uni.nome}</a></td>
             <td>${uni.citta}</td>
             <td>${uni.regione}</td>
             <td>${uni.studenti}</td>
@@ -422,6 +493,19 @@ function ordinaPerRegioneAbastatali() {
     }
 }
 
+function ordinaPerRegioneAfamPrivati() {
+    if (ordineregione) {
+        renderizzaTabella(afamprivati.toReversed());
+        ordineregione = false;
+        ordinestudenti = false;
+    }
+    else {
+        renderizzaTabella(afamprivati);
+        ordineregione = true;
+        ordinestudenti = false;
+    }
+}
+
 // ORDINE PER STUDENTI
 
 var ordinestudenti
@@ -492,6 +576,22 @@ function ordinaPerStudentiConservatori() {
 
 function ordinaPerStudentiAbastatali() {
     let copiauniversita = [...abastatali];
+    if (ordinestudenti) {
+        copiauniversita.sort((a, b) => a.studenti - b.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = false;
+        ordineregione = false;
+    }
+    else {
+        copiauniversita.sort((a, b) => b.studenti - a.studenti);
+        renderizzaTabella(copiauniversita);
+        ordinestudenti = true;
+        ordineregione = false;
+    }
+}
+
+function ordinaPerStudentiAfamPrivati() {
+    let copiauniversita = [...afamprivati];
     if (ordinestudenti) {
         copiauniversita.sort((a, b) => a.studenti - b.studenti);
         renderizzaTabella(copiauniversita);

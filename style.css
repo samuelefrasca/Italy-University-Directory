@@ -17,6 +17,11 @@ main {
     margin: 0 auto;
 }
 
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}
+
 header {
     color: white;
     background-color: #000044;
@@ -27,6 +32,14 @@ header {
 
 a {
     cursor: pointer;
+}
+
+.active {
+    background-color: #ffffff; /* Sfondo bianco per la bolla */
+    color: #000044 !important; /* Testo blu scuro (come l'header) per fare contrasto */ 
+    padding: 5px 15px; /* Spazio interno: 5px sopra/sotto, 15px ai lati */
+    border-radius: 20px; /* Curva i bordi al massimo per l'effetto bolla */
+    font-weight: bold;
 }
 
 ul {
@@ -97,13 +110,16 @@ table {
     width: 100%;
 }
 
+.select-none {
+    -webkit-user-select: none;
+    /* Aggiunge compatibilità per i browser Apple/Safari per il comando user-select seguente */
+    user-select: none;
+}
+
 th {
     border-radius: 5px;
     border: 1px solid #000044;
     background-color: #eee;
-    -webkit-user-select: none;
-    /* Aggiunge compatibilità per i browser Apple/Safari per il comando user-select seguente */
-    user-select: none;
 }
 
 tr:hover {
