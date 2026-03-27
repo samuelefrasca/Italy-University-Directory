@@ -13,10 +13,10 @@ const statali = [
     { nome: "Università degli Studi \"Mediterranea\" di Reggio Calabria", citta: "Reggio Calabria", regione: "Calabria", studenti: 4955, link: "https://www.unirc.it/" },
 
     // CAMPANIA
-    { nome: "Università degli Studi della Campania Luigi Vanvitelli", citta: "Caserta", regione: "Campania", studenti: 25299, link: "https://unicampania.it/" },
-    { nome: "Università degli Studi di Napoli 'Federico II'", citta: "Napoli", regione: "Campania", studenti: 71799, link: "https://www.unina.it/it/" },
-    { nome: "Università degli Studi di Napoli 'L'Orientale'", citta: "Napoli", regione: "Campania", studenti: 11164, link: "https://www.unior.it/it" },
-    { nome: "Università degli Studi di Napoli 'Parthenope'", citta: "Napoli", regione: "Campania", studenti: 14716, link: "https://www.uniparthenope.it/" },
+    { nome: "Università degli Studi della Campania \"Luigi Vanvitelli\"", citta: "Caserta", regione: "Campania", studenti: 25299, link: "https://unicampania.it/" },
+    { nome: "Università degli Studi di Napoli \"Federico II\"", citta: "Napoli", regione: "Campania", studenti: 71799, link: "https://www.unina.it/it/" },
+    { nome: "Università degli Studi di Napoli \"L'Orientale\"", citta: "Napoli", regione: "Campania", studenti: 11164, link: "https://www.unior.it/it" },
+    { nome: "Università degli Studi di Napoli \"Parthenope\"", citta: "Napoli", regione: "Campania", studenti: 14716, link: "https://www.uniparthenope.it/" },
     { nome: "Università degli Studi di Salerno", citta: "Fisciano (SA)", regione: "Campania", studenti: 33332, link: "https://www.unisa.it/" },
     { nome: "Università degli Studi del Sannio", citta: "Benevento", regione: "Campania", studenti: 3768, link: "https://www.unisannio.it/it" },
 
