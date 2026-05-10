@@ -332,7 +332,7 @@ const conservatori = [
     { nome: "Conservatorio statale di musica di Vicenza \"Arrigo Pedrollo\"", sigla: "ConsVi", citta: "Vicenza", regione: "Veneto", studenti: 424, link: "https://www.consvi.it/" }
 ];
 
-const afamprivati = [
+const afamprivate = [
     // BASILICATA
     { nome: "Istituto del Design", sigla: "IdD", citta: "Matera", regione: "Basilicata", studenti: 58, link: "https://www.istitutodeldesign.it/" },
 
@@ -424,185 +424,137 @@ function renderizzaTabella(lista) {
     }
 }
 
-
 // ORDINE PER REGIONE
 
 var ordineregione
 
-function ordinaPerRegioneStatali() {
+function ordinaPerRegione(uni) {
     if (ordineregione) {
-        renderizzaTabella(unistatali.toReversed());
+        renderizzaTabella(uni.toReversed());
+        ordinecitta = false;
         ordineregione = false;
         ordinestudenti = false;
     }
     else {
-        renderizzaTabella(unistatali);
+        renderizzaTabella(uni);
+        ordinecitta = false;
         ordineregione = true;
         ordinestudenti = false;
     }
+}
+
+function ordinaPerRegioneStatali() {
+    ordinaPerRegione(unistatali);
 }
 
 function ordinaPerRegioneSuperiori() {
-    if (ordineregione) {
-        renderizzaTabella(superiori.toReversed());
-        ordineregione = false;
-        ordinestudenti = false;
-    }
-    else {
-        renderizzaTabella(superiori);
-        ordineregione = true;
-        ordinestudenti = false;
-    }
+    ordinaPerRegione(superiori);
 }
 
 function ordinaPerRegionePrivate() {
-    if (ordineregione) {
-        renderizzaTabella(uniprivate.toReversed());
-        ordineregione = false;
-        ordinestudenti = false;
-    }
-    else {
-        renderizzaTabella(uniprivate);
-        ordineregione = true;
-        ordinestudenti = false;
-    }
+    ordinaPerRegione(uniprivate);
 }
 
 function ordinaPerRegioneConservatori() {
-    if (ordineregione) {
-        renderizzaTabella(conservatori.toReversed());
-        ordineregione = false;
+    ordinaPerRegione(conservatori);
+}
+
+function ordinaPerRegioneAbaStatali() {
+    ordinaPerRegione(abastatali);
+}
+
+function ordinaPerRegioneAfamPrivate() {
+    ordinaPerRegione(afamprivate);
+}
+
+// ORDINE PER CITTÀ
+
+var ordinecitta
+
+function ordinaPerCitta(uni) {
+    let copiauniversita = [...uni];
+    if (ordinecitta) {
+        copiauniversita.sort((a, b) => b.citta.localeCompare(a.citta));
+        renderizzaTabella(copiauniversita);
+        ordinecitta = false;
         ordinestudenti = false;
+        ordineregione = false;
     }
     else {
-        renderizzaTabella(conservatori);
-        ordineregione = true;
+        copiauniversita.sort((a, b) => a.citta.localeCompare(b.citta));
+        renderizzaTabella(copiauniversita);
+        ordinecitta = true;
         ordinestudenti = false;
+        ordineregione = false;
     }
 }
 
-function ordinaPerRegioneAbastatali() {
-    if (ordineregione) {
-        renderizzaTabella(abastatali.toReversed());
-        ordineregione = false;
-        ordinestudenti = false;
-    }
-    else {
-        renderizzaTabella(abastatali);
-        ordineregione = true;
-        ordinestudenti = false;
-    }
+function ordinaPerCittaStatali() {
+    ordinaPerCitta(unistatali);
 }
 
-function ordinaPerRegioneAfamPrivati() {
-    if (ordineregione) {
-        renderizzaTabella(afamprivati.toReversed());
-        ordineregione = false;
-        ordinestudenti = false;
-    }
-    else {
-        renderizzaTabella(afamprivati);
-        ordineregione = true;
-        ordinestudenti = false;
-    }
+function ordinaPerCittaSuperiori() {
+    ordinaPerCitta(superiori);
+}
+
+function ordinaPerCittaPrivate() {
+    ordinaPerCitta(uniprivate);
+}
+
+function ordinaPerCittaConservatori() {
+    ordinaPerCitta(conservatori);
+}
+
+function ordinaPerCittaAbaStatali() {
+    ordinaPerCitta(abastatali);
+}
+
+function ordinaPerCittaAfamPrivate() {
+    ordinaPerCitta(afamprivate);
 }
 
 // ORDINE PER STUDENTI
 
 var ordinestudenti
 
-function ordinaPerStudentiStatali() {
-    let copiauniversita = [...unistatali];
+function ordinaPerStudenti(uni) {
+    let copiauniversita = [...uni];
     if (ordinestudenti) {
         copiauniversita.sort((a, b) => a.studenti - b.studenti);
         renderizzaTabella(copiauniversita);
+        ordinecitta = false;
         ordinestudenti = false;
         ordineregione = false;
     }
     else {
         copiauniversita.sort((a, b) => b.studenti - a.studenti);
         renderizzaTabella(copiauniversita);
+        ordinecitta = false;
         ordinestudenti = true;
         ordineregione = false;
     }
+}
+
+function ordinaPerStudentiStatali() {
+    ordinaPerStudenti(unistatali);
 }
 
 function ordinaPerStudentiSuperiori() {
-    let copiauniversita = [...superiori];
-    if (ordinestudenti) {
-        copiauniversita.sort((a, b) => a.studenti - b.studenti);
-        renderizzaTabella(copiauniversita);
-        ordinestudenti = false;
-        ordineregione = false;
-    }
-    else {
-        copiauniversita.sort((a, b) => b.studenti - a.studenti);
-        renderizzaTabella(copiauniversita);
-        ordinestudenti = true;
-        ordineregione = false;
-    }
+    ordinaPerStudenti(superiori);
 }
 
 function ordinaPerStudentiPrivate() {
-    let copiauniversita = [...uniprivate];
-    if (ordinestudenti) {
-        copiauniversita.sort((a, b) => a.studenti - b.studenti);
-        renderizzaTabella(copiauniversita);
-        ordinestudenti = false;
-        ordineregione = false;
-    }
-    else {
-        copiauniversita.sort((a, b) => b.studenti - a.studenti);
-        renderizzaTabella(copiauniversita);
-        ordinestudenti = true;
-        ordineregione = false;
-    }
+    ordinaPerStudenti(uniprivate);
 }
 
 function ordinaPerStudentiConservatori() {
-    let copiauniversita = [...conservatori];
-    if (ordinestudenti) {
-        copiauniversita.sort((a, b) => a.studenti - b.studenti);
-        renderizzaTabella(copiauniversita);
-        ordinestudenti = false;
-        ordineregione = false;
-    }
-    else {
-        copiauniversita.sort((a, b) => b.studenti - a.studenti);
-        renderizzaTabella(copiauniversita);
-        ordinestudenti = true;
-        ordineregione = false;
-    }
+    ordinaPerStudenti(conservatori);
 }
 
-function ordinaPerStudentiAbastatali() {
-    let copiauniversita = [...abastatali];
-    if (ordinestudenti) {
-        copiauniversita.sort((a, b) => a.studenti - b.studenti);
-        renderizzaTabella(copiauniversita);
-        ordinestudenti = false;
-        ordineregione = false;
-    }
-    else {
-        copiauniversita.sort((a, b) => b.studenti - a.studenti);
-        renderizzaTabella(copiauniversita);
-        ordinestudenti = true;
-        ordineregione = false;
-    }
+function ordinaPerStudentiAbaStatali() {
+    ordinaPerStudenti(abastatali);
 }
 
-function ordinaPerStudentiAfamPrivati() {
-    let copiauniversita = [...afamprivati];
-    if (ordinestudenti) {
-        copiauniversita.sort((a, b) => a.studenti - b.studenti);
-        renderizzaTabella(copiauniversita);
-        ordinestudenti = false;
-        ordineregione = false;
-    }
-    else {
-        copiauniversita.sort((a, b) => b.studenti - a.studenti);
-        renderizzaTabella(copiauniversita);
-        ordinestudenti = true;
-        ordineregione = false;
-    }
+function ordinaPerStudentiAfamPrivate() {
+    ordinaPerStudenti(afamprivate);
 }

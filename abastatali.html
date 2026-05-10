@@ -36,10 +36,10 @@
                 <ul>
                     <li><a class="reflink select-none" href="index.html">Università statali</a></li>
                     <li><a class="reflink select-none" href="superiori.html">Scuole Superiori</a></li>
-                    <li><a class="reflink select-none" href="private.html">Università private</a></li>
+                    <li><a class="reflink select-none" href="uniprivate.html">Università private</a></li>
                     <li><span class="reflink select-none active">Accademie di Belle Arti statali</span></li>
                     <li><a class="reflink select-none" href="conservatori.html">Conservatori statali</a></li>
-                    <li><a class="reflink select-none" href="afamprivati.html">AFAM private</a></li>
+                    <li><a class="reflink select-none" href="afamprivate.html">AFAM private</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,9 +52,9 @@
                         <th class="select-none"></th>
                         <th class="select-none">Nome</th>
                         <th class="select-none">Sigla</th>
-                        <th class="select-none">Sede principale</th>
-                        <th class="select-none"><a onclick="ordinaPerRegioneAbastatali()">Regione <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerStudentiAbastatali()">Studenti <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerCittaAbaStatali()">Sede principale <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerRegioneAbaStatali()">Regione <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudentiAbaStatali()">Studenti <i class="fa-solid fa-sort"></i></a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni"></tbody>
@@ -62,14 +62,16 @@
         </div>
     </main>
     <footer>
+        <p>Fonte dati: <a class="a_footer" href="https://www.mur.gov.it/it/aree-tematiche/universita/le-universita" target="_blank">Sito web ufficiale del Ministero dell'Università e della Ricerca (MUR)</a></p>
         <p>&copy; 2026 - Samuele Frasca</p>
-        <p><a href="https://github.com/samuelefrasca" class="a_footer github" target="_blank"><img class="github-logo" src="assets/img/GitHub_Invertocat_White.png" alt="github-logo">GitHub</a></p>
+        <p><a class="a_footer github" href="https://github.com/samuelefrasca" target="_blank"><img class="github-logo" src="assets/img/GitHub_Invertocat_White.png" alt="github-logo">GitHub</a></p>
     </footer>
     <script src="assets/js/script.js"></script>
     <script>
         ordineregione = false;
         ordinestudenti = false;
-        ordinaPerRegioneAbastatali();
+        ordinecitta = false;
+        ordinaPerRegioneAbaStatali();
     </script>
 </body>
 
