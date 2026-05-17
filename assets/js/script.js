@@ -1,4 +1,4 @@
-const unistatali = [
+const statali = [
     // ABRUZZO
     { nome: "Università degli Studi \"Gabriele d'Annunzio\" di Chieti-Pescara", sigla: "UniCh", citta: "Chieti - Pescara", regione: "Abruzzo", studenti: 20460, link: "https://www.unich.it/" },
     { nome: "Università degli Studi dell'Aquila", citta: "L'Aquila", sigla: "UnivAq", regione: "Abruzzo", studenti: 17024, link: "https://www.univaq.it/" },
@@ -121,7 +121,7 @@ const superiori = [
     { nome: "Scuola superiore di studi universitari e di perfezionamento Sant'Anna", sigla: "SSSUP", citta: "Pisa", regione: "Toscana", studenti: 510, link: "https://www.santannapisa.it/it" },
 ];
 
-const uniprivate = [
+const nonstatali = [
     // CALABRIA
     { nome: "Università per Stranieri \"Dante Alighieri\" di Reggio Calabria", sigla: "UniDa", citta: "Reggio Calabria", regione: "Calabria", studenti: 219, link: "https://www.unidarc.it/" },
 
@@ -164,61 +164,27 @@ const uniprivate = [
     { nome: "Università della Valle d'Aosta", sigla: "UniVdA", citta: "Aosta", regione: "Valle d’Aosta", studenti: 1050, link: "https://www.univda.it/" },
 ];
 
-const abastatali = [
+const telematiche = [
     // ABRUZZO
-    { nome: "Accademia di Belle Arti dell'Aquila", sigla: "AbaAq", citta: "L'Aquila", regione: "Abruzzo", studenti: 516, link: "https://www.abaq.it/" },
-
-    // CALABRIA
-    { nome: "Accademia di Belle Arti di Catanzaro", sigla: "AbaCz", citta: "Catanzaro", regione: "Calabria", studenti: 424, link: "https://www.abacatanzaro.it/" },
-    { nome: "Accademia di Belle Arti di Reggio Calabria", sigla: "AbaRc", citta: "Reggio Calabria", regione: "Calabria", studenti: 550, link: "https://www.abarc.it/" },
+    { nome: "Università telematica \"Leonardo da Vinci\"", sigla: "Unidav", citta: "Torrevecchia Teatina (CH)", regione: "Abruzzo", studenti: 546, link: "https://www.unidav.it/" },
 
     // CAMPANIA
-    { nome: "Accademia di Belle Arti di Napoli", sigla: "AbaNa", citta: "Napoli", regione: "Campania", studenti: 4101, link: "https://www.abana.it/" },
-
-    // EMILIA-ROMAGNA
-    { nome: "Accademia di Belle Arti di Bologna", sigla: "AbaBo", citta: "Bologna", regione: "Emilia-Romagna", studenti: 2184, link: "https://www.ababo.it/" },
-    { nome: "Accademia di Belle Arti di Ravenna", sigla: "AbaRa", citta: "Ravenna", regione: "Emilia-Romagna", studenti: 187, link: "https://www.abaravenna.it/" },
+    { nome: "Università telematica \"Giustino Fortunato\"", sigla: "Unifortunato", citta: "Benevento", regione: "Campania", studenti: 2760, link: "https://www.unifortunato.eu/" },
+    { nome: "Università telematica \"Pegaso\"", sigla: "UniPegaso", citta: "Napoli", regione: "Campania", studenti: 108704, link: "https://www.unipegaso.it/" },
 
     // LAZIO
-    { nome: "Accademia di Belle Arti di Frosinone", sigla: "AbaFr", citta: "Frosinone", regione: "Lazio", studenti: 639, link: "https://www.accademiabellearti.fr.it/" },
-    { nome: "Accademia di Belle Arti di Roma", sigla: "AbaRm", citta: "Roma", regione: "Lazio", studenti: 3102, link: "https://abaroma.it/" },
-
-    // LIGURIA
-    { nome: "Accademia Ligustica di Belle Arti di Genova", sigla: "AbaGe", citta: "Genova", regione: "Liguria", studenti: 638, link: "https://www.accademialigustica.it/" },
+    { nome: "Università telematica \"Guglielmo Marconi \"", sigla: "Unimarconi", citta: "Roma", regione: "Lazio", studenti: 23533, link: "https://www.unimarconi.it/" },
+    { nome: "Università telematica internazionale \"UniNettuno\"", sigla: "UTIU", citta: "Roma", regione: "Lazio", studenti: 17435, link: "https://www.uninettunouniversity.net/it/default.aspx" },
+    { nome: "Università telematica \"Niccolò Cusano\"", sigla: "Unicusano", citta: "Roma", regione: "Lazio", studenti: 18583, link: "https://www.unicusano.it/" },
+    { nome: "Università telematica \"San Raffaele\"", sigla: "UniRoma5", citta: "Roma", regione: "Lazio", studenti: 17119, link: "https://www.uniroma5.it/" },
+    { nome: "Università telematica Unitelma Sapienza di Roma", sigla: "Unitelma", citta: "Roma", regione: "Lazio", studenti: 4101, link: "https://www.unitelmasapienza.it/" },
+    { nome: "Università telematica \"Universitas Mercatorum\"", sigla: "UniMercatorum", citta: "Roma", regione: "Lazio", studenti: 64741, link: "https://www.unimercatorum.it/" },
 
     // LOMBARDIA
-    { nome: "Accademia di Belle Arti di Brera", sigla: "AbaMi", citta: "Milano", regione: "Lombardia", studenti: 4263, link: "https://www.accademiadibrera.milano.it/" },
-    { nome: "Politecnico delle Arti di Bergamo", sigla: "AbaBg", citta: "Bergamo", regione: "Lombardia", studenti: 285, link: "https://accademiabellearti.bg.it/" },
-
-    // MARCHE
-    { nome: "Accademia di Belle Arti di Macerata", sigla: "AbaMc", citta: "Macerata", regione: "Marche", studenti: 1371, link: "https://abamc.it/" },
-    { nome: "Accademia di Belle Arti di Urbino", sigla: "AbaUr", citta: "Urbino", regione: "Marche", studenti: 428, link: "https://www.accademiadiurbino.it/" },
-
-    // PIEMONTE
-    { nome: "Accademia Albertina di Belle Arti di Torino", sigla: "AbaTo", citta: "Torino", regione: "Piemonte", studenti: 1634, link: "https://albertina-academy.it/" },
-
-    // PUGLIA
-    { nome: "Accademia di Belle Arti di Bari", sigla: "AbaBa", citta: "Bari", regione: "Puglia", studenti: 1210, link: "https://www.accademiabelleartiba.it/" },
-    { nome: "Accademia di Belle Arti di Foggia", sigla: "AbaFg", citta: "Foggia", regione: "Puglia", studenti: 796, link: "https://www.abafg.it/" },
-    { nome: "Accademia di Belle Arti di Lecce", sigla: "AbaLe", citta: "Lecce", regione: "Puglia", studenti: 822, link: "https://www.accademialecce.edu.it/" },
-
-    // SARDEGNA
-    { nome: "Accademia di Belle Arti \"Mario Sironi\" di Sassari", sigla: "AbaSs", citta: "Sassari", regione: "Sardegna", studenti: 594, link: "https://www.accademiasironi.it/" },
-
-    // SICILIA
-    { nome: "Accademia di Belle Arti di Catania", sigla: "AbaCt", citta: "Catania", regione: "Sicilia", studenti: 2453, link: "https://www.abacatania.it/" },
-    { nome: "Accademia di Belle Arti di Palermo", sigla: "AbaPa", citta: "Palermo", regione: "Sicilia", studenti: 1526, link: "https://www.accademiadipalermo.it/" },
+    { nome: "Università telematica \"e-Campus\"", sigla: "Uni-eCampus", citta: "Novedrate (CO)", regione: "Lombardia", studenti: 49856, link: "https://www.uniecampus.it/" },
 
     // TOSCANA
-    { nome: "Accademia di Belle Arti di Carrara", sigla: "AbaCa", citta: "Carrara", regione: "Toscana", studenti: 1153, link: "https://accademiacarrara.it/" },
-    { nome: "Accademia di Belle Arti di Firenze", sigla: "AbaFi", citta: "Firenze", regione: "Toscana", studenti: 2103, link: "https://www.accademia.firenze.it/" },
-
-    // UMBRIA
-    { nome: "Accademia di Belle Arti \"Pietro Vannucci\" di Perugia", sigla: "AbaPg", citta: "Perugia", regione: "Umbria", studenti: 644, link: "https://www.abaperugia.com/" },
-
-    // VENETO
-    { nome: "Accademia di Belle Arti di Venezia", sigla: "AbaVe", citta: "Venezia", regione: "Veneto", studenti: 1879, link: "https://accademiavenezia.it/" },
-    { nome: "Accademia di Belle Arti di Verona", sigla: "AbaVr", citta: "Verona", regione: "Veneto", studenti: 786, link: "https://accademiabelleartiverona.it/" },
+    { nome: "Università telematica degli studi \"Italian University Line\"", sigla: "IUL", citta: "Firenze", regione: "Toscana", studenti: 1990, link: "https://www.iuline.it/" }
 ];
 
 const conservatori = [
@@ -293,7 +259,7 @@ const conservatori = [
     { nome: "Conservatorio statale di musica di Bari \"Niccolò Piccinni\"", sigla: "ConsBa", citta: "Bari", regione: "Puglia", studenti: 656, link: "https://www.conservatoriopiccinni.it/" },
     { nome: "Conservatorio statale di musica di Foggia \"Umberto Giordano\"", sigla: "ConsFg", citta: "Foggia - Rodi Garganico (FG)", regione: "Puglia", studenti: 496, link: "https://www.conservatoriofoggia.it/" },
     { nome: "Conservatorio statale di musica di Lecce \"Tito Schipa\"", sigla: "ConsLe", citta: "Lecce - Ceglie Messapica (BR)", regione: "Puglia", studenti: 469, link: "https://www.conservatoriolecce.it/" },
-    { nome: "Conservatorio statale di musica di Monopoli (BA) \"Nino Rota\"", sigla: "ConsMo", citta: "Monopoli (BA)", regione: "Puglia", studenti: 374, link: "https://www.conservatoriodimonopoli.org/" },
+    { nome: "Conservatorio statale di musica di Monopoli \"Nino Rota\"", sigla: "ConsMo", citta: "Monopoli (BA)", regione: "Puglia", studenti: 374, link: "https://www.conservatoriodimonopoli.org/" },
     { nome: "Conservatorio statale di musica di Taranto \"Giovanni Paisiello\"", sigla: "ConsTa", citta: "Taranto", regione: "Puglia", studenti: 233, link: "https://www.paisiello.it/" },
 
     // SARDEGNA
@@ -305,7 +271,7 @@ const conservatori = [
     { nome: "Conservatorio statale di musica di Catania \"Vincenzo Bellini\"", sigla: "ConsCt", citta: "Catania", regione: "Sicilia", studenti: 579, link: "https://www.conservatoriocatania.it/" },
     { nome: "Conservatorio statale di musica di Messina \"Arcangelo Corelli\"", sigla: "ConsMe", citta: "Messina", regione: "Sicilia", studenti: 538, link: "https://www.consme.it/" },
     { nome: "Conservatorio statale di musica di Palermo \"Alessandro Scarlatti\"", sigla: "ConsPa", citta: "Palermo", regione: "Sicilia", studenti: 772, link: "https://www.conservatoriopalermo.it/" },
-    { nome: "Conservatorio statale di musica di Ribera (AG) \"Arturo Toscanini\"", sigla: "ConsRi", citta: "Ribera (AG)", regione: "Sicilia", studenti: 284, link: "https://www.conservatoriotoscanini.it/" },
+    { nome: "Conservatorio statale di musica di Ribera \"Arturo Toscanini\"", sigla: "ConsRi", citta: "Ribera (AG)", regione: "Sicilia", studenti: 284, link: "https://www.conservatoriotoscanini.it/" },
     { nome: "Conservatorio statale di musica di Trapani \"Antonio Scontrino\"", sigla: "ConsTp", citta: "Trapani", regione: "Sicilia", studenti: 299, link: "https://www.constp.it/" },
 
     // TOSCANA
@@ -335,23 +301,101 @@ const conservatori = [
     { nome: "Conservatorio statale di musica di Vicenza \"Arrigo Pedrollo\"", sigla: "ConsVi", citta: "Vicenza", regione: "Veneto", studenti: 424, link: "https://www.consvi.it/" }
 ];
 
-const afamprivate = [
+const abastatali = [
+    // ABRUZZO
+    { nome: "Accademia di Belle Arti dell'Aquila", sigla: "AbaAq", citta: "L'Aquila", regione: "Abruzzo", studenti: 516, link: "https://www.abaq.it/" },
+
+    // CALABRIA
+    { nome: "Accademia di Belle Arti di Catanzaro", sigla: "AbaCz", citta: "Catanzaro", regione: "Calabria", studenti: 424, link: "https://www.abacatanzaro.it/" },
+    { nome: "Accademia di Belle Arti di Reggio Calabria", sigla: "AbaRc", citta: "Reggio Calabria", regione: "Calabria", studenti: 550, link: "https://www.abarc.it/" },
+
+    // CAMPANIA
+    { nome: "Accademia di Belle Arti di Napoli", sigla: "AbaNa", citta: "Napoli", regione: "Campania", studenti: 4101, link: "https://www.abana.it/" },
+
+    // EMILIA-ROMAGNA
+    { nome: "Accademia di Belle Arti di Bologna", sigla: "AbaBo", citta: "Bologna", regione: "Emilia-Romagna", studenti: 2184, link: "https://www.ababo.it/" },
+    { nome: "Accademia di Belle Arti di Ravenna", sigla: "AbaRa", citta: "Ravenna", regione: "Emilia-Romagna", studenti: 187, link: "https://www.abaravenna.it/" },
+
+    // LAZIO
+    { nome: "Accademia di Belle Arti di Frosinone", sigla: "AbaFr", citta: "Frosinone", regione: "Lazio", studenti: 639, link: "https://www.accademiabellearti.fr.it/" },
+    { nome: "Accademia di Belle Arti di Roma", sigla: "AbaRm", citta: "Roma", regione: "Lazio", studenti: 3102, link: "https://abaroma.it/" },
+
+    // LIGURIA
+    { nome: "Accademia Ligustica di Belle Arti di Genova", sigla: "AbaGe", citta: "Genova", regione: "Liguria", studenti: 638, link: "https://www.accademialigustica.it/" },
+
+    // LOMBARDIA
+    { nome: "Accademia di Belle Arti di Brera", sigla: "AbaMi", citta: "Milano", regione: "Lombardia", studenti: 4263, link: "https://www.accademiadibrera.milano.it/" },
+    { nome: "Politecnico delle Arti di Bergamo", sigla: "AbaBg", citta: "Bergamo", regione: "Lombardia", studenti: 285, link: "https://accademiabellearti.bg.it/" },
+
+    // MARCHE
+    { nome: "Accademia di Belle Arti di Macerata", sigla: "AbaMc", citta: "Macerata", regione: "Marche", studenti: 1371, link: "https://abamc.it/" },
+    { nome: "Accademia di Belle Arti di Urbino", sigla: "AbaUr", citta: "Urbino", regione: "Marche", studenti: 428, link: "https://www.accademiadiurbino.it/" },
+
+    // PIEMONTE
+    { nome: "Accademia Albertina di Belle Arti di Torino", sigla: "AbaTo", citta: "Torino", regione: "Piemonte", studenti: 1634, link: "https://albertina-academy.it/" },
+
+    // PUGLIA
+    { nome: "Accademia di Belle Arti di Bari", sigla: "AbaBa", citta: "Bari", regione: "Puglia", studenti: 1210, link: "https://www.accademiabelleartiba.it/" },
+    { nome: "Accademia di Belle Arti di Foggia", sigla: "AbaFg", citta: "Foggia", regione: "Puglia", studenti: 796, link: "https://www.abafg.it/" },
+    { nome: "Accademia di Belle Arti di Lecce", sigla: "AbaLe", citta: "Lecce", regione: "Puglia", studenti: 822, link: "https://www.accademialecce.edu.it/" },
+
+    // SARDEGNA
+    { nome: "Accademia di Belle Arti \"Mario Sironi\" di Sassari", sigla: "AbaSs", citta: "Sassari", regione: "Sardegna", studenti: 594, link: "https://www.accademiasironi.it/" },
+
+    // SICILIA
+    { nome: "Accademia di Belle Arti di Catania", sigla: "AbaCt", citta: "Catania", regione: "Sicilia", studenti: 2453, link: "https://www.abacatania.it/" },
+    { nome: "Accademia di Belle Arti di Palermo", sigla: "AbaPa", citta: "Palermo", regione: "Sicilia", studenti: 1526, link: "https://www.accademiadipalermo.it/" },
+
+    // TOSCANA
+    { nome: "Accademia di Belle Arti di Carrara", sigla: "AbaCa", citta: "Carrara", regione: "Toscana", studenti: 1153, link: "https://accademiacarrara.it/" },
+    { nome: "Accademia di Belle Arti di Firenze", sigla: "AbaFi", citta: "Firenze", regione: "Toscana", studenti: 2103, link: "https://www.accademia.firenze.it/" },
+
+    // UMBRIA
+    { nome: "Accademia di Belle Arti \"Pietro Vannucci\" di Perugia", sigla: "AbaPg", citta: "Perugia", regione: "Umbria", studenti: 644, link: "https://www.abaperugia.com/" },
+
+    // VENETO
+    { nome: "Accademia di Belle Arti di Venezia", sigla: "AbaVe", citta: "Venezia", regione: "Veneto", studenti: 1879, link: "https://accademiavenezia.it/" },
+    { nome: "Accademia di Belle Arti di Verona", sigla: "AbaVr", citta: "Verona", regione: "Veneto", studenti: 786, link: "https://accademiabelleartiverona.it/" },
+];
+
+const accnazionali = [
+    // LAZIO
+    { nome: "Accademia nazionale d'arte drammatica \"Silvio d’Amico\"", sigla: "ANDA", citta: "Roma", regione: "Lazio", studenti: 153, link: "https://www.accademiasilviodamico.it/" },
+    { nome: "Accademia nazionale di danza", sigla: "AND", citta: "Roma", regione: "Lazio", studenti: 323, link: "https://www.accademiasilviodamico.it/" }
+];
+
+const isia = [
+    // ABRUZZO
+    { nome: "Istituto superiore per le Industrie Artistiche di Pescara", sigla: "ISIA Pescara", citta: "Pescara", regione: "Abruzzo", studenti: 173, link: "https://www.isiadesign.pe.it/" },
+    
+    // EMILIA-ROMAGNA
+    { nome: "Istituto superiore per le Industrie Artistiche di Faenza", sigla: "ISIA Faenza", citta: "Faenza (RA)", regione: "Emilia-Romagna", studenti: 150, link: "https://www.isiafaenza.it/" },
+    
+    // FRIULI-VENEZIA GIULIA
+    { nome: "Istituto superiore per le Industrie Artistiche di Urbino", sigla: "ISIA Urbino", citta: "Urbino", regione: "Friuli-Venezia Giulia", studenti: 228, link: "https://www.isiaurbino.net/" },
+    
+    // LAZIO
+    { nome: "Istituto superiore per le Industrie Artistiche di Roma", sigla: "ISIA Roma", citta: "Roma - Pordenone", regione: "Lazio", studenti: 453, link: "https://www.isiaroma.it/" },
+    
+    // TOSCANA
+    { nome: "Istituto superiore per le Industrie Artistiche di Roma", sigla: "ISIA Firenze", citta: "Firenze", regione: "Toscana", studenti: 195, link: "https://www.isiadesign.fi.it/" }
+];
+
+const afamprivati = [
     // BASILICATA
     { nome: "Istituto del Design", sigla: "IdD", citta: "Matera", regione: "Basilicata", studenti: 58, link: "https://www.istitutodeldesign.it/" },
-    
+
     // CAMPANIA
     { nome: "Accademia della Moda. Institute of Universal Art and Design", sigla: "IUAD", citta: "Napoli", regione: "Campania", studenti: 1279, link: "https://www.accademiamoda.it/" },
-    
+
     // EMILIA-ROMAGNA
     { nome: "Libera Accademia di Belle Arti di Rimini", sigla: "LABA", citta: "Rimini", regione: "Emilia-Romagna", studenti: 1415, link: "https://www.labarimini.com/" },
     { nome: "The Bernstein School of Musical Theater", sigla: "BSMT", citta: "Bologna", regione: "Emilia-Romagna", studenti: 128, link: "https://www.bsmt.it/" },
-    
+
     // FRIULI-VENEZIA GIULIA
     { nome: "Accademia di Belle Arti G.B. Tiepolo", sigla: "ABA Udine", citta: "Udine", regione: "Friuli-Venezia Giulia", studenti: 549, link: "https://www.abaud.it/" },
-    
+
     // LAZIO
-    { nome: "Accademia nazionale d'arte drammatica \"Silvio d’Amico\"", sigla: "ANDA", citta: "Roma", regione: "Lazio", studenti: 153, link: "https://www.accademiasilviodamico.it/" },
-    { nome: "Accademia nazionale di danza", sigla: "AND", citta: "Roma", regione: "Lazio", studenti: 323, link: "https://www.accademiasilviodamico.it/" },
     { nome: "Accademia Costume & Moda", sigla: "ACM", citta: "Roma", regione: "Lazio", studenti: 485, link: "https://www.accademiacostumeemoda.it/" },
     { nome: "Accademia Internazionale di Teatro", sigla: "AIT", citta: "Roma", regione: "Lazio", studenti: 112, link: "https://www.scuoladiteatro.it/" },
     { nome: "Accademia Nazionale delle Arti e Nuove Tecnologie", sigla: "AANT", citta: "Roma", regione: "Lazio", studenti: 580, link: "https://www.accademiadellearti.it/" },
@@ -360,10 +404,10 @@ const afamprivate = [
     { nome: "Saint Louis College of Music", sigla: "SLMC", citta: "Roma", regione: "Lazio", studenti: 665, link: "https://www.saintlouis.eu/" },
     { nome: "Rome University of Fine Arts", sigla: "RUFA", citta: "Roma", regione: "Lazio", studenti: 1241, link: "https://www.unirufa.it/" },
     { nome: "Accademia di Belle Arti Lorenzo da Viterbo", sigla: "ABAV", citta: "Viterbo", regione: "Lazio", studenti: 137, link: "https://www.abav.it/" },
-    
+
     // LIGURIA
     { nome: "Accademia di Belle Arti Isadora Duncan", sigla: "ABA Sanremo", citta: "Sanremo (IM)", regione: "Liguria", studenti: 279, link: "https://www.accademiabelleartisanremo.it/" },
-    
+
     // LOMBARDIA
     { nome: "Libera Accademia di Belle Arti di Brescia", sigla: "LABA", citta: "Brescia", regione: "Lombardia", studenti: 1415, link: "https://www.laba.edu/" },
     { nome: "Accademia SantaGiulia", sigla: "SantaGiulia", citta: "Brescia", regione: "Lombardia", studenti: 966, link: "https://www.accademiasantagiulia.it/" },
@@ -380,32 +424,32 @@ const afamprivate = [
     { nome: "Istituto Marangoni", sigla: "Marangoni", citta: "Milano", regione: "Lombardia", studenti: 1796, link: "https://www.istitutomarangoni.com/" },
     { nome: "Raffles Milano - Istituto Moda e Design", sigla: "Raffles", citta: "Milano", regione: "Lombardia", studenti: 48, link: "https://www.rafflesmilano.it/" },
     { nome: "Istituto Secoli", sigla: "Secoli", citta: "Milano", regione: "Lombardia", studenti: 86, link: "https://www.istitutosecoli.it/" },
-    
+
     // MARCHE
     { nome: "Istituto Poliarte", sigla: "Poliarte", citta: "Ancona", regione: "Marche", studenti: 192, link: "https://www.poliarte.it/" },
-    
+
     // PIEMONTE
     { nome: "Accademia di Belle Arti di Cuneo", sigla: "ABA Cuneo", citta: "Cuneo", regione: "Piemonte", studenti: 1306, link: "https://accademiabellearticuneo.it/" },
     { nome: "Istituto d'Arte Applicata e Design", sigla: "IAAD", citta: "Torino", regione: "Piemonte", studenti: 579, link: "https://www.iaad.it/" },
     { nome: "Scuola del Teatro Musicale", sigla: "STM", citta: "Novara", regione: "Piemonte", studenti: 105, link: "https://www.scuolateatromusicale.it/" },
-    
+
     // SICILIA
     { nome: "Accademia di Belle Arti Rosario Gagliardi", sigla: "MADE", citta: "Siracusa", regione: "Sicilia", studenti: 96, link: "https://www.madeprogram.it/" },
     { nome: "Accademia di Design e Comunicazione Visiva", sigla: "Abadir", citta: "Sant'Agata li Battiati (CT)", regione: "Sicilia", studenti: 78, link: "https://www.abadir.net/" },
-    
+
     // TOSCANA
     { nome: "Accademia Italiana di Arte, Moda e Design", sigla: "AI", citta: "Firenze", regione: "Toscana", studenti: 743, link: "https://www.accademiaitaliana.com/" },
     { nome: "Libera Accademia di Belle Arti di Firenze", sigla: "LABA", citta: "Firenze", regione: "Toscana", studenti: 699, link: "https://www.laba.biz/" },
     { nome: "Istituto Modartech", sigla: "Modartech", citta: "Pontedera (PI)", regione: "Toscana", studenti: 369, link: "https://www.modartech.com/" },
     { nome: "Scuola di Musica di Fiesole", sigla: "SMF", citta: "Fiesole (FI)", regione: "Toscana", studenti: 179, link: "https://www.scuolamusicafiesole.it/" },
     { nome: "Accademia Nazionale del Jazz", sigla: "SienaJazz", citta: "Siena", regione: "Toscana", studenti: 137, link: "https://www.sienajazz.it/" },
-    
+
     // TRENTINO-ALTO ADIGE
     { nome: "Trentino Art Academy", sigla: "TNAA", citta: "Trento", regione: "Trentino-Alto Adige", studenti: 90, link: "https://www.trentinoartacademy.it/" },
-    
+
     // UMBRIA
     { nome: "Istituto Italiano Design", sigla: "IID", citta: "Perugia", regione: "Umbria", studenti: 45, link: "https://istitutoitalianodesign.com/" },
-    
+
     // VENETO
     { nome: "Scuola Italiana Design", sigla: "SID", citta: "Padova", regione: "Veneto", studenti: 179, link: "https://www.scuolaitalianadesign.com/" },
 ];
@@ -426,7 +470,7 @@ function renderizzaTabella(lista) {
                 <td>${uni.sigla}</td>
                 <td>${uni.citta}</td>
                 <td>${uni.regione}</td>
-                <td>${uni.studenti}</td>
+                <td>${uni.studenti.toLocaleString('it-IT', { useGrouping: 'always' })}</td>
                 </tr>`;
         corpoTabella.innerHTML += riga;
         n++;
@@ -452,30 +496,6 @@ function ordinaPerRegione(uni) {
     }
 }
 
-function ordinaPerRegioneStatali() {
-    ordinaPerRegione(unistatali);
-}
-
-function ordinaPerRegioneSuperiori() {
-    ordinaPerRegione(superiori);
-}
-
-function ordinaPerRegionePrivate() {
-    ordinaPerRegione(uniprivate);
-}
-
-function ordinaPerRegioneConservatori() {
-    ordinaPerRegione(conservatori);
-}
-
-function ordinaPerRegioneAbaStatali() {
-    ordinaPerRegione(abastatali);
-}
-
-function ordinaPerRegioneAfamPrivate() {
-    ordinaPerRegione(afamprivate);
-}
-
 // ORDINE PER CITTÀ
 
 var ordinecitta
@@ -498,30 +518,6 @@ function ordinaPerCitta(uni) {
     }
 }
 
-function ordinaPerCittaStatali() {
-    ordinaPerCitta(unistatali);
-}
-
-function ordinaPerCittaSuperiori() {
-    ordinaPerCitta(superiori);
-}
-
-function ordinaPerCittaPrivate() {
-    ordinaPerCitta(uniprivate);
-}
-
-function ordinaPerCittaConservatori() {
-    ordinaPerCitta(conservatori);
-}
-
-function ordinaPerCittaAbaStatali() {
-    ordinaPerCitta(abastatali);
-}
-
-function ordinaPerCittaAfamPrivate() {
-    ordinaPerCitta(afamprivate);
-}
-
 // ORDINE PER STUDENTI
 
 var ordinestudenti
@@ -542,28 +538,4 @@ function ordinaPerStudenti(uni) {
         ordinestudenti = true;
         ordineregione = false;
     }
-}
-
-function ordinaPerStudentiStatali() {
-    ordinaPerStudenti(unistatali);
-}
-
-function ordinaPerStudentiSuperiori() {
-    ordinaPerStudenti(superiori);
-}
-
-function ordinaPerStudentiPrivate() {
-    ordinaPerStudenti(uniprivate);
-}
-
-function ordinaPerStudentiConservatori() {
-    ordinaPerStudenti(conservatori);
-}
-
-function ordinaPerStudentiAbaStatali() {
-    ordinaPerStudenti(abastatali);
-}
-
-function ordinaPerStudentiAfamPrivate() {
-    ordinaPerStudenti(afamprivate);
 }

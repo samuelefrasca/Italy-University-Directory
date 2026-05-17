@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IUD - Conservatori statali</title>
-    <meta name="description" content="Elenco completo dei conservatori statali in Italia, organizzato per regione e città.">
+    <title>IUD - AFAM privati</title>
+    <meta name="description" content="Elenco completo degli istituti ad Alta Formazione Artistica, Musicale e coreutica - AFAM - in Italia, organizzato per regione e città.">
     <link rel="icon" href="assets/img/iud_icon.png" sizes="144x144">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -26,7 +26,7 @@
             <div class="header">
                 <div class="header1">
                     <h1 class="title">Italy University Directory</h1>
-                    <h2 class="subtitle">Conservatori statali</h2>
+                    <h2 class="subtitle">Istituti privati di Alta Formazione Artistica, Musicale e Coreutica</h2>
                 </div>
                 <div class="header2">
                     <img src="assets/img/iud_image.png" alt="iud_image" height="110px">
@@ -38,11 +38,11 @@
                     <li><a class="reflink select-none" href="superiori.html">Scuole superiori</a></li>
                     <li><a class="reflink select-none" href="nonstatali.html">Non statali</a></li>
                     <li><a class="reflink select-none" href="telematiche.html">Telematiche</a></li>
-                    <li><span class="reflink select-none active">Conservatori</span></li>
+                    <li><a class="reflink select-none" href="conservatori.html">Conservatori</a></li>
                     <li><a class="reflink select-none" href="abastatali.html">ABA</a></li>
                     <li><a class="reflink select-none" href="accnazionali.html">Acc. nazionali</a></li>
                     <li><a class="reflink select-none" href="isia.html">ISIA</a></li>
-                    <li><a class="reflink select-none" href="afamprivati.html">AFAM privati</a></li>
+                    <li><span class="reflink select-none active">AFAM privati</span></li>
                 </ul>
             </nav>
         </div>
@@ -55,9 +55,9 @@
                         <th class="select-none"></th>
                         <th class="select-none">Nome</th>
                         <th class="select-none">Sigla</th>
-                        <th class="select-none"><a onclick="ordinaPerCitta(conservatori)">Sede principale <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerRegione(conservatori)">Regione <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerStudenti(conservatori)">Studenti <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerCitta(afamprivati)">Sede principale <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerRegione(afamprivati)">Regione <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudenti(afamprivati)">Studenti <i class="fa-solid fa-sort"></i></a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni"></tbody>
@@ -74,7 +74,7 @@
         ordineregione = false;
         ordinestudenti = false;
         ordinecitta = false;
-        ordinaPerRegione(conservatori);
+        ordinaPerRegione(afamprivati);
     </script>
 </body>
 
