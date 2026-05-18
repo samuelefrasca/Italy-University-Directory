@@ -85,8 +85,8 @@ const statali = [
     { nome: "Università degli Studi di Siena", sigla: "UniSi", citta: "Siena", regione: "Toscana", studenti: 14833, link: "https://www.unisi.it/" },
     { nome: "Università per stranieri di Siena", sigla: "UniStraSi", citta: "Siena", regione: "Toscana", studenti: 1601, link: "https://www.unistrasi.it/" },
 
-    // TRENTINO ALTO-ADIGE
-    { nome: "Università degli Studi di Trento", sigla: "UniTn", citta: "Trento", regione: "Trentino Alto-Adige", studenti: 16923, link: "https://www.unitn.it/it" },
+    // TRENTINO-ALTO ADIGE
+    { nome: "Università degli Studi di Trento", sigla: "UniTn", citta: "Trento", regione: "Trentino-Alto Adige", studenti: 16923, link: "https://www.unitn.it/it" },
 
     // UMBRIA
     { nome: "Università degli Studi di Perugia", sigla: "UniPg", citta: "Perugia", regione: "Umbria", studenti: 29526, link: "https://www.unipg.it/" },
@@ -157,8 +157,8 @@ const nonstatali = [
     // SICILIA
     { nome: "Libera Università degli Studi di Enna \"Kore\"", sigla: "UKE", citta: "Enna", regione: "Sicilia", studenti: 5675, link: "https://uke.it/" },
 
-    // TRENTINO ALTO-ADIGE
-    { nome: "Libera Università di Bolzano", sigla: "UniBz", citta: "Bolzano", regione: "Trentino Alto-Adige", studenti: 3422, link: "https://www.unibz.it/it/" },
+    // TRENTINO-ALTO ADIGE
+    { nome: "Libera Università di Bolzano", sigla: "UniBz", citta: "Bolzano", regione: "Trentino-Alto Adige", studenti: 3422, link: "https://www.unibz.it/it/" },
 
     // VALLE D'AOSTA
     { nome: "Università della Valle d'Aosta", sigla: "UniVdA", citta: "Aosta", regione: "Valle d’Aosta", studenti: 1050, link: "https://www.univda.it/" },
