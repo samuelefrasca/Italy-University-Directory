@@ -183,7 +183,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    img {
+    .logo {
         display: none;
     }
 }
