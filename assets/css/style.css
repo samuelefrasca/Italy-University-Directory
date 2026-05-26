@@ -27,7 +27,7 @@ main {
 
 header {
     color: white;
-    background-color: #000044;
+    background-color: #000022;
     padding: 20px;
     border-radius: 0px 0px 20px 20px;
     margin-bottom: 20px;
@@ -45,7 +45,7 @@ a {
 .active {
     background-color: #ffffff;
     /* Sfondo bianco per la bolla */
-    color: #000044 !important;
+    color: #000022 !important;
     /* Testo blu scuro (come l'header) per fare contrasto */
     padding: 5px 15px;
     /* Spazio interno: 5px sopra/sotto, 15px ai lati */
@@ -117,46 +117,41 @@ h3 {
     font-size: 28px;
 }
 
-table {
-    border: 1px solid #000044;
-    border-radius: 5px;
-    background-color: #fff;
-    width: 100%;
-}
-
 .select-none {
     -webkit-user-select: none;
     /* Aggiunge compatibilità per i browser Apple/Safari per il comando user-select seguente */
     user-select: none;
 }
 
-th {
+table {
+    border: 1px solid #000022;
     border-radius: 5px;
-    border: 1px solid #000044;
-    background-color: #eee;
-}
-
-tr:hover {
-    background-color: #eee;
+    background-color: #fff;
+    width: 100%;
 }
 
 th {
+    background-color: #eee;
     white-space: nowrap;
-    border: 1px solid #000044;
+    border: 1px solid #000022;
     border-radius: 5px;
     padding: 8px;
     text-align: left;
 }
 
 td {
-    border: 1px solid #000044;
+    border: 1px solid #000022;
     border-radius: 5px;
     padding: 8px;
     text-align: left;
 }
 
+tr:hover {
+    background-color: #eee;
+}
+
 footer {
-    background-color: #000044;
+    background-color: #000022;
     color: white;
     text-align: center;
     padding: 1rem;
