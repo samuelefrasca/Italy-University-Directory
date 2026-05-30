@@ -64,9 +64,9 @@
                         <th class="select-none"></th>
                         <th class="select-none">Nome</th>
                         <th class="select-none">Sigla</th>
-                        <th class="select-none"><a onclick="ordinaPerCitta(telematiche)">Sede principale <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerRegione(telematiche)">Regione <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerStudenti(telematiche)">Studenti <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerCitta('telematiche')">Sede principale <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerRegione('telematiche')">Regione <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudenti('telematiche')">Studenti <i class="fa-solid fa-sort"></i></a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni"></tbody>
@@ -83,7 +83,7 @@
         ordineregione = false;
         ordinestudenti = false;
         ordinecitta = false;
-        ordinaPerRegione(telematiche);
+        caricaTabella('telematiche');
     </script>
 </body>
 

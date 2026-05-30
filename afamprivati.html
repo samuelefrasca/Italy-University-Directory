@@ -64,9 +64,9 @@
                         <th class="select-none"></th>
                         <th class="select-none">Nome</th>
                         <th class="select-none">Sigla</th>
-                        <th class="select-none"><a onclick="ordinaPerCitta(afamprivati)">Sede principale <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerRegione(afamprivati)">Regione <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerStudenti(afamprivati)">Studenti <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerCitta('afamprivati')">Sede principale <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerRegione('afamprivati')">Regione <i class="fa-solid fa-sort"></i></a></th>
+                        <th class="select-none"><a onclick="ordinaPerStudenti('afamprivati')">Studenti <i class="fa-solid fa-sort"></i></a></th>
                     </tr>
                 </thead>
                 <tbody id="tabellauni"></tbody>
@@ -83,7 +83,7 @@
         ordineregione = false;
         ordinestudenti = false;
         ordinecitta = false;
-        ordinaPerRegione(afamprivati);
+        caricaTabella('afamprivati');
     </script>
 </body>
 

@@ -1,0 +1,170 @@
+[
+    {
+        "nome": "Università per Stranieri \"Dante Alighieri\" di Reggio Calabria",
+        "sigla": "UniDa",
+        "citta": "Reggio Calabria",
+        "regione": "Calabria",
+        "studenti": 219,
+        "link": "https://www.unidarc.it/"
+    },
+    {
+        "nome": "Università degli Studi \"Suor Orsola Benincasa\"",
+        "sigla": "UniSob",
+        "citta": "Napoli",
+        "regione": "Campania",
+        "studenti": 9089,
+        "link": "https://www.unisob.na.it/"
+    },
+    {
+        "nome": "Link Campus University",
+        "sigla": "Link",
+        "citta": "Roma",
+        "regione": "Lazio",
+        "studenti": 1448,
+        "link": "https://www.unilink.it/"
+    },
+    {
+        "nome": "LUISS - Libera Università Internazionale Studi Sociali \"Guido Carli\"",
+        "sigla": "LUISS",
+        "citta": "Roma",
+        "regione": "Lazio",
+        "studenti": 11761,
+        "link": "https://www.luiss.it/"
+    },
+    {
+        "nome": "LUMSA - Libera Università Maria Santissima Assunta",
+        "sigla": "LUMSA",
+        "citta": "Roma",
+        "regione": "Lazio",
+        "studenti": 9027,
+        "link": "https://lumsa.it/it/home"
+    },
+    {
+        "nome": "Saint Camillus International University of Health and Medical Sciences",
+        "sigla": "UniCamillus",
+        "citta": "Roma",
+        "regione": "Lazio",
+        "studenti": 3504,
+        "link": "https://unicamillus.org/"
+    },
+    {
+        "nome": "Università Campus Bio-Medico di Roma",
+        "sigla": "UCBM",
+        "citta": "Roma",
+        "regione": "Lazio",
+        "studenti": 3250,
+        "link": "https://www.unicampus.it/"
+    },
+    {
+        "nome": "Università Europea di Roma",
+        "sigla": "UER",
+        "citta": "Roma",
+        "regione": "Lazio",
+        "studenti": 2566,
+        "link": "https://www.uer.it/"
+    },
+    {
+        "nome": "Università degli Studi Internazionali di Roma",
+        "sigla": "UnInt",
+        "citta": "Roma",
+        "regione": "Lazio",
+        "studenti": 1192,
+        "link": "https://www.unint.eu/"
+    },
+    {
+        "nome": "Humanitas University",
+        "sigla": "Hunimed",
+        "citta": "Rozzano (MI)",
+        "regione": "Lombardia",
+        "studenti": 2195,
+        "link": "https://www.hunimed.eu/it/"
+    },
+    {
+        "nome": "IULM - Libera università di lingue e comunicazione",
+        "sigla": "IULM",
+        "citta": "Milano",
+        "regione": "Lombardia",
+        "studenti": 7833,
+        "link": "https://www.iulm.it/it/home"
+    },
+    {
+        "nome": "LIUC - Università Carlo Cattaneo",
+        "sigla": "LIUC",
+        "citta": "Castellanza (VA)",
+        "regione": "Lombardia",
+        "studenti": 2400,
+        "link": "https://www.liuc.it/"
+    },
+    {
+        "nome": "Università Cattolica del Sacro Cuore",
+        "sigla": "UniCatt",
+        "citta": "Milano",
+        "regione": "Lombardia",
+        "studenti": 41867,
+        "link": "https://www.unicatt.it/"
+    },
+    {
+        "nome": "Università commerciale \"Luigi Bocconi\"",
+        "sigla": "Bocconi",
+        "citta": "Milano",
+        "regione": "Lombardia",
+        "studenti": 14000,
+        "link": "https://www.unibocconi.it/it"
+    },
+    {
+        "nome": "Università Vita-Salute \"San Raffaele\"",
+        "sigla": "UniSR",
+        "citta": "Milano",
+        "regione": "Lombardia",
+        "studenti": 5841,
+        "link": "https://www.unisr.it/"
+    },
+    {
+        "nome": "UniNeuromed - Neuromed Mediterranean University of Sciences and Technologies",
+        "sigla": "UniNeuromed",
+        "citta": "Pozzilli (IS)",
+        "regione": "Molise",
+        "studenti": null,
+        "link": "https://www.unineuromed.it/"
+    },
+    {
+        "nome": "Università degli Studi di Scienze Gastronomiche",
+        "sigla": "UniSG",
+        "citta": "Pollenzo, Bra (CN)",
+        "regione": "Piemonte",
+        "studenti": 294,
+        "link": "https://www.unisg.it/"
+    },
+    {
+        "nome": "Libera Università Mediterranea \"Giuseppe Degennaro\"",
+        "sigla": "LUM",
+        "citta": "Casamassima (BA)",
+        "regione": "Puglia",
+        "studenti": 2288,
+        "link": "https://www.lum.it/"
+    },
+    {
+        "nome": "Libera Università degli Studi di Enna \"Kore\"",
+        "sigla": "UKE",
+        "citta": "Enna",
+        "regione": "Sicilia",
+        "studenti": 5675,
+        "link": "https://uke.it/"
+    },
+    {
+        "nome": "Libera Università di Bolzano",
+        "sigla": "UniBz",
+        "citta": "Bolzano",
+        "regione": "Trentino-Alto Adige",
+        "studenti": 3422,
+        "link": "https://www.unibz.it/it/"
+    },
+    {
+        "nome": "Università della Valle d'Aosta",
+        "sigla": "UniVdA",
+        "citta": "Aosta",
+        "regione": "Valle d’Aosta",
+        "studenti": 1050,
+        "link": "https://www.univda.it/"
+    }
+]

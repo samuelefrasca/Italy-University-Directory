@@ -1,0 +1,490 @@
+[
+  {
+    "nome": "Università degli Studi \"Gabriele d'Annunzio\" di Chieti-Pescara",
+    "sigla": "UniCh",
+    "citta": "Chieti - Pescara",
+    "regione": "Abruzzo",
+    "studenti": 20460,
+    "link": "https://www.unich.it/"
+  },
+  {
+    "nome": "Università degli Studi dell'Aquila",
+    "sigla": "UnivAq",
+    "citta": "L'Aquila",
+    "regione": "Abruzzo",
+    "studenti": 17024,
+    "link": "https://www.univaq.it/"
+  },
+  {
+    "nome": "Università degli Studi di Teramo",
+    "sigla": "UniTe",
+    "citta": "Teramo",
+    "regione": "Abruzzo",
+    "studenti": 4732,
+    "link": "https://www.unite.it/UniTE/"
+  },
+  {
+    "nome": "Università degli Studi della Basilicata",
+    "sigla": "UniBas",
+    "citta": "Potenza - Matera",
+    "regione": "Basilicata",
+    "studenti": 5522,
+    "link": "https://portale.unibas.it/site/home.html"
+  },
+  {
+    "nome": "Università degli Studi Magna Græcia di Catanzaro",
+    "sigla": "UniCz",
+    "citta": "Catanzaro",
+    "regione": "Calabria",
+    "studenti": 12056,
+    "link": "https://web.unicz.it/it/"
+  },
+  {
+    "nome": "Università della Calabria",
+    "sigla": "UniCal",
+    "citta": "Rende (CS)",
+    "regione": "Calabria",
+    "studenti": 23469,
+    "link": "https://www.unical.it/"
+  },
+  {
+    "nome": "Università degli Studi \"Mediterranea\" di Reggio Calabria",
+    "sigla": "UniRc",
+    "citta": "Reggio Calabria",
+    "regione": "Calabria",
+    "studenti": 4988,
+    "link": "https://www.unirc.it/"
+  },
+  {
+    "nome": "Università degli Studi della Campania \"Luigi Vanvitelli\"",
+    "sigla": "UniCampania",
+    "citta": "Caserta",
+    "regione": "Campania",
+    "studenti": 23517,
+    "link": "https://unicampania.it/"
+  },
+  {
+    "nome": "Università degli Studi di Napoli \"Federico II\"",
+    "sigla": "UniNa",
+    "citta": "Napoli",
+    "regione": "Campania",
+    "studenti": 71907,
+    "link": "https://www.unina.it/it/"
+  },
+  {
+    "nome": "Università degli Studi di Napoli \"L'Orientale\"",
+    "sigla": "UniOr",
+    "citta": "Napoli",
+    "regione": "Campania",
+    "studenti": 8508,
+    "link": "https://www.unior.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Napoli \"Parthenope\"",
+    "sigla": "UniParthenope",
+    "citta": "Napoli",
+    "regione": "Campania",
+    "studenti": 14845,
+    "link": "https://www.uniparthenope.it/"
+  },
+  {
+    "nome": "Università degli Studi di Salerno",
+    "sigla": "UniSa",
+    "citta": "Fisciano (SA)",
+    "regione": "Campania",
+    "studenti": 32512,
+    "link": "https://www.unisa.it/"
+  },
+  {
+    "nome": "Università degli Studi del Sannio",
+    "sigla": "UniSannio",
+    "citta": "Benevento",
+    "regione": "Campania",
+    "studenti": 3768,
+    "link": "https://www.unisannio.it/it"
+  },
+  {
+    "nome": "Alma Mater Studiorum - Università di Bologna",
+    "sigla": "UniBo",
+    "citta": "Bologna",
+    "regione": "Emilia-Romagna",
+    "studenti": 85256,
+    "link": "https://www.unibo.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Ferrara",
+    "sigla": "UniFe",
+    "citta": "Ferrara",
+    "regione": "Emilia-Romagna",
+    "studenti": 27101,
+    "link": "https://www.unife.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Modena e Reggio Emilia",
+    "sigla": "UniMoRe",
+    "citta": "Modena - Reggio Emilia",
+    "regione": "Emilia-Romagna",
+    "studenti": 25851,
+    "link": "https://www.unimore.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Parma",
+    "sigla": "UniPr",
+    "citta": "Parma",
+    "regione": "Emilia-Romagna",
+    "studenti": 30842,
+    "link": "https://www.unipr.it/"
+  },
+  {
+    "nome": "Università degli Studi di Trieste",
+    "sigla": "UniTs",
+    "citta": "Trieste",
+    "regione": "Friuli-Venezia Giulia",
+    "studenti": 17534,
+    "link": "https://portale.units.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Udine",
+    "sigla": "UniUd",
+    "citta": "Udine",
+    "regione": "Friuli-Venezia Giulia",
+    "studenti": 14707,
+    "link": "https://www.uniud.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Cassino e del Lazio Meridionale",
+    "sigla": "UniCas",
+    "citta": "Cassino",
+    "regione": "Lazio",
+    "studenti": 7433,
+    "link": "https://www.unicas.it/"
+  },
+  {
+    "nome": "Sapienza Università di Roma",
+    "sigla": "UniRoma1",
+    "citta": "Roma",
+    "regione": "Lazio",
+    "studenti": 112000,
+    "link": "https://www.uniroma1.it/it/"
+  },
+  {
+    "nome": "Università degli Studi di Roma Tor Vergata",
+    "sigla": "UniRoma2",
+    "citta": "Roma",
+    "regione": "Lazio",
+    "studenti": 31181,
+    "link": "https://web.uniroma2.it/it"
+  },
+  {
+    "nome": "Università degli Studi Roma Tre",
+    "sigla": "UniRoma3",
+    "citta": "Roma",
+    "regione": "Lazio",
+    "studenti": 35109,
+    "link": "https://www.uniroma3.it/"
+  },
+  {
+    "nome": "Università degli Studi di Roma \"Foro Italico\"",
+    "sigla": "UniRoma4",
+    "citta": "Roma",
+    "regione": "Lazio",
+    "studenti": 2445,
+    "link": "https://www.uniroma4.it/"
+  },
+  {
+    "nome": "Università degli Studi della Tuscia",
+    "sigla": "UniTus",
+    "citta": "Viterbo",
+    "regione": "Lazio",
+    "studenti": 7724,
+    "link": "https://www.unitus.it/"
+  },
+  {
+    "nome": "Università degli Studi di Genova",
+    "sigla": "UniGe",
+    "citta": "Genova",
+    "regione": "Liguria",
+    "studenti": 31976,
+    "link": "https://unige.it/"
+  },
+  {
+    "nome": "Università degli Studi di Bergamo",
+    "sigla": "UniBg",
+    "citta": "Bergamo",
+    "regione": "Lombardia",
+    "studenti": 18954,
+    "link": "https://www.unibg.it/"
+  },
+  {
+    "nome": "Università degli Studi di Brescia",
+    "sigla": "UniBs",
+    "citta": "Brescia",
+    "regione": "Lombardia",
+    "studenti": 16456,
+    "link": "https://www.unibs.it/it"
+  },
+  {
+    "nome": "Politecnico di Milano",
+    "sigla": "PoliMi",
+    "citta": "Milano",
+    "regione": "Lombardia",
+    "studenti": 48124,
+    "link": "https://www.polimi.it/"
+  },
+  {
+    "nome": "Università degli Studi di Milano",
+    "sigla": "UniMi",
+    "citta": "Milano",
+    "regione": "Lombardia",
+    "studenti": 58016,
+    "link": "https://www.unimi.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Milano-Bicocca",
+    "sigla": "UniMiB",
+    "citta": "Milano",
+    "regione": "Lombardia",
+    "studenti": 36215,
+    "link": "https://www.unimib.it/"
+  },
+  {
+    "nome": "Università degli Studi di Pavia",
+    "sigla": "UniPv",
+    "citta": "Pavia",
+    "regione": "Lombardia",
+    "studenti": 26515,
+    "link": "https://portale.unipv.it/it"
+  },
+  {
+    "nome": "Università degli Studi dell'Insubria",
+    "sigla": "Uninsubria",
+    "citta": "Varese - Como",
+    "regione": "Lombardia",
+    "studenti": 11214,
+    "link": "https://www.uninsubria.it/"
+  },
+  {
+    "nome": "Università Politecnica delle Marche",
+    "sigla": "UnivPM",
+    "citta": "Ancona",
+    "regione": "Marche",
+    "studenti": 16241,
+    "link": "https://www.univpm.it/Entra/"
+  },
+  {
+    "nome": "Università degli Studi di Camerino",
+    "sigla": "UniCam",
+    "citta": "Camerino (MC)",
+    "regione": "Marche",
+    "studenti": 6259,
+    "link": "https://www.unicam.it/"
+  },
+  {
+    "nome": "Università degli Studi di Macerata",
+    "sigla": "UniMc",
+    "citta": "Macerata",
+    "regione": "Marche",
+    "studenti": 9181,
+    "link": "https://www.unimc.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Urbino \"Carlo Bo\"",
+    "sigla": "UniUrb",
+    "citta": "Urbino",
+    "regione": "Marche",
+    "studenti": 13398,
+    "link": "https://www.uniurb.it/"
+  },
+  {
+    "nome": "Università degli Studi del Molise",
+    "sigla": "UniMol",
+    "citta": "Campobasso",
+    "regione": "Molise",
+    "studenti": 6889,
+    "link": "https://www3.unimol.it/"
+  },
+  {
+    "nome": "Università degli Studi del Piemonte Orientale \"Amedeo Avogadro\"",
+    "sigla": "UPO",
+    "citta": "Alessandria - Novara - Vercelli",
+    "regione": "Piemonte",
+    "studenti": 14235,
+    "link": "https://www.uniupo.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Torino",
+    "sigla": "UniTo",
+    "citta": "Torino",
+    "regione": "Piemonte",
+    "studenti": 79122,
+    "link": "https://www.unito.it/"
+  },
+  {
+    "nome": "Politecnico di Torino",
+    "sigla": "PoliTo",
+    "citta": "Torino",
+    "regione": "Piemonte",
+    "studenti": 35605,
+    "link": "https://www.polito.it/"
+  },
+  {
+    "nome": "Politecnico di Bari",
+    "sigla": "PoliBa",
+    "citta": "Bari",
+    "regione": "Puglia",
+    "studenti": 10715,
+    "link": "https://www.poliba.it/"
+  },
+  {
+    "nome": "Università degli Studi di Bari \"Aldo Moro\"",
+    "sigla": "UniBa",
+    "citta": "Bari",
+    "regione": "Puglia",
+    "studenti": 40527,
+    "link": "https://www.uniba.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Foggia",
+    "sigla": "UniFg",
+    "citta": "Foggia",
+    "regione": "Puglia",
+    "studenti": 13560,
+    "link": "https://www.unifg.it/it"
+  },
+  {
+    "nome": "Università del Salento",
+    "sigla": "UniSalento",
+    "citta": "Lecce",
+    "regione": "Puglia",
+    "studenti": 19779,
+    "link": "https://www.unisalento.it/"
+  },
+  {
+    "nome": "Università degli Studi di Cagliari",
+    "sigla": "UniCa",
+    "citta": "Cagliari",
+    "regione": "Sardegna",
+    "studenti": 25094,
+    "link": "https://www.unica.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Sassari",
+    "sigla": "UniSs",
+    "citta": "Sassari",
+    "regione": "Sardegna",
+    "studenti": 12054,
+    "link": "https://www.uniss.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Catania",
+    "sigla": "UniCt",
+    "citta": "Catania",
+    "regione": "Sicilia",
+    "studenti": 40287,
+    "link": "https://www.unict.it/"
+  },
+  {
+    "nome": "Università degli Studi di Messina",
+    "sigla": "UniMe",
+    "citta": "Messina",
+    "regione": "Sicilia",
+    "studenti": 25656,
+    "link": "https://www.unime.it/"
+  },
+  {
+    "nome": "Università degli Studi di Palermo",
+    "sigla": "UniPa",
+    "citta": "Palermo",
+    "regione": "Sicilia",
+    "studenti": 44439,
+    "link": "https://www.unipa.it/"
+  },
+  {
+    "nome": "Università degli Studi di Firenze",
+    "sigla": "UniFi",
+    "citta": "Firenze",
+    "regione": "Toscana",
+    "studenti": 56166,
+    "link": "https://www.unifi.it/it"
+  },
+  {
+    "nome": "Università di Pisa",
+    "sigla": "UniPi",
+    "citta": "Pisa",
+    "regione": "Toscana",
+    "studenti": 44709,
+    "link": "https://www.unipi.it/"
+  },
+  {
+    "nome": "Università degli Studi di Siena",
+    "sigla": "UniSi",
+    "citta": "Siena",
+    "regione": "Toscana",
+    "studenti": 14833,
+    "link": "https://www.unisi.it/"
+  },
+  {
+    "nome": "Università per stranieri di Siena",
+    "sigla": "UniStraSi",
+    "citta": "Siena",
+    "regione": "Toscana",
+    "studenti": 1601,
+    "link": "https://www.unistrasi.it/"
+  },
+  {
+    "nome": "Università degli Studi di Trento",
+    "sigla": "UniTn",
+    "citta": "Trento",
+    "regione": "Trentino-Alto Adige",
+    "studenti": 16923,
+    "link": "https://www.unitn.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Perugia",
+    "sigla": "UniPg",
+    "citta": "Perugia",
+    "regione": "Umbria",
+    "studenti": 29526,
+    "link": "https://www.unipg.it/"
+  },
+  {
+    "nome": "Università per stranieri di Perugia",
+    "sigla": "UniStraPg",
+    "citta": "Perugia",
+    "regione": "Umbria",
+    "studenti": 1098,
+    "link": "https://www.unistrapg.it/"
+  },
+  {
+    "nome": "Università degli Studi di Padova",
+    "sigla": "UniPd",
+    "citta": "Padova",
+    "regione": "Veneto",
+    "studenti": 72543,
+    "link": "https://www.unipd.it/"
+  },
+  {
+    "nome": "Università Ca' Foscari Venezia",
+    "sigla": "UniVe",
+    "citta": "Venezia",
+    "regione": "Veneto",
+    "studenti": 18941,
+    "link": "https://www.unive.it/"
+  },
+  {
+    "nome": "Università Iuav di Venezia",
+    "sigla": "Iuav",
+    "citta": "Venezia",
+    "regione": "Veneto",
+    "studenti": 4821,
+    "link": "https://www.iuav.it/it"
+  },
+  {
+    "nome": "Università degli Studi di Verona",
+    "sigla": "UniVr",
+    "citta": "Verona",
+    "regione": "Veneto",
+    "studenti": 26322,
+    "link": "https://www.univr.it/"
+  }
+]
