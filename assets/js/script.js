@@ -22,7 +22,7 @@ function renderizzaTabella(lista) {
 }
 
 function caricaTabella(lista) {
-    fetch(`../../data/${lista}.json`)
+    fetch(`data/${lista}.json`)
         .then(res => res.json())
         .then(data => {
             renderizzaTabella(data);
@@ -34,7 +34,7 @@ function caricaTabella(lista) {
 var ordineregione
 
 function ordinaPerRegione(uni) {
-    fetch(`../../data/${uni}.json`)
+    fetch(`data/${uni}.json`)
         .then(res => res.json())
         .then(data => {
             if (ordineregione) {
@@ -57,7 +57,7 @@ function ordinaPerRegione(uni) {
 var ordinecitta
 
 function ordinaPerCitta(uni) {
-    fetch(`../../data/${uni}.json`)
+    fetch(`data/${uni}.json`)
         .then(res => res.json())
         .then(data => {
             let copiauniversita = [...data];
@@ -83,7 +83,7 @@ function ordinaPerCitta(uni) {
 var ordinestudenti
 
 function ordinaPerStudenti(uni) {
-    fetch(`../../data/${uni}.json`)
+    fetch(`data/${uni}.json`)
         .then(res => res.json())
         .then(data => {
             let copiauniversita = [...data];
