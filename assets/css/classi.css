@@ -1,0 +1,60 @@
+/* CORSI TROVATE */
+#corsitrovati {
+    margin-bottom: 8px;
+}
+
+/* BOTTONI TABELLA */
+
+.toolbar-tabella {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0;
+    flex-wrap: wrap;
+}
+
+.toolbar-tabella .filtri,
+.toolbar-tabella .ordina {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.toolbar-tabella select,
+.toolbar-tabella button {
+    padding: 8px 12px;
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* TABELLA */
+
+table {
+    width: 100%;
+    border: 2px solid #0d1b3d;
+    border-collapse: collapse;
+}
+
+.riga-principale td {
+    font-weight: 500;
+    border: 1px solid #d9d9d9;
+    padding: 8px 12px;
+}
+
+.riga-dettagli td {
+    border: 1px solid #d9d9d9;
+    padding: 8px 12px;
+    font-size: 0.82rem;
+    color: #555;
+    border-bottom: 1px solid #0d1b3d;
+}
+
+/* Zebra: ogni coppia di righe alternata */
+tbody tr.riga-principale:nth-child(4n+1) td,
+tbody tr.riga-principale:nth-child(4n+1) + tr td {
+    background-color: #fafafa;
+}
