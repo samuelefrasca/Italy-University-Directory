@@ -114,7 +114,7 @@ template = """<!DOCTYPE html>
         <div class="container">
             <div class="header">
                 <div class="header1">
-                    <a href="../../">
+                    <a href="../">
                         <img class="logo" src="../assets/img/iud_image.png" alt="iud_image">
                     </a>
                 </div>
