@@ -112,6 +112,7 @@ a {
     margin-bottom: 16px;
     font-size: 16px;
     border-radius: 999px;
+    box-sizing: border-box;
 }
 
 #searchNelleClassi {
@@ -121,6 +122,7 @@ a {
     margin: 0 auto;
     padding: 8px 12px;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .cardclassul {
@@ -267,9 +269,30 @@ footer {
 }
 
 @media (max-width: 768px) {
-
     .header1,
     .header3 {
         display: none;
+    }
+
+    main {
+        margin: 0 10px;
+    }
+
+    .maintitle {
+        font-size: 20pt;
+    }
+
+    .cardlink {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        white-space: normal;
+        overflow-wrap: break-word;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .data-note {
+        margin-left: 10px;
     }
 }
