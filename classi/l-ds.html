@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Corsi di laurea in Scienze della difesa e della sicurezza (L-DS): università e sedi | IUD</title>
+    <title>Corsi di laurea in Scienze della difesa e della sicurezza (L/DS): università e sedi | IUD</title>
     <meta name="description"
-        content="Scopri in quali università e sedi è attivo il corso di laurea in Scienze della difesa e della sicurezza (L-DS) in Italia. Elenco chiaro e aggiornato delle sedi disponibili.">
+        content="Scopri in quali università e sedi è attivo il corso di laurea in Scienze della difesa e della sicurezza (L/DS) in Italia. Elenco chiaro e aggiornato delle sedi disponibili.">
     <meta name="robots" content="index,follow">
 
 
@@ -16,9 +16,9 @@
 
 
     <meta property="og:site_name" content="Italy University Directory">
-    <meta property="og:title" content="Corsi di laurea in Scienze della difesa e della sicurezza (L-DS): università e sedi | IUD">
+    <meta property="og:title" content="Corsi di laurea in Scienze della difesa e della sicurezza (L/DS): università e sedi | IUD">
     <meta property="og:description"
-        content="Scopri in quali università e sedi è attivo il corso di laurea in Scienze della difesa e della sicurezza (L-DS) in Italia.">
+        content="Scopri in quali università e sedi è attivo il corso di laurea in Scienze della difesa e della sicurezza (L/DS) in Italia.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://samuelefrasca.github.io/Italy-University-Directory/classi/l-ds.html">
     <meta property="og:image"
@@ -26,9 +26,9 @@
 
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Corsi di laurea in Scienze della difesa e della sicurezza (L-DS): università e sedi | IUD">
+    <meta name="twitter:title" content="Corsi di laurea in Scienze della difesa e della sicurezza (L/DS): università e sedi | IUD">
     <meta name="twitter:description"
-        content="Scopri in quali università e sedi è attivo il corso di laurea in Scienze della difesa e della sicurezza (L-DS) in Italia.">
+        content="Scopri in quali università e sedi è attivo il corso di laurea in Scienze della difesa e della sicurezza (L/DS) in Italia.">
     <meta name="twitter:image"
         content="https://samuelefrasca.github.io/Italy-University-Directory/assets/img/iud_icon.png">
 
@@ -43,9 +43,9 @@
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Corsi di laurea in Scienze della difesa e della sicurezza (L-DS): università e sedi",
+        "name": "Corsi di laurea in Scienze della difesa e della sicurezza (L/DS): università e sedi",
         "url": "https://samuelefrasca.github.io/Italy-University-Directory/classi/l-ds.html",
-        "description": "Scopri in quali università e sedi è attivo il corso di laurea in Scienze della difesa e della sicurezza (L-DS) in Italia. Elenco chiaro e aggiornato delle sedi disponibili."
+        "description": "Scopri in quali università e sedi è attivo il corso di laurea in Scienze della difesa e della sicurezza (L/DS) in Italia. Elenco chiaro e aggiornato delle sedi disponibili."
     }
     </script>
 </head>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="header2">
                     <h1 class="title">Italy University Directory</h1>
-                    <h2 class="subtitle">L-DS - Scienze della difesa e della sicurezza</h2>
+                    <h2 class="subtitle">L/DS - Scienze della difesa e della sicurezza</h2>
                 </div>
                 <div class="header3"></div>
             </div>
@@ -72,27 +72,30 @@
         <div class="container table-responsive">
             <div class="toolbar-tabella">
                 <div class="filtri">
-                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'L-DS')">
+                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'L/DS')">
                         <option value="">Tutte le lingue</option>
                         <option value="italiano">Italiano</option>
                         <option value="inglese">Inglese</option>
+                        <option value="tedesco">Tedesco</option>
+                        <option value="francese">Francese</option>
+                        <option value="ladino">Ladino</option>
                     </select>
-                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'L-DS')">
+                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'L/DS')">
                         <option value="">Tutti gli accessi</option>
                         <option value="libero">Accesso libero</option>
                         <option value="programmato">Accesso programmato</option>
                     </select>
-                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'L-DS')">
+                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'L/DS')">
                         <option value="">Tutte le didattiche</option>
                         <option value="presenza">In presenza</option>
-                        <option value="online">Online</option>
-                        <option value="misto">Misto</option>
+                        <option value="distanza">A distanza</option>
+                        <option value="mista">Mista</option>
                     </select>
                 </div>
                 <div class="ordina">
-                    <button type="button" onclick="ordinaPerCorso('L-DS')">Ordina per corso</button>
-                    <button type="button" onclick="ordinaPerSede('L-DS')">Ordina per sede</button>
-                    <button type="button" onclick="ordinaPerRegione('L-DS')">Ordina per regione</button>
+                    <button type="button" onclick="ordinaPerCorso('L/DS')">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede('L/DS')">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione('L/DS')">Ordina per regione</button>
                 </div>
             </div>
             <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
@@ -101,8 +104,7 @@
                 <tbody id="tabellauni"></tbody>
             </table>
             <p class="data-note">
-                Dati corsi da AlmaLaurea; alcune università e le lauree magistrali saranno aggiunte nei
-                prossimi aggiornamenti.
+                Dati corsi dal MUR. Per i corsi privi dell’indicazione della lingua nei dati di riferimento, la lingua viene assegnata automaticamente e potrebbe risultare imprecisa.
             </p>
         </div>
     </main>
@@ -110,7 +112,7 @@
     <script src="../assets/js/footer.js"></script>
     <script src="../assets/js/scriptclassi.js"></script>
     <script>
-        caricaTabella("L-DS");
+        caricaTabella("L/DS");
         ordinecorso = true;
         ordinecitta = false;
         ordineregione = false;

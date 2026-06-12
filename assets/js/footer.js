@@ -8,8 +8,6 @@ if (footer) {
             <a class="a_footer" href="https://www.mur.gov.it/it/aree-tematiche/universita/le-universita" target="_blank">MUR</a>
             &middot;
             <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank">USTAT</a>
-            &middot;
-            <a class="a_footer" href="https://www.almalaurea.it/" target="_blank">AlmaLaurea</a>
         </p>
         <p>&copy; 2026 -
             <a class="a_footer" href="https://samuelefrasca.github.io/" target="_blank">Samuele Frasca</a>

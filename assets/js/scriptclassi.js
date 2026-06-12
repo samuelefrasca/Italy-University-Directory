@@ -61,7 +61,7 @@ function renderizzaTabella(offerte, mappaUniversita) {
 
 function caricaTabella(codiceCorso) {
     Promise.all([
-        fetch(`../data/corsi/triennali.json`).then(r => r.json()),
+        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
         fetch(`../data/universita.json`).then(r => r.json())
     ])
         .then(([corsi, universita]) => {
@@ -93,7 +93,7 @@ var ordinecorso
 
 function ordinaPerCorso(codiceCorso) {
     Promise.all([
-        fetch(`../data/corsi/triennali.json`).then(r => r.json()),
+        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
         fetch(`../data/universita.json`).then(r => r.json())
     ])
         .then(([corsi, universita]) => {
@@ -130,7 +130,7 @@ var ordineregione;
 
 function ordinaPerRegione(codiceCorso) {
     Promise.all([
-        fetch(`../data/corsi/triennali.json`).then(r => r.json()),
+        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
         fetch(`../data/universita.json`).then(r => r.json())
     ])
         .then(([corsi, universita]) => {
@@ -167,7 +167,7 @@ var ordinecitta;
 
 function ordinaPerSede(codiceCorso) {
     Promise.all([
-        fetch(`../data/corsi/triennali.json`).then(r => r.json()),
+        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
         fetch(`../data/universita.json`).then(r => r.json())
     ])
         .then(([corsi, universita]) => {
@@ -206,7 +206,7 @@ function ordinaPerSede(codiceCorso) {
 
 function filtraLingua(codiceCorso, lingua) {
     Promise.all([
-        fetch(`../data/corsi/triennali.json`).then(r => r.json()),
+        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
         fetch(`../data/universita.json`).then(r => r.json())
     ])
         .then(([corsi, universita]) => {
@@ -234,7 +234,7 @@ function filtraLingua(codiceCorso, lingua) {
 
 function filtraAccesso(codiceCorso, flag) {
     Promise.all([
-        fetch(`../data/corsi/triennali.json`).then(r => r.json()),
+        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
         fetch(`../data/universita.json`).then(r => r.json())
     ])
         .then(([corsi, universita]) => {
@@ -262,7 +262,7 @@ function filtraAccesso(codiceCorso, flag) {
 
 function filtraDidattica(codiceCorso, didattica) {
     Promise.all([
-        fetch(`../data/corsi/triennali.json`).then(r => r.json()),
+        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
         fetch(`../data/universita.json`).then(r => r.json())
     ])
         .then(([corsi, universita]) => {
@@ -297,6 +297,12 @@ function gestisciFiltroLingua(valore, codiceCorso) {
         filtraLingua(codiceCorso, "Italiano");
     } else if (valore === "inglese") {
         filtraLingua(codiceCorso, "Inglese");
+    } else if (valore === "tedesco") {
+        filtraLingua(codiceCorso, "Tedesco");
+    } else if (valore === "francese") {
+        filtraLingua(codiceCorso, "Francese");
+    } else if (valore === "ladino") {
+        filtraLingua(codiceCorso, "Ladino");
     }
 }
 
@@ -315,9 +321,9 @@ function gestisciFiltroDidattica(valore, codiceCorso) {
         caricaTabella(codiceCorso);
     } else if (valore === "presenza") {
         filtraDidattica(codiceCorso, "presenza");
-    } else if (valore === "online") {
-        filtraDidattica(codiceCorso, "online");
-    } else if (valore === "misto") {
-        filtraDidattica(codiceCorso, "presenza/online");
+    } else if (valore === "distanza") {
+        filtraDidattica(codiceCorso, "distanza");
+    } else if (valore === "mista") {
+        filtraDidattica(codiceCorso, "mista");
     }
 }

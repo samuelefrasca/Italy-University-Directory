@@ -76,6 +76,9 @@
                         <option value="">Tutte le lingue</option>
                         <option value="italiano">Italiano</option>
                         <option value="inglese">Inglese</option>
+                        <option value="tedesco">Tedesco</option>
+                        <option value="francese">Francese</option>
+                        <option value="ladino">Ladino</option>
                     </select>
                     <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'L-25')">
                         <option value="">Tutti gli accessi</option>
@@ -85,8 +88,8 @@
                     <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'L-25')">
                         <option value="">Tutte le didattiche</option>
                         <option value="presenza">In presenza</option>
-                        <option value="online">Online</option>
-                        <option value="misto">Misto</option>
+                        <option value="distanza">A distanza</option>
+                        <option value="mista">Mista</option>
                     </select>
                 </div>
                 <div class="ordina">
@@ -101,8 +104,7 @@
                 <tbody id="tabellauni"></tbody>
             </table>
             <p class="data-note">
-                Dati corsi da AlmaLaurea; alcune università e le lauree magistrali saranno aggiunte nei
-                prossimi aggiornamenti.
+                Dati corsi dal MUR. Per i corsi privi dell’indicazione della lingua nei dati di riferimento, la lingua viene assegnata automaticamente e potrebbe risultare imprecisa.
             </p>
         </div>
     </main>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Corsi di laurea in Informatica (LM-18): università e sedi | IUD</title>
+    <meta name="description"
+        content="Scopri in quali università e sedi è attivo il corso di laurea in Informatica (LM-18) in Italia. Elenco chiaro e aggiornato delle sedi disponibili.">
+    <meta name="robots" content="index,follow">
+
+
+    <link rel="canonical" href="https://samuelefrasca.github.io/Italy-University-Directory/classi/lm-18.html">
+
+
+    <meta property="og:site_name" content="Italy University Directory">
+    <meta property="og:title" content="Corsi di laurea in Informatica (LM-18): università e sedi | IUD">
+    <meta property="og:description"
+        content="Scopri in quali università e sedi è attivo il corso di laurea in Informatica (LM-18) in Italia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samuelefrasca.github.io/Italy-University-Directory/classi/lm-18.html">
+    <meta property="og:image"
+        content="https://samuelefrasca.github.io/Italy-University-Directory/assets/img/iud_icon.png">
+
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Corsi di laurea in Informatica (LM-18): università e sedi | IUD">
+    <meta name="twitter:description"
+        content="Scopri in quali università e sedi è attivo il corso di laurea in Informatica (LM-18) in Italia.">
+    <meta name="twitter:image"
+        content="https://samuelefrasca.github.io/Italy-University-Directory/assets/img/iud_icon.png">
+
+
+    <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/classi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Corsi di laurea in Informatica (LM-18): università e sedi",
+        "url": "https://samuelefrasca.github.io/Italy-University-Directory/classi/lm-18.html",
+        "description": "Scopri in quali università e sedi è attivo il corso di laurea in Informatica (LM-18) in Italia. Elenco chiaro e aggiornato delle sedi disponibili."
+    }
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header1">
+                    <a href="../">
+                        <img class="logo" src="../assets/img/iud_image.png" alt="iud_image">
+                    </a>
+                </div>
+                <div class="header2">
+                    <h1 class="title">Italy University Directory</h1>
+                    <h2 class="subtitle">LM-18 - Informatica</h2>
+                </div>
+                <div class="header3"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container table-responsive">
+            <div class="toolbar-tabella">
+                <div class="filtri">
+                    <select id="filtroLingua" onchange="gestisciFiltroLingua(this.value, 'LM-18')">
+                        <option value="">Tutte le lingue</option>
+                        <option value="italiano">Italiano</option>
+                        <option value="inglese">Inglese</option>
+                        <option value="tedesco">Tedesco</option>
+                        <option value="francese">Francese</option>
+                        <option value="ladino">Ladino</option>
+                    </select>
+                    <select id="filtroAccesso" onchange="gestisciFiltroAccesso(this.value, 'LM-18')">
+                        <option value="">Tutti gli accessi</option>
+                        <option value="libero">Accesso libero</option>
+                        <option value="programmato">Accesso programmato</option>
+                    </select>
+                    <select id="filtroDidattica" onchange="gestisciFiltroDidattica(this.value, 'LM-18')">
+                        <option value="">Tutte le didattiche</option>
+                        <option value="presenza">In presenza</option>
+                        <option value="distanza">A distanza</option>
+                        <option value="mista">Mista</option>
+                    </select>
+                </div>
+                <div class="ordina">
+                    <button type="button" onclick="ordinaPerCorso('LM-18')">Ordina per corso</button>
+                    <button type="button" onclick="ordinaPerSede('LM-18')">Ordina per sede</button>
+                    <button type="button" onclick="ordinaPerRegione('LM-18')">Ordina per regione</button>
+                </div>
+            </div>
+            <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
+            <h3 id ="corsitrovati"></h3>
+            <table>
+                <tbody id="tabellauni"></tbody>
+            </table>
+            <p class="data-note">
+                Dati corsi dal MUR. Per i corsi privi dell’indicazione della lingua nei dati di riferimento, la lingua viene assegnata automaticamente e potrebbe risultare imprecisa.
+            </p>
+        </div>
+    </main>
+    <footer id="site-footer" data-base=".."></footer>
+    <script src="../assets/js/footer.js"></script>
+    <script src="../assets/js/scriptclassi.js"></script>
+    <script>
+        caricaTabella("LM-18");
+        ordinecorso = true;
+        ordinecitta = false;
+        ordineregione = false;
+    </script>
+</body>
+
+</html>

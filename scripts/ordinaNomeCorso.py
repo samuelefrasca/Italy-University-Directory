@@ -1,6 +1,6 @@
 import json
 
-with open("data/corsi/triennali.json", "r", encoding="utf-8") as f:
+with open("data/corsi_per_classe.json", "r", encoding="utf-8") as f:
     data_corsi = json.load(f)
 
 with open("data/universita.json", "r", encoding="utf-8") as f:
@@ -16,5 +16,5 @@ for classe in data_corsi.values():
         )
     )
 
-with open("data/corsi/triennali.json", "w", encoding="utf-8") as f:
+with open("data/corsi_per_classe.json", "w", encoding="utf-8") as f:
     json.dump(data_corsi, f, ensure_ascii=False, indent=4)
