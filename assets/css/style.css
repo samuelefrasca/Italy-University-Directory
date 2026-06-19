@@ -68,6 +68,13 @@ header {
     font-size: 40px;
 }
 
+.title2 {
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    margin: 16px;
+}
+
 .subtitle {
     text-align: center;
     width: 100%;
@@ -310,6 +317,22 @@ footer {
     .header1,
     .header3 {
         display: none;
+    }
+
+    .header2 {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+    
+    .title2 {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 20px;
     }
 
     main {
