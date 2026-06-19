@@ -2,6 +2,10 @@
     overflow-x: auto;
 }
 
+#unitrovate {
+    margin-bottom: 8px;
+}
+
 table {
     width: 100%;
     border-collapse: separate;

@@ -1,4 +1,31 @@
 const corpoTabella = document.getElementById("tabellauni");
+const uniTrovate = document.getElementById("unitrovate");
+const searchInput = document.getElementById("searchNegliAtenei");
+
+// Barra di ricerca
+
+let uniAttuale = [];
+
+if (searchInput) {
+    searchInput.addEventListener("input", function () {
+        const paroleCercate = this.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+
+        const filtrate = uniAttuale.filter(uni => {
+            const contenuto = [
+                uni.nome,
+                uni.sigla,
+                uni.citta,
+                uni.regione
+            ].join(" ").toLowerCase();
+
+            return paroleCercate.every(parola => contenuto.includes(parola));
+        });
+
+        renderizzaTabella(filtrate);
+    });
+}
+
+// Creazione tabella
 
 function renderizzaTabella(lista) {
     corpoTabella.innerHTML = "";
@@ -19,13 +46,15 @@ function renderizzaTabella(lista) {
         corpoTabella.innerHTML += riga;
         n++;
     }
+    uniTrovate.textContent = `${n - 1} atenei trovati`;
 }
 
 function caricaTabella(uni) {
     fetch(`../data/universita.json`)
         .then(res => res.json())
         .then(data => {
-            const dataFiltered = data.filter(x => x.categoria == uni)
+            const dataFiltered = data.filter(x => x.categoria == uni);
+            uniAttuale = data.filter(x => x.categoria == uni);
             renderizzaTabella(dataFiltered);
         })
 }

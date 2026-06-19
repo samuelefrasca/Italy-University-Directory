@@ -107,11 +107,25 @@ a {
 
 #searchClassi {
     width: 100%;
-    max-width: 500px;
     padding: 10px 14px;
     margin-bottom: 16px;
     font-size: 16px;
+    border: 1px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    /* il border è lo stesso di #searchNelleClassi, solo che mancando il border radius, lì è di default, qua si deve aggiungere*/
     border-radius: 999px;
+    box-sizing: border-box;
+}
+
+#searchNegliAtenei {
+    width: 100%;
+    max-width: 750px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    /* come in #searchClassi, il border è lo stesso di #searchNelleClassi, solo che mancando il border radius, lì è di default, qua si deve aggiungere*/
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
@@ -125,6 +139,12 @@ a {
     box-sizing: border-box;
 }
 
+.tutteleclassi {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
 .cardclassul {
     display: flex;
     flex-direction: column;
@@ -133,6 +153,8 @@ a {
     margin-bottom: 20px;
     justify-content: center;
     gap: 30px;
+    max-width: 100%;
+    width: 50%;
 }
 
 .cardul {
@@ -146,7 +168,7 @@ a {
 }
 
 .cardli {
-    margin: 5px;
+    margin: 0 5px;
     font-size: 1.1rem;
     transition: 0.3s all;
 }
@@ -169,6 +191,16 @@ a.reflink:visited {
 }
 
 a.cardlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 44px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: center;
+    box-sizing: border-box;
     text-decoration: none;
     color: #000;
     background-color: #ddd;
@@ -188,6 +220,11 @@ a.cardlink:visited {
 
 .bloccoclassi {
     margin-top: 40px;
+}
+
+.tipolaurea {
+    margin: 0;
+    text-align: center;
 }
 
 a.uni {
@@ -269,6 +306,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
     .header1,
     .header3 {
         display: none;
@@ -282,14 +320,12 @@ footer {
         font-size: 20pt;
     }
 
-    .cardlink {
-        display: block;
+    .tutteleclassi {
+        flex-direction: column;
+    }
+
+    .cardclassul {
         width: 100%;
-        max-width: 100%;
-        white-space: normal;
-        overflow-wrap: break-word;
-        text-align: center;
-        box-sizing: border-box;
     }
 
     .data-note {
