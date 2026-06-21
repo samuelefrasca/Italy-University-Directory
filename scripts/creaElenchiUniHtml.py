@@ -154,7 +154,7 @@ def genera_html(cat):
 
     <link rel="canonical" href="{base_url}">
     <script>
-        if (window.location.hostname === 'samuelefrasca.github.io') {{
+        if (window.location.hostname === 'samuelefrasca.github.io' || window.location.hostname === 'unidirectory.pages.dev') {{
             const path = window.location.pathname
                 .replace('/Italy-University-Directory', '')
                 .replace(/\\.html$/, '');

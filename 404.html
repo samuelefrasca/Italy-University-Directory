@@ -4,15 +4,65 @@
 <head>
     <meta charset="utf-8">
     <script>
-        if (window.location.hostname === 'samuelefrasca.github.io') {
+        if (window.location.hostname === 'samuelefrasca.github.io' || window.location.hostname === 'unidirectory.pages.dev') {
             const path = window.location.pathname
                 .replace('/Italy-University-Directory', '')
                 .replace(/\.html$/, '');
             window.location.replace('https://unidirectory.it' + path + window.location.search);
         }
     </script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body></body>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header1">
+                    <a href="/">
+                        <img class="logo" src="assets/img/iud_image.png" alt="Logo Unidirectory" />
+                    </a>
+                </div>
+                <div class="header2">
+                    <h1 class="title">unidirectory</h1>
+                </div>
+                <div class="header3"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 style="font-family: Arial, Helvetica, sans-serif;">Error 404</h1>
+            <p><a href="https://unidirectory.it">Torna alla home</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="subfooter">
+            <p>&copy; 2026 -
+                <a class="a_footer" href="https://samuelefrasca.github.io/" target="_blank"
+                    rel="noopener noreferrer">Samuele Frasca</a>
+            </p>
+            <p>
+                <a class="a_footer github" href="https://github.com/samuelefrasca" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="github-logo" src="assets/img/GitHub_Invertocat_White.png" alt="github-logo">GitHub
+                </a>
+            </p>
+        </div>
+        <div class="subfooter">
+            <p>Fonte dati:
+                <a class="a_footer" href="https://www.mur.gov.it/it/aree-tematiche/universita/le-universita"
+                    target="_blank" rel="noopener noreferrer">MUR</a>
+                &middot;
+                <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
+            </p>
+            <p><a class="a_footer" href="privacy.html">Privacy Policy</a></p>
+            <p><a class="a_footer" href="sitemap.xml">Mappa del sito</a></p>
+            <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
+        </div>
+    </footer>
+</body>
 
 </html>

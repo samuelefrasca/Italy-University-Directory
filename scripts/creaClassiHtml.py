@@ -209,7 +209,7 @@ template = """<!DOCTYPE html>
 
     <link rel="canonical" href="https://unidirectory.it/classi/{{SLUG}}">
     <script>
-        if (window.location.hostname === 'samuelefrasca.github.io') {
+        if (window.location.hostname === 'samuelefrasca.github.io' || window.location.hostname === 'unidirectory.pages.dev') {
             const path = window.location.pathname
                 .replace('/Italy-University-Directory', '')
                 .replace(/\.html$/, '');
