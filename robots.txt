@@ -1,1 +1,1 @@
-Sitemap: https://samuelefrasca.github.io/Italy-University-Directory/sitemap.txt
+Sitemap: https://unidirectory.it/sitemap.xml

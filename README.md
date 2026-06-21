@@ -1,4 +1,4 @@
-# 🎓 Italy University Directory
+# 🎓 Unidirectory
 
 Un directory completo, navigabile e intuitivo delle università e degli istituti di alta formazione in Italia, con una mappatura dettagliata dei corsi di laurea per classe. Questo progetto fornisce un'esperienza di consultazione semplice e veloce, con dati aggiornati e link diretti ai portali ufficiali.
 

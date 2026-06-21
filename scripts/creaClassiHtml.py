@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 classi = [
@@ -154,6 +155,44 @@ classi = [
   {"nome":"Conservazione e restauro dei beni culturali","codice":"LMR/02","slug":"lmr-02"}
 ]
 
+with open("data/corsi_per_classe.json", encoding="utf-8") as f:
+    corsi_per_classe = json.load(f)
+
+with open("data/universita.json", encoding="utf-8") as f:
+    universita_list = json.load(f)
+
+mappa_universita = {u["sigla"]: u for u in universita_list}
+
+def genera_righe_html(codice):
+    corso = corsi_per_classe.get(codice)
+    if not corso:
+        return ""
+    
+    righe = []
+    for offerta in corso["offerte"]:
+        uni = mappa_universita.get(offerta["universita"], {})
+        link = uni.get("link", "#")
+        nome_uni = uni.get("nome", offerta["universita"])
+        regione = offerta.get("regione", uni.get("regione", "----"))
+        accesso = "✅ Accesso Libero" if offerta["accessoLibero"] else "🔒 Accesso Programmato"
+        nolink = "" if uni.get("link") else 'onclick=\'alert("Sito non trovato"); return false;\''
+        
+        # Serializza l'offerta come data attribute per il JS
+        data_offerta = json.dumps(offerta, ensure_ascii=False).replace('"', '&quot;')
+        
+        righe.append(f"""
+                    <tr class="riga-principale" data-offerta="{data_offerta}">
+                        <td><a class="uni" href="{link}" {nolink} target="_blank">{nome_uni}</a></td>
+                        <td colspan="4"><strong>{offerta["nomeCorso"]}</strong></td>
+                    </tr>
+                    <tr class="riga-dettagli">
+                        <td colspan="2" class="dettaglio">📍 {offerta["sede"]} — {regione}</td>
+                        <td class="dettaglio">🎓 {offerta["didattica"]}</td>
+                        <td class="dettaglio">🌐 {offerta["lingua"]} &nbsp;|&nbsp; {accesso}</td>
+                    </tr>""")
+    
+    return "\n".join(righe)
+
 template = """<!DOCTYPE html>
 <html lang="it">
 
@@ -162,31 +201,31 @@ template = """<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <title>Corsi di laurea in {{NOME}} ({{CODICE}}): università e sedi | IUD</title>
+    <title>Corsi di laurea in {{NOME}} ({{CODICE}}): università e sedi | Unidirectory</title>
     <meta name="description"
         content="Scopri in quali università e sedi è attivo il corso di laurea in {{NOME}} ({{CODICE}}) in Italia. Elenco chiaro e aggiornato delle sedi disponibili.">
     <meta name="robots" content="index,follow">
 
 
-    <link rel="canonical" href="https://samuelefrasca.github.io/Italy-University-Directory/classi/{{SLUG}}.html">
+    <link rel="canonical" href="https://unidirectory.it/classi/{{SLUG}}.html">
 
 
-    <meta property="og:site_name" content="Italy University Directory">
-    <meta property="og:title" content="Corsi di laurea in {{NOME}} ({{CODICE}}): università e sedi | IUD">
+    <meta property="og:site_name" content="Unidirectory">
+    <meta property="og:title" content="Corsi di laurea in {{NOME}} ({{CODICE}}): università e sedi | Unidirectory">
     <meta property="og:description"
         content="Scopri in quali università e sedi è attivo il corso di laurea in {{NOME}} ({{CODICE}}) in Italia.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://samuelefrasca.github.io/Italy-University-Directory/classi/{{SLUG}}.html">
+    <meta property="og:url" content="https://unidirectory.it/classi/{{SLUG}}.html">
     <meta property="og:image"
-        content="https://samuelefrasca.github.io/Italy-University-Directory/assets/img/iud_icon.png">
+        content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Corsi di laurea in {{NOME}} ({{CODICE}}): università e sedi | IUD">
+    <meta name="twitter:title" content="Corsi di laurea in {{NOME}} ({{CODICE}}): università e sedi | Unidirectory">
     <meta name="twitter:description"
         content="Scopri in quali università e sedi è attivo il corso di laurea in {{NOME}} ({{CODICE}}) in Italia.">
     <meta name="twitter:image"
-        content="https://samuelefrasca.github.io/Italy-University-Directory/assets/img/iud_icon.png">
+        content="https://unidirectory.it/assets/img/iud_icon.png">
 
 
     <link rel="icon" type="image/png" href="../assets/img/iud_icon.png">
@@ -194,13 +233,12 @@ template = """<!DOCTYPE html>
     <link rel="stylesheet" href="../assets/css/classi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Corsi di laurea in {{NOME}} ({{CODICE}}): università e sedi",
-        "url": "https://samuelefrasca.github.io/Italy-University-Directory/classi/{{SLUG}}.html",
+        "name": "Corsi di laurea in {{NOME}} ({{CODICE}}): università e sedi | Unidirectory",
+        "url": "https://unidirectory.it/classi/{{SLUG}}.html",
         "description": "Scopri in quali università e sedi è attivo il corso di laurea in {{NOME}} ({{CODICE}}) in Italia. Elenco chiaro e aggiornato delle sedi disponibili."
     }
     </script>
@@ -213,11 +251,11 @@ template = """<!DOCTYPE html>
             <div class="header">
                 <div class="header1">
                     <a href="../">
-                        <img class="logo" src="../assets/img/iud_image.png" alt="iud_image">
+                        <img class="logo" src="../assets/img/iud_image.png" alt="Logo Unidirectory">
                     </a>
                 </div>
                 <div class="header2">
-                    <h1 class="title">Italy University Directory</h1>
+                    <h1 class="title">unidirectory</h1>
                     <h2 class="subtitle">{{CODICE}} - {{NOME}}</h2>
                 </div>
                 <div class="header3"></div>
@@ -257,14 +295,36 @@ template = """<!DOCTYPE html>
             <input type="search" id="searchNelleClassi" placeholder="Cerca università, sede, regione o corso...">
             <h3 id ="corsitrovati"></h3>
             <table>
-                <tbody id="tabellauni"></tbody>
+                <tbody id="tabellauni">{{RIGHE}}</tbody>
             </table>
             <p class="data-note">
                 Dati corsi dal MUR. Per i corsi privi dell’indicazione della lingua nei dati di riferimento, la lingua viene assegnata automaticamente e potrebbe risultare imprecisa.
             </p>
         </div>
     </main>
-    <footer id="site-footer" data-base=".."></footer>
+    <footer>
+        <div class="subfooter">
+            <p>&copy; 2026 -
+                <a class="a_footer" href="https://samuelefrasca.github.io/" target="_blank" rel="noopener noreferrer">Samuele Frasca</a>
+            </p>
+            <p>
+                <a class="a_footer github" href="https://github.com/samuelefrasca" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo" src="../assets/img/GitHub_Invertocat_White.png" alt="github-logo">GitHub
+                </a>
+            </p>
+        </div>
+        <div class="subfooter">
+            <p>Fonte dati:
+                <a class="a_footer" href="https://www.mur.gov.it/it/aree-tematiche/universita/le-universita"
+                    target="_blank" rel="noopener noreferrer">MUR</a>
+                &middot;
+                <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
+            </p>
+            <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
+            <p><a class="a_footer" href="../sitemap.xml">Mappa del sito</a></p>
+            <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
+        </div>
+    </footer>
     <script src="../assets/js/footer.js"></script>
     <script src="../assets/js/scriptclassi.js"></script>
     <script>
@@ -287,6 +347,7 @@ for classe in classi:
         .replace("{{NOME}}", classe["nome"])
         .replace("{{CODICE}}", classe["codice"])
         .replace("{{SLUG}}", classe["slug"])
+        .replace("{{RIGHE}}", genera_righe_html(classe["codice"]))
     )
 
     nome_file = f"{classe['slug']}.html"

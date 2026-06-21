@@ -90,7 +90,7 @@ head_template = """<head>
 
     <link rel="canonical" href="{url}">
 
-    <meta property="og:site_name" content="Italy University Directory">
+    <meta property="og:site_name" content="Unidirectory">
     <meta property="og:title" content="{titolo}">
     <meta property="og:description"
         content="{og_descrizione}">

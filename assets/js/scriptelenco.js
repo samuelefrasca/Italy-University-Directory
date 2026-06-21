@@ -35,13 +35,16 @@ function renderizzaTabella(lista) {
         let nolink = uni.link ? "" : "onclick='alert(\"Sito non trovato\"); return false;'";
         if (!uni.studenti) { uni.studenti = "----" }
         if (!uni.sigla) { uni.sigla = "----" }
-        let riga = `<tr>
+        let studenti_display = typeof uni.studenti === "number"
+            ? uni.studenti.toLocaleString("it-IT", { useGrouping: "always" })
+            : uni.studenti;
+        let riga = `<tr data-uni="${JSON.stringify(uni).replace(/"/g, '&quot;"')}">
                 <td class="num">${n}</td>
                 <td><a class="uni" href="${link}" ${nolink} target="_blank">${uni.nome}</a></td>
                 <td>${uni.sigla}</td>
                 <td>${uni.citta}</td>
                 <td>${uni.regione}</td>
-                <td class="studenti">${uni.studenti.toLocaleString('it-IT', { useGrouping: 'always' })}</td>
+                <td class="studenti">${studenti_display}</td>
                 </tr>`;
         corpoTabella.innerHTML += riga;
         n++;
@@ -49,90 +52,66 @@ function renderizzaTabella(lista) {
     uniTrovate.textContent = `${n - 1} atenei trovati`;
 }
 
-function caricaTabella(uni) {
-    fetch(`../data/universita.json`)
-        .then(res => res.json())
-        .then(data => {
-            const dataFiltered = data.filter(x => x.categoria == uni);
-            uniAttuale = data.filter(x => x.categoria == uni);
-            renderizzaTabella(dataFiltered);
-        })
+// Carica dal DOM statico (pre-generato da Python)
+
+function caricaTabella(categoria) {
+    const righe = corpoTabella.querySelectorAll("tr[data-uni]");
+    uniAttuale = Array.from(righe).map(riga => JSON.parse(riga.dataset.uni));
+    uniTrovate.textContent = `${uniAttuale.length} atenei trovati`;
+    ordineregione = true;
 }
 
 // ORDINE PER REGIONE
 
 var ordineregione
 
-function ordinaPerRegione(uni) {
-    fetch(`../data/universita.json`)
-        .then(res => res.json())
-        .then(data => {
-            const dataFiltered = data.filter(x => x.categoria == uni)
-            if (ordineregione) {
-                renderizzaTabella(dataFiltered.toReversed());
-                ordinecitta = false;
-                ordineregione = false;
-                ordinestudenti = false;
-            }
-            else {
-                renderizzaTabella(dataFiltered);
-                ordinecitta = false;
-                ordineregione = true;
-                ordinestudenti = false;
-            }
-        })
+function ordinaPerRegione(categoria) {
+    const copia = [...uniAttuale];
+    copia.sort((a, b) => a.regione.localeCompare(b.regione, "it"));
+    if (ordineregione) {
+        renderizzaTabella(copia.reverse());
+        ordineregione = false;
+    } else {
+        renderizzaTabella(copia);
+        ordineregione = true;
+    }
+    ordinecitta = false;
+    ordinestudenti = false;
 }
 
 // ORDINE PER CITTÀ
 
 var ordinecitta
 
-function ordinaPerCitta(uni) {
-    fetch(`../data/universita.json`)
-        .then(res => res.json())
-        .then(data => {
-            const dataFiltered = data.filter(x => x.categoria == uni)
-            const copiauniversita = [...dataFiltered];
-            if (ordinecitta) {
-                copiauniversita.sort((a, b) => b.citta.localeCompare(a.citta));
-                renderizzaTabella(copiauniversita);
-                ordinecitta = false;
-                ordinestudenti = false;
-                ordineregione = false;
-            }
-            else {
-                copiauniversita.sort((a, b) => a.citta.localeCompare(b.citta));
-                renderizzaTabella(copiauniversita);
-                ordinecitta = true;
-                ordinestudenti = false;
-                ordineregione = false;
-            }
-        })
+function ordinaPerCitta(categoria) {
+    const copia = [...uniAttuale];
+    copia.sort((a, b) => a.citta.localeCompare(b.citta, "it"));
+    if (ordinecitta) {
+        renderizzaTabella(copia.reverse());
+        ordinecitta = false;
+    } else {
+        renderizzaTabella(copia);
+        ordinecitta = true;
+    }
+    ordinestudenti = false;
+    ordineregione = false;
 }
 
 // ORDINE PER STUDENTI
 
 var ordinestudenti
 
-function ordinaPerStudenti(uni) {
-    fetch(`../data/universita.json`)
-        .then(res => res.json())
-        .then(data => {
-            const dataFiltered = data.filter(x => x.categoria == uni)
-            const copiauniversita = [...dataFiltered];
-            if (ordinestudenti) {
-                copiauniversita.sort((a, b) => a.studenti - b.studenti);
-                renderizzaTabella(copiauniversita);
-                ordinecitta = false;
-                ordinestudenti = false;
-                ordineregione = false;
-            }
-            else {
-                copiauniversita.sort((a, b) => b.studenti - a.studenti);
-                renderizzaTabella(copiauniversita);
-                ordinecitta = false;
-                ordinestudenti = true;
-                ordineregione = false;
-            }
-        })
+function ordinaPerStudenti(categoria) {
+    const copia = [...uniAttuale];
+    if (ordinestudenti) {
+        copia.sort((a, b) => a.studenti - b.studenti);
+        renderizzaTabella(copia);
+        ordinestudenti = false;
+    } else {
+        copia.sort((a, b) => b.studenti - a.studenti);
+        renderizzaTabella(copia);
+        ordinestudenti = true;
+    }
+    ordinecitta = false;
+    ordineregione = false;
 }

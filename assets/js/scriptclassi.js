@@ -5,6 +5,7 @@ const searchInput = document.getElementById("searchNelleClassi");
 // Barra di ricerca
 
 let offerteAttuali = [];
+let tutteLeOfferte = [];
 let mappaUniversitaAttuale = {};
 
 if (searchInput) {
@@ -19,6 +20,7 @@ if (searchInput) {
                 offerta.sede,
                 offerta.didattica,
                 offerta.lingua,
+                offerta.regione,
                 uniData.nome,
                 uniData.regione,
                 uniData.citta
@@ -40,7 +42,7 @@ function renderizzaTabella(offerte, mappaUniversita) {
         const uniData = mappaUniversita[offerta.universita] || {};
         const link = uniData.link ?? "#";
         const nolink = uniData.link ? "" : `onclick='alert("Sito non trovato"); return false;'`;
-        const regione = uniData.regione || "----";
+        const regione = offerta.regione ? offerta.regione : uniData.regione || "----";
         const nomeUni = uniData.nome || offerta.universita;
         const accesso = offerta.accessoLibero ? "✅ Accesso Libero" : "🔒 Accesso Programmato";
 
@@ -60,30 +62,24 @@ function renderizzaTabella(offerte, mappaUniversita) {
 }
 
 function caricaTabella(codiceCorso) {
-    Promise.all([
-        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
-        fetch(`../data/universita.json`).then(r => r.json())
-    ])
-        .then(([corsi, universita]) => {
-            // Trova il corso richiesto per codice (es. "L-1")
-            const corso = corsi[codiceCorso];
-            if (!corso) {
-                corpoTabella.innerHTML = `<tr><td colspan="8">Corso non trovato.</td></tr>`;
-                return;
-            }
-
-            // Costruisce una mappa { "UniBo": { nome, link, regione, ... }, ... }
-            // così la ricerca è O(1) invece di O(n) per ogni riga
+    fetch(`../data/universita.json`).then(r => r.json())
+        .then(universita => {
             const mappaUniversita = {};
             for (let uni of universita) {
                 mappaUniversita[uni.sigla] = uni;
             }
-            offerteAttuali = [...corso.offerte];
             mappaUniversitaAttuale = mappaUniversita;
-            renderizzaTabella(corso.offerte, mappaUniversita);
-        })
-        .catch(err => {
-            console.error("Errore nel caricamento dei dati:", err);
+
+            // Legge le righe già presenti nell'HTML statico
+            // e ricostruisce offerteAttuali dal DOM
+            const righe = corpoTabella.querySelectorAll("tr.riga-principale");
+            offerteAttuali = Array.from(righe).map(riga => {
+                return JSON.parse(riga.dataset.offerta);
+            });
+
+            tutteLeOfferte = [...offerteAttuali];
+
+            corsiTrovati.textContent = `${offerteAttuali.length} corsi trovati`;
         });
 }
 
@@ -92,36 +88,16 @@ function caricaTabella(codiceCorso) {
 var ordinecorso
 
 function ordinaPerCorso(codiceCorso) {
-    Promise.all([
-        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
-        fetch(`../data/universita.json`).then(r => r.json())
-    ])
-        .then(([corsi, universita]) => {
-            // Trova il corso richiesto per codice (es. "L-1")
-            const corso = corsi[codiceCorso];
-            if (!corso) {
-                corpoTabella.innerHTML = `<tr><td colspan="8">Corso non trovato.</td></tr>`;
-                return;
-            }
-
-            // Costruisce una mappa { "UniBo": { nome, link, regione, ... }, ... }
-            // così la ricerca è O(1) invece di O(n) per ogni riga
-            const mappaUniversita = {};
-            for (let uni of universita) {
-                mappaUniversita[uni.sigla] = uni;
-            }
-            if (ordinecorso) {
-                renderizzaTabella(corso.offerte.reverse(), mappaUniversita);
-                ordinecorso = false;
-                ordinecitta = false;
-                ordineregione = false;
-            } else {
-                renderizzaTabella(corso.offerte, mappaUniversita);
-                ordinecorso = true;
-                ordinecitta = false;
-                ordineregione = false;
-            }
-        })
+    const copia = [...offerteAttuali];
+    if (ordinecorso) {
+        renderizzaTabella(copia.reverse(), mappaUniversitaAttuale);
+        ordinecorso = false;
+    } else {
+        renderizzaTabella(copia, mappaUniversitaAttuale);
+        ordinecorso = true;
+    }
+    ordinecitta = false;
+    ordineregione = false;
 }
 
 // ORDINE PER REGIONE
@@ -129,36 +105,20 @@ function ordinaPerCorso(codiceCorso) {
 var ordineregione;
 
 function ordinaPerRegione(codiceCorso) {
-    Promise.all([
-        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
-        fetch(`../data/universita.json`).then(r => r.json())
-    ])
-        .then(([corsi, universita]) => {
-            const corso = corsi[codiceCorso];
-            const mappaUniversita = {};
-
-            for (let uni of universita) {
-                mappaUniversita[uni.sigla] = uni;
-            }
-
-            const offerteOrdinate = [...corso.offerte].sort((a, b) => {
-                const regioneA = mappaUniversita[a.universita]?.regione || "";
-                const regioneB = mappaUniversita[b.universita]?.regione || "";
-                return regioneA.localeCompare(regioneB, "it");
-            });
-
-            if (ordineregione) {
-                renderizzaTabella(offerteOrdinate.reverse(), mappaUniversita);
-                ordinecorso = false;
-                ordinecitta = false;
-                ordineregione = false;
-            } else {
-                renderizzaTabella(offerteOrdinate, mappaUniversita);
-                ordinecorso = false;
-                ordinecitta = false;
-                ordineregione = true;
-            }
-        });
+    const copia = [...offerteAttuali].sort((a, b) => {
+        const regioneA = a.regione || mappaUniversitaAttuale[a.universita]?.regione || "";
+        const regioneB = b.regione || mappaUniversitaAttuale[b.universita]?.regione || "";
+        return regioneA.localeCompare(regioneB, "it");
+    });
+    if (ordineregione) {
+        renderizzaTabella(copia.reverse(), mappaUniversitaAttuale);
+        ordineregione = false;
+    } else {
+        renderizzaTabella(copia, mappaUniversitaAttuale);
+        ordineregione = true;
+    }
+    ordinecorso = false;
+    ordinecitta = false;
 }
 
 // ORDINE PER CITTÀ
@@ -166,164 +126,57 @@ function ordinaPerRegione(codiceCorso) {
 var ordinecitta;
 
 function ordinaPerSede(codiceCorso) {
-    Promise.all([
-        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
-        fetch(`../data/universita.json`).then(r => r.json())
-    ])
-        .then(([corsi, universita]) => {
-            const corso = corsi[codiceCorso];
-            const mappaUniversita = {};
-
-            for (let uni of universita) {
-                mappaUniversita[uni.sigla] = uni;
-            }
-
-            const offerteOrdinate = [...corso.offerte].sort((a, b) => {
-                const cittaA = mappaUniversita[a.universita]?.citta || "";
-                const cittaB = mappaUniversita[b.universita]?.citta || "";
-                const cmpCitta = cittaA.localeCompare(cittaB, "it");
-                if (cmpCitta !== 0) return cmpCitta;
-                const nomeA = mappaUniversita[a.universita]?.nome || "";
-                const nomeB = mappaUniversita[b.universita]?.nome || "";
-                return nomeA.localeCompare(nomeB, "it");
-            });
-
-            if (ordinecitta) {
-                renderizzaTabella(offerteOrdinate.reverse(), mappaUniversita);
-                ordinecorso = false;
-                ordinecitta = false;
-                ordineregione = false;
-            } else {
-                renderizzaTabella(offerteOrdinate, mappaUniversita);
-                ordinecorso = false;
-                ordinecitta = true;
-                ordineregione = false;
-            }
-        });
+    const copia = [...offerteAttuali].sort((a, b) => {
+        const cittaA = a.sede || mappaUniversitaAttuale[a.universita]?.citta || "";
+        const cittaB = b.sede || mappaUniversitaAttuale[b.universita]?.citta || "";
+        const cmpCitta = cittaA.localeCompare(cittaB, "it");
+        if (cmpCitta !== 0) return cmpCitta;
+        const nomeA = mappaUniversitaAttuale[a.universita]?.nome || "";
+        const nomeB = mappaUniversitaAttuale[b.universita]?.nome || "";
+        return nomeA.localeCompare(nomeB, "it");
+    });
+    if (ordinecitta) {
+        renderizzaTabella(copia.reverse(), mappaUniversitaAttuale);
+        ordinecitta = false;
+    } else {
+        renderizzaTabella(copia, mappaUniversitaAttuale);
+        ordinecitta = true;
+    }
+    ordinecorso = false;
+    ordineregione = false;
 }
 
 // FILTRI
 
-function filtraLingua(codiceCorso, lingua) {
-    Promise.all([
-        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
-        fetch(`../data/universita.json`).then(r => r.json())
-    ])
-        .then(([corsi, universita]) => {
-            const corso = corsi[codiceCorso];
-            if (!corso) {
-                corpoTabella.innerHTML = `<tr><td colspan="8">Corso non trovato.</td></tr>`;
-                return;
-            }
+function applicaFiltri() {
+    const lingua = document.getElementById("filtroLingua").value;
+    const accesso = document.getElementById("filtroAccesso").value;
+    const didattica = document.getElementById("filtroDidattica").value;
 
-            const mappaUniversita = {};
-            for (let uni of universita) {
-                mappaUniversita[uni.sigla] = uni;
-            }
+    let filtrate = [...tutteLeOfferte];
 
-            const offerteFiltrate = corso.offerte
-                .filter(offerta => (offerta.lingua || "").toLowerCase().includes(lingua.toLowerCase()))
-                .sort((a, b) =>
-                    (mappaUniversita[a.universita]?.regione || "")
-                        .localeCompare(mappaUniversita[b.universita]?.regione || "", "it")
-                );
+    if (lingua) {
+        filtrate = filtrate.filter(o =>
+            (o.lingua || "").toLowerCase().includes(lingua.toLowerCase())
+        );
+    }
+    if (accesso === "libero") {
+        filtrate = filtrate.filter(o => o.accessoLibero === true);
+    } else if (accesso === "programmato") {
+        filtrate = filtrate.filter(o => o.accessoLibero === false);
+    }
+    if (didattica) {
+        filtrate = filtrate.filter(o =>
+            (o.didattica || "").toLowerCase().includes(didattica.toLowerCase())
+        );
+    }
 
-            renderizzaTabella(offerteFiltrate, mappaUniversita);
-        })
-}
-
-function filtraAccesso(codiceCorso, flag) {
-    Promise.all([
-        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
-        fetch(`../data/universita.json`).then(r => r.json())
-    ])
-        .then(([corsi, universita]) => {
-            const corso = corsi[codiceCorso];
-            if (!corso) {
-                corpoTabella.innerHTML = `<tr><td colspan="8">Corso non trovato.</td></tr>`;
-                return;
-            }
-
-            const mappaUniversita = {};
-            for (let uni of universita) {
-                mappaUniversita[uni.sigla] = uni;
-            }
-
-            const offerteFiltrate = corso.offerte
-                .filter(offerta => offerta.accessoLibero === flag)
-                .sort((a, b) =>
-                    (mappaUniversita[a.universita]?.regione || "")
-                        .localeCompare(mappaUniversita[b.universita]?.regione || "", "it")
-                );
-
-            renderizzaTabella(offerteFiltrate, mappaUniversita);
-        })
-}
-
-function filtraDidattica(codiceCorso, didattica) {
-    Promise.all([
-        fetch(`../data/corsi_per_classe.json`).then(r => r.json()),
-        fetch(`../data/universita.json`).then(r => r.json())
-    ])
-        .then(([corsi, universita]) => {
-            const corso = corsi[codiceCorso];
-            if (!corso) {
-                corpoTabella.innerHTML = `<tr><td colspan="8">Corso non trovato.</td></tr>`;
-                return;
-            }
-
-            const mappaUniversita = {};
-            for (let uni of universita) {
-                mappaUniversita[uni.sigla] = uni;
-            }
-
-            const offerteFiltrate = corso.offerte
-                .filter(offerta => (offerta.didattica || "").toLowerCase().includes(didattica.toLowerCase()))
-                .sort((a, b) =>
-                    (mappaUniversita[a.universita]?.regione || "")
-                        .localeCompare(mappaUniversita[b.universita]?.regione || "", "it")
-                );
-
-            renderizzaTabella(offerteFiltrate, mappaUniversita);
-        })
+    offerteAttuali = filtrate;
+    renderizzaTabella(filtrate, mappaUniversitaAttuale);
 }
 
 // GESTISCI FILTRO
 
-function gestisciFiltroLingua(valore, codiceCorso) {
-    if (valore === "") {
-        caricaTabella(codiceCorso);
-    } else if (valore === "italiano") {
-        filtraLingua(codiceCorso, "Italiano");
-    } else if (valore === "inglese") {
-        filtraLingua(codiceCorso, "Inglese");
-    } else if (valore === "tedesco") {
-        filtraLingua(codiceCorso, "Tedesco");
-    } else if (valore === "francese") {
-        filtraLingua(codiceCorso, "Francese");
-    } else if (valore === "ladino") {
-        filtraLingua(codiceCorso, "Ladino");
-    }
-}
-
-function gestisciFiltroAccesso(valore, codiceCorso) {
-    if (valore === "") {
-        caricaTabella(codiceCorso);
-    } else if (valore === "libero") {
-        filtraAccesso(codiceCorso, true);
-    } else if (valore === "programmato") {
-        filtraAccesso(codiceCorso, false);
-    }
-}
-
-function gestisciFiltroDidattica(valore, codiceCorso) {
-    if (valore === "") {
-        caricaTabella(codiceCorso);
-    } else if (valore === "presenza") {
-        filtraDidattica(codiceCorso, "presenza");
-    } else if (valore === "distanza") {
-        filtraDidattica(codiceCorso, "distanza");
-    } else if (valore === "mista") {
-        filtraDidattica(codiceCorso, "mista");
-    }
-}
+function gestisciFiltroLingua(valore, codiceCorso) { applicaFiltri(); }
+function gestisciFiltroAccesso(valore, codiceCorso) { applicaFiltri(); }
+function gestisciFiltroDidattica(valore, codiceCorso) { applicaFiltri(); }

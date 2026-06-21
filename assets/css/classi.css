@@ -11,20 +11,20 @@
     align-items: center;
     gap: 12px;
     margin: 18px 0;
-    flex-wrap: wrap;
 }
 
 .toolbar-tabella .filtri,
 .toolbar-tabella .ordina {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
 }
 
 .toolbar-tabella select,
 .toolbar-tabella button {
     padding: 8px 12px;
     font: inherit;
+    background-color: #fff;
+    border: 1px solid black;
 }
 
 button {
@@ -35,8 +35,9 @@ button {
 
 table {
     width: 100%;
-    border: 2px solid #0d1b3d;
+    border: 1px solid #ccc;
     border-collapse: collapse;
+    background-color: #f2f2f2;
 }
 
 .riga-principale td {
@@ -50,11 +51,29 @@ table {
     padding: 8px 12px;
     font-size: 0.82rem;
     color: #555;
-    border-bottom: 1px solid #0d1b3d;
+    border-bottom: 1px solid #ccc;
 }
 
 /* Zebra: ogni coppia di righe alternata */
 tbody tr.riga-principale:nth-child(4n+1) td,
-tbody tr.riga-principale:nth-child(4n+1) + tr td {
-    background-color: #fafafa;
+tbody tr.riga-principale:nth-child(4n+1)+tr td {
+    background-color: #fff;
+}
+
+@media (max-width: 850px) {
+
+    .toolbar-tabella {
+        display: flex;
+    }
+
+    .filtri, .ordina {
+        flex-direction: column;
+        margin: 0px;
+        gap: 0px;
+    }
+
+    .toolbar-tabella select,
+    .toolbar-tabella button {
+        padding: 4px 2px;
+    }
 }
