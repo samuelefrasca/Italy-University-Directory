@@ -10,14 +10,22 @@
         content="Scopri l'elenco delle scuole superiori universitarie in Italia, organizzate per regione e città.">
     <meta name="robots" content="index,follow">
 
-    <link rel="canonical" href="https://unidirectory.it/uni/superiori.html">
+    <link rel="canonical" href="https://unidirectory.it/uni/superiori">
+    <script>
+        if (window.location.hostname === 'samuelefrasca.github.io') {
+            const path = window.location.pathname
+                .replace('/Italy-University-Directory', '')
+                .replace(/\.html$/, '');
+            window.location.replace('https://unidirectory.it' + path + window.location.search);
+        }
+    </script>
 
     <meta property="og:site_name" content="Unidirectory">
     <meta property="og:title" content="Scuole superiori universitarie in Italia: elenco per regione e città | Unidirectory">
     <meta property="og:description"
         content="Scopri l'elenco delle scuole superiori universitarie in Italia, organizzate per regione e città.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://unidirectory.it/uni/superiori.html">
+    <meta property="og:url" content="https://unidirectory.it/uni/superiori">
     <meta property="og:image"
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
@@ -38,7 +46,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Scuole superiori universitarie in Italia: elenco per regione e città",
-        "url": "https://unidirectory.it/uni/superiori.html",
+        "url": "https://unidirectory.it/uni/superiori",
         "description": "Scopri l'elenco delle scuole superiori universitarie in Italia, organizzate per regione e città."
     }
     </script>

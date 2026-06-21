@@ -10,14 +10,22 @@
         content="Scopri l'elenco delle accademie nazionali in Italia.">
     <meta name="robots" content="index,follow">
 
-    <link rel="canonical" href="https://unidirectory.it/uni/accnazionali.html">
+    <link rel="canonical" href="https://unidirectory.it/uni/accnazionali">
+    <script>
+        if (window.location.hostname === 'samuelefrasca.github.io') {
+            const path = window.location.pathname
+                .replace('/Italy-University-Directory', '')
+                .replace(/\.html$/, '');
+            window.location.replace('https://unidirectory.it' + path + window.location.search);
+        }
+    </script>
 
     <meta property="og:site_name" content="Unidirectory">
     <meta property="og:title" content="Accademie nazionali in Italia: elenco completo | Unidirectory">
     <meta property="og:description"
         content="Scopri l'elenco delle accademie nazionali in Italia.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://unidirectory.it/uni/accnazionali.html">
+    <meta property="og:url" content="https://unidirectory.it/uni/accnazionali">
     <meta property="og:image"
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
@@ -38,7 +46,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Accademie nazionali in Italia: elenco completo",
-        "url": "https://unidirectory.it/uni/accnazionali.html",
+        "url": "https://unidirectory.it/uni/accnazionali",
         "description": "Scopri l'elenco delle accademie nazionali in Italia."
     }
     </script>

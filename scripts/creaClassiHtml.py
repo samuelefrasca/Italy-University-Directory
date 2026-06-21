@@ -207,15 +207,22 @@ template = """<!DOCTYPE html>
     <meta name="robots" content="index,follow">
 
 
-    <link rel="canonical" href="https://unidirectory.it/classi/{{SLUG}}.html">
-
+    <link rel="canonical" href="https://unidirectory.it/classi/{{SLUG}}">
+    <script>
+        if (window.location.hostname === 'samuelefrasca.github.io') {
+            const path = window.location.pathname
+                .replace('/Italy-University-Directory', '')
+                .replace(/\.html$/, '');
+            window.location.replace('https://unidirectory.it' + path + window.location.search);
+        }
+    </script>
 
     <meta property="og:site_name" content="Unidirectory">
     <meta property="og:title" content="Corsi di laurea in {{NOME}} ({{CODICE}}): università e sedi | Unidirectory">
     <meta property="og:description"
         content="Scopri in quali università e sedi è attivo il corso di laurea in {{NOME}} ({{CODICE}}) in Italia.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://unidirectory.it/classi/{{SLUG}}.html">
+    <meta property="og:url" content="https://unidirectory.it/classi/{{SLUG}}">
     <meta property="og:image"
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
@@ -238,7 +245,7 @@ template = """<!DOCTYPE html>
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Corsi di laurea in {{NOME}} ({{CODICE}}): università e sedi | Unidirectory",
-        "url": "https://unidirectory.it/classi/{{SLUG}}.html",
+        "url": "https://unidirectory.it/classi/{{SLUG}}",
         "description": "Scopri in quali università e sedi è attivo il corso di laurea in {{NOME}} ({{CODICE}}) in Italia. Elenco chiaro e aggiornato delle sedi disponibili."
     }
     </script>

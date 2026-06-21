@@ -10,14 +10,22 @@
         content="Scopri l'elenco degli istituti privati di Alta Formazione Artistica, Musicale e Coreutica (AFAM) in Italia.">
     <meta name="robots" content="index,follow">
 
-    <link rel="canonical" href="https://unidirectory.it/uni/afamprivati.html">
+    <link rel="canonical" href="https://unidirectory.it/uni/afamprivati">
+    <script>
+        if (window.location.hostname === 'samuelefrasca.github.io') {
+            const path = window.location.pathname
+                .replace('/Italy-University-Directory', '')
+                .replace(/\.html$/, '');
+            window.location.replace('https://unidirectory.it' + path + window.location.search);
+        }
+    </script>
 
     <meta property="og:site_name" content="Unidirectory">
     <meta property="og:title" content="Istituti privati AFAM in Italia: elenco completo | Unidirectory">
     <meta property="og:description"
         content="Scopri l'elenco degli istituti privati di Alta Formazione Artistica, Musicale e Coreutica (AFAM) in Italia.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://unidirectory.it/uni/afamprivati.html">
+    <meta property="og:url" content="https://unidirectory.it/uni/afamprivati">
     <meta property="og:image"
         content="https://unidirectory.it/assets/img/iud_icon.png">
 
@@ -38,7 +46,7 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Istituti privati AFAM in Italia: elenco completo",
-        "url": "https://unidirectory.it/uni/afamprivati.html",
+        "url": "https://unidirectory.it/uni/afamprivati",
         "description": "Scopri l'elenco degli istituti privati di Alta Formazione Artistica, Musicale e Coreutica (AFAM) in Italia."
     }
     </script>

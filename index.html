@@ -12,7 +12,15 @@
         content="Esplora università, istituti AFAM e corsi di laurea in Italia. Elenchi chiari e aggiornati per regione, città e tipologia di istituzione." />
     <meta name="robots" content="index,follow" />
 
-    <link rel="canonical" href="https://unidirectory.it/" />
+    <link rel="canonical" href="https://unidirectory.it/">
+    <script>
+        if (window.location.hostname === 'samuelefrasca.github.io') {
+            const path = window.location.pathname
+                .replace('/Italy-University-Directory', '')
+                .replace(/\.html$/, '');
+            window.location.replace('https://unidirectory.it' + path + window.location.search);
+        }
+    </script>
 
     <meta property="og:site_name" content="Unidirectory" />
     <meta property="og:title" content="Unidirectory | Università e corsi di laurea in Italia" />
@@ -698,10 +706,12 @@
     <footer>
         <div class="subfooter">
             <p>&copy; 2026 -
-                <a class="a_footer" href="https://samuelefrasca.github.io/" target="_blank" rel="noopener noreferrer">Samuele Frasca</a>
+                <a class="a_footer" href="https://samuelefrasca.github.io/" target="_blank"
+                    rel="noopener noreferrer">Samuele Frasca</a>
             </p>
             <p>
-                <a class="a_footer github" href="https://github.com/samuelefrasca" target="_blank" rel="noopener noreferrer">
+                <a class="a_footer github" href="https://github.com/samuelefrasca" target="_blank"
+                    rel="noopener noreferrer">
                     <img class="github-logo" src="assets/img/GitHub_Invertocat_White.png" alt="github-logo">GitHub
                 </a>
             </p>

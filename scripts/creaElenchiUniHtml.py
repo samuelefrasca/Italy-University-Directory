@@ -135,7 +135,7 @@ def genera_nav(nav_active, slug_corrente):
 
 
 def genera_html(cat):
-    base_url = f"https://unidirectory.it/uni/{cat['slug']}.html"
+    base_url = f"https://unidirectory.it/uni/{cat['slug']}"
     righe = genera_righe(cat["categoria"])
     nav = genera_nav(cat["nav_active"], cat["slug"])
     n_totale = righe.count("<tr data-uni=")
@@ -153,6 +153,14 @@ def genera_html(cat):
     <meta name="robots" content="index,follow">
 
     <link rel="canonical" href="{base_url}">
+    <script>
+        if (window.location.hostname === 'samuelefrasca.github.io') {{
+            const path = window.location.pathname
+                .replace('/Italy-University-Directory', '')
+                .replace(/\\.html$/, '');
+            window.location.replace('https://unidirectory.it' + path + window.location.search);
+        }}
+    </script>
 
     <meta property="og:site_name" content="Unidirectory">
     <meta property="og:title" content="{cat["titolo_seo"]} | Unidirectory">
