@@ -2,7 +2,7 @@
 
 Un directory completo, navigabile e intuitivo delle università e degli istituti di alta formazione in Italia, con una mappatura dettagliata dei corsi di laurea per classe. Questo progetto fornisce un'esperienza di consultazione semplice e veloce, con dati aggiornati e link diretti ai portali ufficiali.
 
-🚀 **[Vai al sito live](https://samuelefrasca.github.io/Italy-University-Directory/)**
+🚀 **[Vai al sito live](https://unidirectory.it/)**
 
 ## 🛠️ Caratteristiche
 *   **Directory completa di istituti**: Università statali, non statali, telematiche, Scuole superiori universitarie, Conservatori, Accademie, Enti AFAM privati.
@@ -24,7 +24,7 @@ Un directory completo, navigabile e intuitivo delle università e degli istituti
 *   **Python** (Script per generazione automatica di pagine e gestione dei dati).
 *   **JSON** (Strutturazione dei dati per università e corsi di laurea).
 
-## 📈 Obiettivi del Progetto
+## 📈 Obiettivi Personali del Progetto
 Questo progetto mi permette di approfondire e mettere in pratica concetti di web development:
 *   Gestione di **strutture dati complesse** (Array, Objects, JSON).
 *   **Rendering dinamico** di contenuti nel browser.
