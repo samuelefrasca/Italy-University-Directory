@@ -2079,6 +2079,15 @@
         "categoria": "superiori"
     },
     {
+        "nome": "Institute of Advanced Science for Agriculture",
+        "sigla": "IASA",
+        "citta": "Jolanda di Savoia (FE)",
+        "regione": "Emilia-Romagna",
+        "studenti": null,
+        "link": "https://www.bfeducational.it/it/",
+        "categoria": "superiori"
+    },
+    {
         "nome": "Scuola Internazionale Superiore di Studi Avanzati",
         "sigla": "SISSA",
         "citta": "Trieste",
