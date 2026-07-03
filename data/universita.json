@@ -90,8 +90,8 @@
         "categoria": "abastatali"
     },
     {
-        "nome": "Politecnico delle Arti di Bergamo",
-        "sigla": "AbaBg",
+        "nome": "Politecnico delle Arti di Bergamo - Accademia di Belle Arti \"Giacomo Carrara\"",
+        "sigla": "PAB",
         "citta": "Bergamo",
         "regione": "Lombardia",
         "studenti": 285,
@@ -945,8 +945,8 @@
         "categoria": "conservatori"
     },
     {
-        "nome": "Politecnico delle Arti statale di Bergamo \"Gaetano Donizetti - Giacomo Carrara\" (area musicale)",
-        "sigla": "ConsBg",
+        "nome": "Politecnico delle Arti di Bergamo - Conservatorio di Musica \"Gaetano Donizetti\"",
+        "sigla": "PAB",
         "citta": "Bergamo",
         "regione": "Lombardia",
         "studenti": 296,
