@@ -239,7 +239,7 @@
         "citta": "Roma",
         "regione": "Lazio",
         "studenti": 323,
-        "link": "https://www.accademiasilviodamico.it/",
+        "link": "https://www.accademianazionaledanza.it/",
         "categoria": "accnazionali"
     },
     {
@@ -262,7 +262,7 @@
     },
     {
         "nome": "Libera Accademia di Belle Arti di Rimini",
-        "sigla": "LABA",
+        "sigla": "LABA Rimini",
         "citta": "Rimini",
         "regione": "Emilia-Romagna",
         "studenti": 1415,
@@ -370,7 +370,7 @@
     },
     {
         "nome": "Libera Accademia di Belle Arti di Brescia",
-        "sigla": "LABA",
+        "sigla": "LABA Brescia",
         "citta": "Brescia",
         "regione": "Lombardia",
         "studenti": 1415,
@@ -568,7 +568,7 @@
     },
     {
         "nome": "Libera Accademia di Belle Arti di Firenze",
-        "sigla": "LABA",
+        "sigla": "LABA Firenze",
         "citta": "Firenze",
         "regione": "Toscana",
         "studenti": 699,
@@ -1299,7 +1299,7 @@
         "nome": "Istituto superiore per le Industrie Artistiche di Urbino",
         "sigla": "ISIA Urbino",
         "citta": "Urbino",
-        "regione": "Friuli-Venezia Giulia",
+        "regione": "Marche",
         "studenti": 228,
         "link": "https://www.isiaurbino.net/",
         "categoria": "isia"
@@ -1314,7 +1314,7 @@
         "categoria": "isia"
     },
     {
-        "nome": "Istituto superiore per le Industrie Artistiche di Roma",
+        "nome": "Istituto superiore per le Industrie Artistiche di Firenze",
         "sigla": "ISIA Firenze",
         "citta": "Firenze",
         "regione": "Toscana",
