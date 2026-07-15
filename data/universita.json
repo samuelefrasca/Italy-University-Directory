@@ -1,7 +1,7 @@
 [
     {
         "nome": "Accademia di Belle Arti dell'Aquila",
-        "sigla": "AbaAq",
+        "sigla": "Abaq",
         "citta": "L'Aquila",
         "regione": "Abruzzo",
         "studenti": 516,
@@ -280,7 +280,7 @@
     },
     {
         "nome": "Accademia di Belle Arti G.B. Tiepolo",
-        "sigla": "ABA Udine",
+        "sigla": "AbaUd",
         "citta": "Udine",
         "regione": "Friuli-Venezia Giulia",
         "studenti": 549,
@@ -491,7 +491,7 @@
         "citta": "Milano",
         "regione": "Lombardia",
         "studenti": 48,
-        "link": "https://www.rafflesmilano.it/",
+        "link": "https://rafflesmilano.it/it/",
         "categoria": "afamprivati"
     },
     {
@@ -509,7 +509,7 @@
         "citta": "Ancona",
         "regione": "Marche",
         "studenti": 192,
-        "link": "https://www.poliarte.it/",
+        "link": "https://www.poliarte.net/",
         "categoria": "afamprivati"
     },
     {
@@ -707,7 +707,7 @@
         "citta": "Vibo Valentia",
         "regione": "Calabria",
         "studenti": 371,
-        "link": "https://www.conservatoriovibo.it/",
+        "link": "https://consvv.it/",
         "categoria": "conservatori"
     },
     {
@@ -1406,7 +1406,7 @@
     {
         "nome": "Humanitas University",
         "sigla": "Hunimed",
-        "citta": "Rozzano (MI)",
+        "citta": "Pieve Emanuele (MI)",
         "regione": "Lombardia",
         "studenti": 2195,
         "link": "https://www.hunimed.eu/it/",
@@ -1469,7 +1469,7 @@
     {
         "nome": "Università degli Studi di Scienze Gastronomiche",
         "sigla": "UniSG",
-        "citta": "Pollenzo, Bra (CN)",
+        "citta": "Bra (CN)",
         "regione": "Piemonte",
         "studenti": 294,
         "link": "https://www.unisg.it/",
@@ -1685,7 +1685,7 @@
     {
         "nome": "Università degli Studi di Cassino e del Lazio Meridionale",
         "sigla": "UniCas",
-        "citta": "Cassino",
+        "citta": "Cassino (FR)",
         "regione": "Lazio",
         "studenti": 7433,
         "link": "https://www.unicas.it/",
@@ -2084,7 +2084,7 @@
         "citta": "Jolanda di Savoia (FE)",
         "regione": "Emilia-Romagna",
         "studenti": null,
-        "link": "https://www.bfeducational.it/it/",
+        "link": "https://www.iasaeu.it/",
         "categoria": "superiori"
     },
     {
@@ -2169,7 +2169,7 @@
         "categoria": "telematiche"
     },
     {
-        "nome": "Università telematica \"Guglielmo Marconi \"",
+        "nome": "Università telematica \"Guglielmo Marconi\"",
         "sigla": "Unimarconi",
         "citta": "Roma",
         "regione": "Lazio",
