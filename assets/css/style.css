@@ -39,7 +39,6 @@ header {
     background-color: #0d1b3d;
     padding: 18px 24px;
     border-radius: 0 0 20px 20px;
-    margin-bottom: 20px;
 }
 
 .header {
@@ -169,6 +168,7 @@ a {
     max-width: 750px;
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
     padding: 10px 14px;
     font-size: 16px;
     border: 1px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
@@ -198,9 +198,10 @@ a {
     flex-direction: column;
     list-style: none;
     padding: 0;
+    margin: 0;
     margin-bottom: 20px;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
 }
 
@@ -263,6 +264,11 @@ a.cardlink:hover {
     margin-top: 40px;
 }
 
+.main-subtitle {
+    margin: 20px;
+    text-align: center;
+}
+
 .tipolaurea {
     margin: 0;
     text-align: center;
@@ -294,8 +300,12 @@ a.uni:visited {
 .maintitle {
     font-size: 28px;
     text-align: center;
-    margin: 0;
-    margin-bottom: 25px;
+    margin: 20px;
+}
+
+.half {
+    display: flex;
+    flex-direction: row;
 }
 
 .select-none {
@@ -392,7 +402,7 @@ footer p {
     .home-cards {
         flex-direction: column;
         gap: 15px;
-        margin-top: 0;
+        margin-top: 15px;
     }
 
     .square-card {
@@ -407,7 +417,7 @@ footer p {
         margin-bottom: 10px;
     }
 
-    .tipolaurea {
+    .main-subtitle {
         font-size: 16pt;
     }
 

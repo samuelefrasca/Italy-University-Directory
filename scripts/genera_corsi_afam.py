@@ -29,10 +29,12 @@ except ImportError:
     sys.exit(1)
 
 # ── Percorsi ──────────────────────────────────────────────────────────────────
-CSV_PATH       = "/mnt/user-data/uploads/72c39733-af10-4b7e-8d5c-878499fab765.csv"
-UNIV_JSON_PATH = "/mnt/user-data/uploads/universita.json"
-OUTPUT_JSON    = "/mnt/user-data/outputs/corsi_afam_per_area.json"
-SKIPPED_LOG    = "/home/claude/skippati_afam.json"
+SCRIPT_DIR     = Path(__file__).resolve().parent
+DATA_DIR       = SCRIPT_DIR.parent / "data"
+CSV_PATH       = DATA_DIR / "offerta_formativa_afam_mur.csv"
+UNIV_JSON_PATH = DATA_DIR / "universita.json"
+OUTPUT_JSON    = DATA_DIR / "corsi_afam_per_area.json"
+SKIPPED_LOG    = DATA_DIR / "skippati_afam.json"
 
 # ── Solo i corsi di diploma accademico (equivalenti a laurea/laurea magistrale) ─
 # Esclusi: Vecchio Ordinamento (ad esaurimento), Master/Perfezionamento,
@@ -251,11 +253,7 @@ MAPPING_ISTITUTO: dict[str, str] = {
     "7228":  "SantaGiulia",      # Brescia - Accademia SantaGiulia
     "7296":  "LABA Brescia",     # Brescia - Libera Accademia di Belle Arti
     "7231":  "Galli",            # Como - Accademia Aldo Galli
-
-    # NOTA: "CPM Music Institute" di Milano (sigla CPM su unidirectory.it) non
-    # compare in questo dataset con nessun COD_ISTITUTO: probabilmente non
-    # rilascia titoli AFAM riconosciuti (o non ancora accreditato quando i dati
-    # sono stati raccolti). Nessuna riga richiede questa sigla.
+    "33750": "CPM",              # Milano - CPM Music Institute (Istituto Mussida Music Publishing)
 }
 
 # COD_ISTITUTO trovati nel CSV ma NON presenti tra gli atenei elencati su
@@ -264,7 +262,6 @@ MAPPING_ISTITUTO: dict[str, str] = {
 # silenziosamente con una sigla sbagliata.
 #   35471  Agrigento  - Accademia di Belle Arti "Michelangelo"
 #   39394  Bologna    - Istituto Polo Michelangelo Arte e Design
-#   33750  Milano     - Istituto Mussida Music Publishing
 #    7221  Novara     - "A.C.M.E" di Novara
 
 # ── Caricamento universita.json (se presente) ─────────────────────────────────
@@ -310,7 +307,7 @@ df = df.drop_duplicates(subset=[COL_COD_IST, COL_AREA, COL_CLASSE, COL_CORSO, CO
 print(f"  Righe dopo dedup: {len(df)}")
 
 # ── Costruzione output ─────────────────────────────────────────────────────────
-corsi_per_area: dict = {}
+corsi_per_classe: dict = {}
 skippati: list = []
 
 for idx, row in df.iterrows():
@@ -340,55 +337,48 @@ for idx, row in df.iterrows():
     comune      = str(row[COL_COMUNE]).strip().title() if pd.notna(row[COL_COMUNE]) else ""
     nome_corso  = str(row[COL_CORSO]).strip().title() if pd.notna(row[COL_CORSO]) else ""
 
-    if area_corso not in corsi_per_area:
-        corsi_per_area[area_corso] = {}
-
-    if codice_classe not in corsi_per_area[area_corso]:
-        corsi_per_area[area_corso][codice_classe] = {
+    if codice_classe not in corsi_per_classe:
+        corsi_per_classe[codice_classe] = {
+            "area": area_corso,
             "codice": codice_classe,
             "nome": nome_classe,
             "offerte": []
         }
 
-    corsi_per_area[area_corso][codice_classe]["offerte"].append({
+    corsi_per_classe[codice_classe]["offerte"].append({
         "universita": sigla,
         "nomeCorso":  nome_corso,
         "sede":       comune,
     })
 
 # ── Deduplica offerte e ordina ─────────────────────────────────────────────────
-for area in corsi_per_area:
-    for codice in corsi_per_area[area]:
-        viste: set = set()
-        offerte_uniche = []
-        for o in corsi_per_area[area][codice]["offerte"]:
-            chiave = (o["universita"], o["nomeCorso"], o["sede"])
-            if chiave not in viste:
-                viste.add(chiave)
-                offerte_uniche.append(o)
-        offerte_uniche.sort(key=lambda x: (x["universita"], x["nomeCorso"], x["sede"]))
-        corsi_per_area[area][codice]["offerte"] = offerte_uniche
+for codice in corsi_per_classe:
+    viste: set = set()
+    offerte_uniche = []
+    for o in corsi_per_classe[codice]["offerte"]:
+        chiave = (o["universita"], o["nomeCorso"], o["sede"])
+        if chiave not in viste:
+            viste.add(chiave)
+            offerte_uniche.append(o)
+    offerte_uniche.sort(key=lambda x: (x["universita"], x["nomeCorso"], x["sede"]))
+    corsi_per_classe[codice]["offerte"] = offerte_uniche
 
-    # Ordina le classi per codice dentro ogni area
-    corsi_per_area[area] = dict(sorted(corsi_per_area[area].items(), key=lambda x: x[0]))
-
-# Ordina le aree per nome
-corsi_per_area = dict(sorted(corsi_per_area.items(), key=lambda x: x[0]))
+# Ordina le classi per codice
+corsi_per_classe = dict(sorted(corsi_per_classe.items(), key=lambda x: x[0]))
 
 # ── Salvataggio ───────────────────────────────────────────────────────────────
-Path("/mnt/user-data/outputs").mkdir(parents=True, exist_ok=True)
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
-    json.dump(corsi_per_area, f, ensure_ascii=False, indent=2)
+    json.dump(corsi_per_classe, f, ensure_ascii=False, indent=2)
 
-with open(SKIPPED_LOG, "w", encoding="utf-8") as f:
-    json.dump(skippati, f, ensure_ascii=False, indent=2)
+if skippati:
+    with open(SKIPPED_LOG, "w", encoding="utf-8") as f:
+        json.dump(skippati, f, ensure_ascii=False, indent=2)
 
-# ── Statistiche ───────────────────────────────────────────────────────────────
-totale_classi   = sum(len(v) for v in corsi_per_area.values())
-totale_offerte  = sum(len(c["offerte"]) for v in corsi_per_area.values() for c in v.values())
-print("\n── RISULTATI ──────────────────────────────────────────────────────")
-print(f"  Aree scritte:     {len(corsi_per_area)}")
-print(f"  Classi scritte:   {totale_classi}")
+# -- Statistiche ---------------------------------------------------------------
+totale_offerte  = sum(len(c["offerte"]) for c in corsi_per_classe.values())
+print("\n-- RISULTATI --------------------------------------------------------------")
+print(f"  Classi scritte:   {len(corsi_per_classe)}")
 print(f"  Offerte totali:   {totale_offerte}")
 print(f"  Righe saltate:    {len(skippati)}")
 print(f"  Output:           {OUTPUT_JSON}")
@@ -401,9 +391,9 @@ if skippati:
         comune = next(s["COMUNE_SEDE"] for s in skippati if s["COD_ISTITUTO"] == c)
         print(f"    - {c}  {nome}  ({comune})")
 else:
-    print("\n  ✅ Nessun corso saltato!")
+    print("\n  OK - Nessun corso saltato!")
 
-print("\n── Anteprima prima area / prima classe ──────────────────────────────")
-prima_area = next(iter(corsi_per_area))
-prima_classe = next(iter(corsi_per_area[prima_area].values()))
-print(json.dumps({prima_area: {prima_classe["codice"]: prima_classe}}, ensure_ascii=False, indent=2)[:800])
+print("\n-- Anteprima prima classe --------------------------------------------------")
+primo_codice = next(iter(corsi_per_classe))
+prima_classe = corsi_per_classe[primo_codice]
+print(json.dumps({primo_codice: prima_classe}, ensure_ascii=False, indent=2)[:800])
