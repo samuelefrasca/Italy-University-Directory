@@ -81,6 +81,14 @@ categorie = [
         "desc_seo": "Scopri l'elenco degli istituti privati di Alta Formazione Artistica, Musicale e Coreutica (AFAM) in Italia.",
         "nav_active": "AFAM privati",
     },
+    {
+        "categoria": "ssml",
+        "slug": "ssml",
+        "titolo": "Scuole Superiori per mediatori linguistici",
+        "titolo_seo": "Scuole Superiori per mediatori linguistici SSML in Italia: elenco completo",
+        "desc_seo": "Scopri l'elenco delle Scuole Superiori per mediatori linguistici SSML in Italia.",
+        "nav_active": "SSML",
+    },
 ]
 
 # ── Nav links (usati in tutte le pagine) ─────────────────────────────────────
@@ -95,6 +103,7 @@ NAV_ITEMS = [
     ("Acc. nazionali", "accnazionali.html"),
     ("ISIA",           "isia.html"),
     ("AFAM privati",   "afamprivati.html"),
+    ("SSML",   "ssml.html"),
 ]
 
 # ── Generazione righe HTML ───────────────────────────────────────────────────

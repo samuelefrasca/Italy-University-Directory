@@ -2239,5 +2239,383 @@
         "studenti": 1990,
         "link": "https://www.iuline.it/",
         "categoria": "telematiche"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Nelson Mandela\"",
+        "sigla": "SSML Mandela",
+        "citta": "Matera - Taranto",
+        "regione": "Basilicata - Puglia",
+        "studenti": 0,
+        "link": "https://www.ssmlnelsonmandela.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici della Basilicata",
+        "sigla": "SSML Basilicata",
+        "citta": "Potenza",
+        "regione": "Basilicata",
+        "studenti": 0,
+        "link": "https://www.ssmlbasilicata.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Don Domenico Calarco\"",
+        "sigla": "SSML Reggio Calabria",
+        "citta": "Reggio Calabria",
+        "regione": "Calabria",
+        "studenti": 0,
+        "link": "https://www.mediatorilinguistici-rc.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Istituto Criminologia.it",
+        "sigla": "Criminologia",
+        "citta": "Vibo Valentia",
+        "regione": "Calabria",
+        "studenti": 0,
+        "link": "https://www.criminologia.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici di Lamezia Terme",
+        "sigla": "SSML Lamezia Terme",
+        "citta": "Lamezia Terme (CZ)",
+        "regione": "Calabria",
+        "studenti": 0,
+        "link": "https://www.ssmllameziaterme.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"IUM Academy School\"",
+        "sigla": "IUM Napoli",
+        "citta": "Napoli",
+        "regione": "Campania",
+        "studenti": 0,
+        "link": "https://iumna.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Fondazione Villaggio dei Ragazzi - Don Salvatore d'Angelo\"",
+        "sigla": "SSML Maddaloni",
+        "citta": "Maddaloni (CE)",
+        "regione": "Campania",
+        "studenti": 0,
+        "link": "https://www.villaggiodeiragazzi.it/opere/polo-universitario/scuola-per-mediatori-linguistici/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici di Pozzuoli",
+        "sigla": "SSML Pozzuoli",
+        "citta": "Pozzuoli (NA)",
+        "regione": "Campania",
+        "studenti": 0,
+        "link": null,
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Istituto Internazionale\"",
+        "sigla": "SSML Internazionale",
+        "citta": "Benevento",
+        "regione": "Campania",
+        "studenti": 0,
+        "link": "https://www.ssmlinternazionale.it/site/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici di Salerno",
+        "sigla": "Istituto Teseo",
+        "citta": "San Cipriano Picentino (SA)",
+        "regione": "Campania",
+        "studenti": 0,
+        "link": "https://www.istitutoteseo.eu/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "FUSP - Fondazione Unicampus San Pellegrino - SSML RIMINI",
+        "sigla": "FUSP",
+        "citta": "Rimini - Ceglie Messapica (BR) - Trento",
+        "regione": "Emilia-Romagna - Puglia - Trentino-Alto Adige",
+        "studenti": 0,
+        "link": "https://www.fusp.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Carlo Bo\"",
+        "sigla": "SSML Carlo Bo",
+        "citta": "Roma - Milano - Firenze - Bologna - Bari",
+        "regione": "Lazio - Lombardia - Toscana - Emilia-Romagna - Puglia",
+        "studenti": 0,
+        "link": "https://www.ssmlcarlobo.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"San Domenico\"",
+        "sigla": "SSML San Domenico",
+        "citta": "Roma - Fermo",
+        "regione": "Lazio - Marche",
+        "studenti": 0,
+        "link": "http://www.ssmlsandomenico.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Gregorio VII\"",
+        "sigla": "SSML Gregorio VII",
+        "citta": "Roma",
+        "regione": "Lazio",
+        "studenti": 0,
+        "link": "http://www.gregoriosettimo.eu/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Armando Curcio\"",
+        "sigla": "Istituto Armando Curcio",
+        "citta": "Roma",
+        "regione": "Lazio",
+        "studenti": 0,
+        "link": "https://istitutoarmandocurcio.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Santa Chiara\"",
+        "sigla": "SSML Santa Chiara",
+        "citta": "Frascati (RM)",
+        "regione": "Lazio",
+        "studenti": 0,
+        "link": "http://www.ssmlsantachiara.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Columbus Academy\"",
+        "sigla": "Columbus Academy",
+        "citta": "Roma",
+        "regione": "Lazio",
+        "studenti": 0,
+        "link": "https://columbusacademy.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Carolina Albasio\"",
+        "sigla": "Albasio",
+        "citta": "Castellanza (VA)",
+        "regione": "Lombardia",
+        "studenti": 0,
+        "link": "https://www.albasio.eu/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Civica Scuola Interpreti e Traduttori \"Altiero Spinelli\"",
+        "sigla": "Civica SSML",
+        "citta": "Milano",
+        "regione": "Lombardia",
+        "studenti": 0,
+        "link": "https://lingue.fondazionemilano.eu/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "UNI INTERNATIONAL SSML di Varese",
+        "sigla": "SSML Varese",
+        "citta": "Varese",
+        "regione": "Lombardia",
+        "studenti": 0,
+        "link": "http://www.ssml.va.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"P.M. Loria\"",
+        "sigla": "UNIUMA",
+        "citta": "Milano",
+        "regione": "Lombardia",
+        "studenti": 0,
+        "link": "https://www.uniuma.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici UniverMantova \"Gonzaga\"",
+        "sigla": "SSML Gonzaga",
+        "citta": "Mantova",
+        "regione": "Lombardia",
+        "studenti": 0,
+        "link": "https://ssml.unimn.it/it/ateneo/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici LIMEC Milano",
+        "sigla": "Limec SSML",
+        "citta": "Milano",
+        "regione": "Lombardia",
+        "studenti": 0,
+        "link": "https://unilimecssml.com/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici di Ancona",
+        "sigla": "SSML Ancona",
+        "citta": "Ancona",
+        "regione": "Marche",
+        "studenti": 0,
+        "link": "https://www.mediatorilinguistici.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici del Molise - International Studies College SSML",
+        "sigla": "SSML Molise",
+        "citta": "Campobasso",
+        "regione": "Molise",
+        "studenti": 0,
+        "link": null,
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici del Molise - International Studies College SSML",
+        "sigla": "SSML Molise",
+        "citta": "Campobasso",
+        "regione": "Molise",
+        "studenti": 0,
+        "link": null,
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici VITTORIA",
+        "sigla": "SSML VITTORIA",
+        "citta": "Torino",
+        "regione": "Piemonte",
+        "studenti": 0,
+        "link": "https://ssmlto.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Adriano Macagno\"",
+        "sigla": "ICUSSML",
+        "citta": "Cuneo",
+        "regione": "Piemonte",
+        "studenti": 0,
+        "link": "https://www.icussml.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici Città di Pinerolo \"Sant'Agostino\"",
+        "sigla": "SSML Pinerolo",
+        "citta": "Pinerolo (TO)",
+        "regione": "Piemonte",
+        "studenti": 0,
+        "link": "https://www.ssmlpinerolo.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Istituto Universitario Salvo D'Acquisto",
+        "sigla": "IUSDA",
+        "citta": "Borgomanero (NO)",
+        "regione": "Piemonte",
+        "studenti": 0,
+        "link": "https://www.iusda.eu/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Marco Polo\" di Foggia",
+        "sigla": "SSML Marco Polo",
+        "citta": "Foggia",
+        "regione": "Puglia",
+        "studenti": 0,
+        "link": "https://www.mediazionelinguisticafoggia.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici di Bari - Bona Sforza",
+        "sigla": "Bona Sforza University",
+        "citta": "Bari",
+        "regione": "Puglia",
+        "studenti": 0,
+        "link": "https://bonasforza.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"Verbum\"",
+        "sigla": "SSML Verbum",
+        "citta": "Cagliari",
+        "regione": "Sardegna",
+        "studenti": 0,
+        "link": "https://associazioneaster.it/index.php?sez=66&art=282",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici I.CO.TE.A",
+        "sigla": "SSML ICOTEA",
+        "citta": "Modica (RG)",
+        "regione": "Sicilia",
+        "studenti": 0,
+        "link": "https://www.icotea.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici \"San Michele\"",
+        "sigla": "SSML San Michele",
+        "citta": "Sant'Agata Militello (ME)",
+        "regione": "Sicilia",
+        "studenti": 0,
+        "link": "https://mediazionelinguisticasanmichele.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola di Studi Superiori per Mediatori Linguistici \"Agorà Mundi\"",
+        "sigla": "SSML Agorà Mundi",
+        "citta": "Agrigento",
+        "regione": "Sicilia",
+        "studenti": 0,
+        "link": "https://agoramundimediazionelinguistica.com/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Istituto Universitario Unicollege",
+        "sigla": "SSML Unicollege",
+        "citta": "Firenze - Mantova - Torino",
+        "regione": "Toscana - Lombardia - Piemonte",
+        "studenti": 0,
+        "link": "https://www.unicollegessml.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici di Pisa",
+        "sigla": "SSML Pisa",
+        "citta": "Pisa",
+        "regione": "Toscana",
+        "studenti": 0,
+        "link": "https://www.mediazionelinguistica.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici di Perugia",
+        "sigla": "SSML Perugia",
+        "citta": "Perugia",
+        "regione": "Umbria",
+        "studenti": 0,
+        "link": "https://www.mediazionelinguisticaperugia.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici Ciels",
+        "sigla": "Ciels",
+        "citta": "Padova - Brescia - Bologna - Palermo",
+        "regione": "Veneto - Lombardia - Emilia-Romagna - Sicilia",
+        "studenti": 0,
+        "link": "https://www.ciels.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici di Padova",
+        "sigla": "SSML Padova",
+        "citta": "Padova",
+        "regione": "Veneto",
+        "studenti": 0,
+        "link": "https://www.mediatorilinguisticipadova.it/",
+        "categoria": "ssml"
+    },
+    {
+        "nome": "Scuola Superiore per Mediatori Linguistici di Vicenza",
+        "sigla": "SSML Vicenza",
+        "citta": "Vicenza - Belluno",
+        "regione": "Veneto",
+        "studenti": 0,
+        "link": "https://www.ssml.eu/",
+        "categoria": "ssml"
     }
 ]
