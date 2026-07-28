@@ -278,10 +278,6 @@ a.cardlink:hover {
     transform: translateY(-2px);
 }
 
-.bloccoclassi {
-    margin-top: 40px;
-}
-
 .main-subtitle {
     margin: 12px;
     text-align: center;
@@ -313,12 +309,6 @@ a.uni:visited {
 .altreuni {
     margin-top: 20px;
     text-align: left;
-}
-
-.maintitle {
-    font-size: 28px;
-    text-align: center;
-    margin: 20px;
 }
 
 .half {
@@ -429,12 +419,6 @@ footer p {
         font-size: 1.1rem;
     }
 
-    .maintitle {
-        font-size: 20pt;
-        margin: 0;
-        margin-bottom: 10px;
-    }
-
     .main-subtitle {
         font-size: 16pt;
     }
@@ -446,8 +430,10 @@ footer p {
 
     .cardul,
     .cardclassul {
+        flex-direction: column;
         gap: 10px;
         margin: 0;
+        width: 100%;
     }
 
     .tutteleclassi {

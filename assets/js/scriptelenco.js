@@ -2,6 +2,10 @@ const corpoTabella = document.getElementById("tabellauni");
 const uniTrovate = document.getElementById("unitrovate");
 const searchInput = document.getElementById("searchNegliAtenei");
 
+// Rileva se la colonna studenti è presente nell'header della tabella
+const haStudenti = document.querySelector("thead .studenti, thead th:last-child a[onclick*='ordinaPerStudenti']") !== null
+    || document.querySelectorAll("thead th").length > 5;
+
 // Barra di ricerca
 
 let uniAttuale = [];
@@ -38,13 +42,16 @@ function renderizzaTabella(lista) {
         let studenti_display = typeof uni.studenti === "number"
             ? uni.studenti.toLocaleString("it-IT", { useGrouping: "always" })
             : uni.studenti;
+        let colStudenti = haStudenti
+            ? `<td class="studenti">${studenti_display}</td>`
+            : "";
         let riga = `<tr data-uni="${JSON.stringify(uni).replace(/"/g, '&quot;"')}">
                 <td class="num">${n}</td>
                 <td><a class="uni" href="${link}" ${nolink} target="_blank">${uni.nome}</a></td>
                 <td>${uni.sigla}</td>
                 <td>${uni.citta}</td>
                 <td>${uni.regione}</td>
-                <td class="studenti">${studenti_display}</td>
+                ${colStudenti}
                 </tr>`;
         corpoTabella.innerHTML += riga;
         n++;
@@ -103,12 +110,13 @@ var ordinestudenti
 
 function ordinaPerStudenti(categoria) {
     const copia = [...uniAttuale];
+    const numStudenti = (u) => (typeof u.studenti === "number" ? u.studenti : 0);
     if (ordinestudenti) {
-        copia.sort((a, b) => a.studenti - b.studenti);
+        copia.sort((a, b) => numStudenti(a) - numStudenti(b));
         renderizzaTabella(copia);
         ordinestudenti = false;
     } else {
-        copia.sort((a, b) => b.studenti - a.studenti);
+        copia.sort((a, b) => numStudenti(b) - numStudenti(a));
         renderizzaTabella(copia);
         ordinestudenti = true;
     }

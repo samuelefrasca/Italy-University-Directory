@@ -111,6 +111,7 @@ NAV_ITEMS = [
 def genera_righe(categoria):
     lista = [u for u in universita_list if u.get("categoria") == categoria]
     righe = []
+    mostra_studenti = categoria != "ssml"
     for n, uni in enumerate(lista, start=1):
         link = uni.get("link") or "#"
         nolink = "" if uni.get("link") else 'onclick=\'alert("Sito non trovato"); return false;\''
@@ -121,13 +122,14 @@ def genera_righe(categoria):
         # Serializza uni come data attribute per il JS
         data_uni = json.dumps(uni, ensure_ascii=False).replace('"', "&quot;")
 
+        col_studenti = f'\n                <td class="studenti">{studenti_display}</td>' if mostra_studenti else ""
+
         righe.append(f"""        <tr data-uni="{data_uni}">
                 <td class="num">{n}</td>
                 <td><a class="uni" href="{link}" {nolink} target="_blank">{uni["nome"]}</a></td>
                 <td>{sigla}</td>
                 <td>{uni.get("citta", "----")}</td>
-                <td>{uni.get("regione", "----")}</td>
-                <td class="studenti">{studenti_display}</td>
+                <td>{uni.get("regione", "----")}</td>{col_studenti}
             </tr>""")
     return "\n".join(righe)
 
@@ -237,7 +239,7 @@ def genera_html(cat):
                         <th class="select-none">Sigla</th>
                         <th class="select-none"><a onclick="ordinaPerCitta('{cat["categoria"]}')">Sede principale <i class="fa-solid fa-sort"></i></a></th>
                         <th class="select-none"><a onclick="ordinaPerRegione('{cat["categoria"]}')">Regione <i class="fa-solid fa-sort"></i></a></th>
-                        <th class="select-none"><a onclick="ordinaPerStudenti('{cat["categoria"]}')">Studenti <i class="fa-solid fa-sort"></i></a></th>
+{"" if cat["categoria"] == "ssml" else '                        <th class="select-none"><a onclick="ordinaPerStudenti(\'' + cat["categoria"] + '\')">Studenti <i class="fa-solid fa-sort"></i></a></th>'}
                     </tr>
                 </thead>
                 <tbody id="tabellauni">
