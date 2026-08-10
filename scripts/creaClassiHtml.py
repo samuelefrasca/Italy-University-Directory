@@ -320,7 +320,7 @@ template = """<!DOCTYPE html>
     </main>
     <footer>
         <div class="subfooter">
-            <p>&copy; 2026 -
+            <p>&copy; 2026 Unidirectory ·
                 <a class="a_footer" href="https://samuelefrasca.github.io/" target="_blank" rel="noopener noreferrer">Samuele Frasca</a>
             </p>
             <p>
@@ -330,14 +330,15 @@ template = """<!DOCTYPE html>
             </p>
         </div>
         <div class="subfooter">
-            <p>Fonte dati:
+            <p>Dati:
                 <a class="a_footer" href="https://www.mur.gov.it/it/aree-tematiche/universita/le-universita"
                     target="_blank" rel="noopener noreferrer">MUR</a>
                 &middot;
                 <a class="a_footer" href="https://ustat.mur.gov.it/" target="_blank" rel="noopener noreferrer">USTAT</a>
             </p>
+            <p><a class="a_footer" href="../about.html">About</a></p>
             <p><a class="a_footer" href="../privacy.html">Privacy Policy</a></p>
-            <p><a class="a_footer" href="../sitemap.xml">Mappa del sito</a></p>
+            <p><a class="a_footer" href="../sitemap.xml">Sitemap</a></p>
             <p><a class="a_footer" href="mailto:info@unidirectory.it">Contattaci</a></p>
         </div>
     </footer>
