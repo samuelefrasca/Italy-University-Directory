@@ -91,7 +91,7 @@
     },
     {
         "nome": "Politecnico delle Arti di Bergamo - Accademia di Belle Arti \"Giacomo Carrara\"",
-        "sigla": "PAB",
+        "sigla": "PAB-AbaBg",
         "citta": "Bergamo",
         "regione": "Lombardia",
         "studenti": 285,
@@ -946,7 +946,7 @@
     },
     {
         "nome": "Politecnico delle Arti di Bergamo - Conservatorio di Musica \"Gaetano Donizetti\"",
-        "sigla": "PAB",
+        "sigla": "PAB-ConsBg",
         "citta": "Bergamo",
         "regione": "Lombardia",
         "studenti": 296,
@@ -1308,7 +1308,7 @@
         "nome": "Istituto superiore per le Industrie Artistiche di Roma",
         "sigla": "ISIA Roma",
         "citta": "Roma - Pordenone",
-        "regione": "Lazio",
+        "regione": "Lazio - Friuli-Venezia Giulia",
         "studenti": 453,
         "link": "https://www.isiaroma.it/",
         "categoria": "isia"

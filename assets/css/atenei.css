@@ -1,0 +1,383 @@
+/* =========================
+   PAGINA ATENEO
+   ========================= */
+
+.ateneo-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.ateneo-titolo h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #0d1b3d;
+}
+
+.ateneo-localita {
+    margin: 8px 0 0;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.sito-ateneo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background-color: #0d1b3d;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.sito-ateneo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.link-ateneovuoto {
+    color: #000;
+    text-decoration: none;
+}
+
+.link-ateneovuoto:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   STATISTICHE
+   ========================= */
+
+.statistiche {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+    font-size: 24px;
+    color: #0d1b3d;
+}
+
+.stat-card strong {
+    display: block;
+    font-size: 22px;
+    color: #0d1b3d;
+}
+
+.stat-card span {
+    display: block;
+    margin-top: 3px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   SEZIONI
+   ========================= */
+
+.sezione {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sezione-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.sezione-header h2 {
+    margin: 0;
+    color: #0d1b3d;
+    font-size: 23px;
+}
+
+.numero-corsi {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   RICERCA CORSI
+   ========================= */
+
+.ricerca-corsi input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    margin-bottom: 25px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 1px solid light-dark(
+        rgb(118, 118, 118),
+        rgb(133, 133, 133)
+    );
+    border-radius: 999px;
+}
+
+
+/* =========================
+   CATEGORIE CORSI
+   ========================= */
+
+.categoria-corsi {
+    margin-bottom: 25px;
+}
+
+.categoria-corsi h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #0d1b3d;
+}
+
+.categoria-corsi h3 span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6b7280;
+}
+
+.lista-corsi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.corso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 16px;
+    border-radius: 10px;
+    background-color: #f7f9fc;
+    color: #000;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.corso:hover {
+    background-color: #eef2f7;
+    transform: translateX(3px);
+}
+
+.corso strong {
+    display: block;
+}
+
+.corso span {
+    display: block;
+    margin-top: 3px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.corso i {
+    color: #0d1b3d;
+}
+
+.mostra-tutti {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #0d1b3d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mostra-tutti:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SEDI
+   ========================= */
+
+.sedi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sede {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+}
+
+.sede strong {
+    display: block;
+}
+
+.sede span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================
+   INFORMAZIONI
+   ========================= */
+
+.informazioni {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-riga {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.info-riga:last-child {
+    border-bottom: none;
+}
+
+.info-riga span {
+    color: #6b7280;
+}
+
+.info-riga strong {
+    text-align: right;
+    color: #0d1b3d;
+}
+
+
+/* =========================
+   GRAFICO
+   ========================= */
+
+.grafico {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.barra-label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.barra-container {
+    width: 100%;
+    height: 25px;
+    background-color: #edf0f5;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.barra-valore {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #0d1b3d;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 999px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 850px) {
+
+    .ateneo-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .ateneo-titolo h1 {
+        font-size: 26px;
+    }
+
+    .sito-ateneo {
+        width: 100%;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .statistiche {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .sezione {
+        padding: 20px 15px;
+    }
+
+    .sezione-header h2 {
+        font-size: 20px;
+    }
+
+    .info-riga {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .info-riga strong {
+        text-align: left;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .statistiche {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 14px;
+    }
+
+}

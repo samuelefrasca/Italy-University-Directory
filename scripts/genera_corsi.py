@@ -5,7 +5,8 @@ e dal file universita.json con le sigle.
 
 Il CSV ha separatore ";" ed encoding latin-1.
 Le colonne rilevanti:
-  ANNO_VALIDITA, NomeOperativo, NUMERO (codice classe), DES (nome classe),
+  ANNO_VALIDITA, NomeOperativo, Area, Gruppo_Nome,
+  NUMERO (codice classe), DES (nome classe),
   NOME_CORSO, PROVINCIA, COMUNE, ACCESSO, DIDATTICA
 
 Valori di ACCESSO:  "accesso libero" | "locale" | "nazionale"
@@ -171,6 +172,8 @@ print(f"  Colonne: {list(df.columns)}")
 # Filtra anno più recente
 COL_ANNO     = "ANNO_VALIDITA"
 COL_NOME_OP  = "NomeOperativo"
+COL_AREA     = "Area"         # area es. "STEM"
+COL_GRUPPO   = "Gruppo_Nome"  # gruppo es. "Scientifico"
 COL_NUMERO   = "NUMERO"       # codice classe es. "L-1"
 COL_DES      = "DES"          # nome classe es. "Beni culturali"
 COL_CORSO    = "NOME_CORSO"
@@ -211,6 +214,8 @@ for idx, row in df.iterrows():
         continue
 
     nome_classe = str(row[COL_DES]).strip() if pd.notna(row[COL_DES]) else ""
+    area       = str(row[COL_AREA]).strip() if pd.notna(row[COL_AREA]) else ""
+    gruppo     = str(row[COL_GRUPPO]).strip() if pd.notna(row[COL_GRUPPO]) else ""
 
     # Sede: usiamo COMUNE (titolizzato)
     comune = str(row[COL_COMUNE]).strip().title() if pd.notna(row[COL_COMUNE]) else ""
@@ -225,6 +230,8 @@ for idx, row in df.iterrows():
         corsi_per_classe[codice_classe] = {
             "codice": codice_classe,
             "nome": nome_classe,
+            "area": area,
+            "gruppo": gruppo,
             "offerte": []
         }
 

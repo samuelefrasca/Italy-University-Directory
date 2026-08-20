@@ -38,14 +38,14 @@ function renderizzaTabella(offerte, mappaUniversita) {
     let n = 0;
     for (let offerta of offerte) {
         const uniData = mappaUniversita[offerta.universita] || {};
-        const link = uniData.link ?? "#";
-        const nolink = uniData.link ? "" : `onclick='alert("Sito non trovato"); return false;'`;
+        const slug = offerta.universita.toLowerCase().replace(/ /g, "_");
+        const link = `../../atenei/${slug}.html`;
         const regione = offerta.regione ? offerta.regione : uniData.regione || "----";
         const nomeUni = uniData.nome || offerta.universita;
 
         corpoTabella.innerHTML += `
         <tr class="riga-principale">
-            <td><a class="uni" href="${link}" ${nolink} target="_blank">${nomeUni}</a></td>
+            <td><a class="uni" href="${link}">${nomeUni}</a></td>
             <td colspan="4"><strong>${offerta.nomeCorso}</strong></td>
         </tr>
         <tr class="riga-dettagli">

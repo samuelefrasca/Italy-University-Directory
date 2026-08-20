@@ -59,7 +59,7 @@ MAPPING_ISTITUTO: dict[str, str] = {
 
     # --- Accademie di Belle Arti statali -------------------------------------
     "7238":  "AbaBa",    # Bari
-    "59090": "PAB",      # Bergamo (area artistica) - Politecnico delle Arti
+    "59090": "PAB-AbaBg",# Bergamo (area artistica) - Politecnico delle Arti
     "7195":  "AbaBo",    # Bologna
     "7213":  "AbaCa",    # Carrara
     "7292":  "AbaCt",    # Catania
@@ -87,8 +87,8 @@ MAPPING_ISTITUTO: dict[str, str] = {
     "7196":  "AbaVe",    # Venezia
     "54187": "AbaVr",    # Verona - codice attuale
     "7306":  "AbaVr",    # Verona - codice storico (legalmente riconosciuta)
-    "7313":  "PAB",      # Bergamo (Carrara) - codice storico pre-Politecnico delle Arti
-    "7315":  "PAB",      # Bergamo (Donizetti, Ist. Musicale Pareggiato) - codice storico
+    "7313":  "PAB-AbaBg",# Bergamo (Carrara) - codice storico pre-Politecnico delle Arti
+    "7315":  "PAB-AbaBg",# Bergamo (Donizetti, Ist. Musicale Pareggiato) - codice storico
 
     # --- Conservatori statali di musica ---------------------------------------
     "7198":  "ConsAd",   # Adria
@@ -96,7 +96,7 @@ MAPPING_ISTITUTO: dict[str, str] = {
     "7257":  "ConsAv",   # Avellino
     "7305":  "ConsBa",   # Bari
     "7301":  "ConsBn",   # Benevento
-    "54190": "PAB",      # Bergamo (area musicale) - Politecnico delle Arti
+    "54190": "PAB-ConsBg",# Bergamo (area musicale) - Politecnico delle Arti
     "7199":  "ConsBo",   # Bologna
     "7270":  "ConsBz",   # Bolzano
     "7300":  "ConsBs",   # Brescia

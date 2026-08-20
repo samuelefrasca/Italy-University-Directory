@@ -2,6 +2,8 @@
     "L-1": {
         "codice": "L-1",
         "nome": "Beni culturali",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Arte e Design",
         "offerte": [
             {
                 "universita": "UniMi",
@@ -360,6 +362,8 @@
     "L-10": {
         "codice": "L-10",
         "nome": "Lettere",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Letterario-Umanistico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -854,6 +858,8 @@
     "L-11": {
         "codice": "L-11",
         "nome": "Lingue e culture moderne",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Linguistico",
         "offerte": [
             {
                 "universita": "UniPr",
@@ -1276,6 +1282,8 @@
     "L-12": {
         "codice": "L-12",
         "nome": "Mediazione linguistica",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Linguistico",
         "offerte": [
             {
                 "universita": "UniTs",
@@ -1586,6 +1594,8 @@
     "L-13": {
         "codice": "L-13",
         "nome": "Scienze biologiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniCa",
@@ -2008,6 +2018,8 @@
     "L-14": {
         "codice": "L-14",
         "nome": "Scienze dei servizi giuridici",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Giuridico",
         "offerte": [
             {
                 "universita": "UniPa",
@@ -2558,6 +2570,8 @@
     "L-15": {
         "codice": "L-15",
         "nome": "Scienze del turismo",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Economico",
         "offerte": [
             {
                 "universita": "UniMc",
@@ -2836,6 +2850,8 @@
     "L-16": {
         "codice": "L-16",
         "nome": "Scienze dell'amministrazione e dell'organizzazione",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniTo",
@@ -3066,6 +3082,8 @@
     "L-17": {
         "codice": "L-17",
         "nome": "Scienze dell'architettura",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "PoliTo",
@@ -3201,6 +3219,8 @@
     "L-18": {
         "codice": "L-18",
         "nome": "Scienze dell'economia e della gestione aziendale",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Economico",
         "offerte": [
             {
                 "universita": "UniTo",
@@ -4370,6 +4390,8 @@
     "L-19": {
         "codice": "L-19",
         "nome": "Scienze dell'educazione e della formazione",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Educazione e Formazione",
         "offerte": [
             {
                 "universita": "UniMoRe",
@@ -4850,6 +4872,8 @@
     "L-2": {
         "codice": "L-2",
         "nome": "Biotecnologie",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -5256,6 +5280,8 @@
     "L-20": {
         "codice": "L-20",
         "nome": "Scienze della comunicazione",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniPd",
@@ -5775,6 +5801,8 @@
     "L-21": {
         "codice": "L-21",
         "nome": "Scienze della pianificazione territoriale, urbanistica, paesaggistica e ambientale",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "UniBas",
@@ -5877,6 +5905,8 @@
     "L-22": {
         "codice": "L-22",
         "nome": "Scienze delle attività motorie e sportive",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Scienze motorie e sportive",
         "offerte": [
             {
                 "universita": "UniRoma4",
@@ -6339,6 +6369,8 @@
     "L-23": {
         "codice": "L-23",
         "nome": "Scienze e tecniche dell'edilizia",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "UniPa",
@@ -6473,6 +6505,8 @@
     "L-24": {
         "codice": "L-24",
         "nome": "Scienze e tecniche psicologiche",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Psicologico",
         "offerte": [
             {
                 "universita": "UTIU",
@@ -6951,6 +6985,8 @@
     "L-25": {
         "codice": "L-25",
         "nome": "Scienze e tecnologie agrarie e forestali",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Agrario-Forestale e Veterinario",
         "offerte": [
             {
                 "universita": "UniMi",
@@ -7446,6 +7482,8 @@
     "L-26": {
         "codice": "L-26",
         "nome": "Scienze e tecnologie alimentari",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Agrario-Forestale e Veterinario",
         "offerte": [
             {
                 "universita": "UniPg",
@@ -7749,6 +7787,8 @@
     "L-27": {
         "codice": "L-27",
         "nome": "Scienze e tecnologie chimiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UPO",
@@ -8116,6 +8156,8 @@
     "L-28": {
         "codice": "L-28",
         "nome": "Scienze e tecnologie della navigazione",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniParthenope",
@@ -8178,6 +8220,8 @@
     "L-29": {
         "codice": "L-29",
         "nome": "Scienze e tecnologie farmaceutiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniNa",
@@ -8401,6 +8445,8 @@
     "L-3": {
         "codice": "L-3",
         "nome": "Discipline delle arti figurative, della musica, dello spettacolo e della moda",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Arte e Design",
         "offerte": [
             {
                 "universita": "IULM",
@@ -8607,6 +8653,8 @@
     "L-30": {
         "codice": "L-30",
         "nome": "Scienze e tecnologie fisiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -8981,6 +9029,8 @@
     "L-31": {
         "codice": "L-31",
         "nome": "Scienze e tecnologie informatiche",
+        "area": "STEM",
+        "gruppo": "Informatica e Tecnologie ICT",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -9443,6 +9493,8 @@
     "L-32": {
         "codice": "L-32",
         "nome": "Scienze e tecnologie per l'ambiente e la natura",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniCam",
@@ -9801,6 +9853,8 @@
     "L-33": {
         "codice": "L-33",
         "nome": "Scienze economiche",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Economico",
         "offerte": [
             {
                 "universita": "UniRoma2",
@@ -10360,6 +10414,8 @@
     "L-34": {
         "codice": "L-34",
         "nome": "Scienze geologiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniPd",
@@ -10614,6 +10670,8 @@
     "L-35": {
         "codice": "L-35",
         "nome": "Scienze matematiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniNa",
@@ -10964,6 +11022,8 @@
     "L-36": {
         "codice": "L-36",
         "nome": "Scienze politiche e delle relazioni internazionali",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -11458,6 +11518,8 @@
     "L-37": {
         "codice": "L-37",
         "nome": "Scienze sociali per la cooperazione, lo sviluppo e la pace",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -11528,6 +11590,8 @@
     "L-38": {
         "codice": "L-38",
         "nome": "Scienze zootecniche e tecnologie delle produzioni animali",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Agrario-Forestale e Veterinario",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -11718,6 +11782,8 @@
     "L-39": {
         "codice": "L-39",
         "nome": "Scienze del Servizio sociale",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniDa",
@@ -12060,6 +12126,8 @@
     "L-4": {
         "codice": "L-4",
         "nome": "Disegno industriale",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Arte e Design",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -12322,6 +12390,8 @@
     "L-40": {
         "codice": "L-40",
         "nome": "Sociologia",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniNa",
@@ -12480,6 +12550,8 @@
     "L-41": {
         "codice": "L-41",
         "nome": "Statistica",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniMoRe",
@@ -12662,6 +12734,8 @@
     "L-42": {
         "codice": "L-42",
         "nome": "Storia",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Letterario-Umanistico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -12828,6 +12902,8 @@
     "L-43": {
         "codice": "L-43",
         "nome": "Diagnostica per la conservazione dei beni culturali",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniMi",
@@ -12874,6 +12950,8 @@
     "L-5": {
         "codice": "L-5",
         "nome": "Filosofia",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Letterario-Umanistico",
         "offerte": [
             {
                 "universita": "UniTs",
@@ -13192,6 +13270,8 @@
     "L-6": {
         "codice": "L-6",
         "nome": "Geografia",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniStraSi",
@@ -13230,6 +13310,8 @@
     "L-7": {
         "codice": "L-7",
         "nome": "Ingegneria civile e ambientale",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "PoliTo",
@@ -13740,6 +13822,8 @@
     "L-8": {
         "codice": "L-8",
         "nome": "Ingegneria dell'informazione",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniPv",
@@ -14836,6 +14920,8 @@
     "L-9": {
         "codice": "L-9",
         "nome": "Ingegneria industriale",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniNa",
@@ -16171,6 +16257,8 @@
     "L-P01": {
         "codice": "L-P01",
         "nome": "Professioni tecniche per l'edilizia e il territorio",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "PoliBa",
@@ -16369,6 +16457,8 @@
     "L-P02": {
         "codice": "L-P02",
         "nome": "Professioni tecniche agrarie, alimentari e forestali",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Agrario-Forestale e Veterinario",
         "offerte": [
             {
                 "universita": "UniSi",
@@ -16463,6 +16553,8 @@
     "L-P03": {
         "codice": "L-P03",
         "nome": "Professioni tecniche industriali e dellinformazione",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -16597,6 +16689,8 @@
     "L-Sc.Mat.": {
         "codice": "L-Sc.Mat.",
         "nome": "Scienze dei Materiali",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -16675,6 +16769,8 @@
     "L/DS": {
         "codice": "L/DS",
         "nome": "Scienze della difesa e della sicurezza",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniNa",
@@ -16738,6 +16834,8 @@
     "L/GASTR": {
         "codice": "L/GASTR",
         "nome": "Scienze, culture e politiche della gastronomia",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Economico",
         "offerte": [
             {
                 "universita": "UniFg",
@@ -16872,6 +16970,8 @@
     "L/SNT1": {
         "codice": "L/SNT1",
         "nome": "Professioni sanitarie, infermieristiche e professione sanitaria ostetrica",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -18541,6 +18641,8 @@
     "L/SNT2": {
         "codice": "L/SNT2",
         "nome": "Professioni sanitarie della riabilitazione",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -20145,6 +20247,8 @@
     "L/SNT3": {
         "codice": "L/SNT3",
         "nome": "Professioni sanitarie tecniche",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniPr",
@@ -21963,6 +22067,8 @@
     "L/SNT4": {
         "codice": "L/SNT4",
         "nome": "Professioni sanitarie della prevenzione",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -22414,6 +22520,8 @@
     "LM-1": {
         "codice": "LM-1",
         "nome": "Antropologia culturale ed etnologia",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -22508,6 +22616,8 @@
     "LM-11": {
         "codice": "LM-11",
         "nome": "Scienze per la conservazione dei beni culturali",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -22570,6 +22680,8 @@
     "LM-12": {
         "codice": "LM-12",
         "nome": "Design",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Arte e Design",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -22792,6 +22904,8 @@
     "LM-13": {
         "codice": "LM-13",
         "nome": "Farmacia e farmacia industriale",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -23351,6 +23465,8 @@
     "LM-14": {
         "codice": "LM-14",
         "nome": "Filologia moderna",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Letterario-Umanistico",
         "offerte": [
             {
                 "universita": "UniMe",
@@ -23781,6 +23897,8 @@
     "LM-15": {
         "codice": "LM-15",
         "nome": "Filologia, letterature e storia dell'antichità",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Letterario-Umanistico",
         "offerte": [
             {
                 "universita": "UniPv",
@@ -24035,6 +24153,8 @@
     "LM-16": {
         "codice": "LM-16",
         "nome": "Finanza",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Economico",
         "offerte": [
             {
                 "universita": "UniMoRe",
@@ -24225,6 +24345,8 @@
     "LM-17": {
         "codice": "LM-17",
         "nome": "Fisica",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -24551,6 +24673,8 @@
     "LM-18": {
         "codice": "LM-18",
         "nome": "Informatica",
+        "area": "STEM",
+        "gruppo": "Informatica e Tecnologie ICT",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -24909,6 +25033,8 @@
     "LM-19": {
         "codice": "LM-19",
         "nome": "Informazione e sistemi editoriali",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "Unicusano",
@@ -25075,6 +25201,8 @@
     "LM-2": {
         "codice": "LM-2",
         "nome": "Archeologia",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Letterario-Umanistico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -25393,6 +25521,8 @@
     "LM-20": {
         "codice": "LM-20",
         "nome": "Ingegneria aerospaziale e astronautica",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "PoliMi",
@@ -25503,6 +25633,8 @@
     "LM-21": {
         "codice": "LM-21",
         "nome": "Ingegneria biomedica",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniGe",
@@ -25733,6 +25865,8 @@
     "LM-22": {
         "codice": "LM-22",
         "nome": "Ingegneria chimica",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniPd",
@@ -25891,6 +26025,8 @@
     "LM-23": {
         "codice": "LM-23",
         "nome": "Ingegneria civile",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "UniCas",
@@ -26345,6 +26481,8 @@
     "LM-24": {
         "codice": "LM-24",
         "nome": "Ingegneria dei sistemi edilizi",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "PoliMi",
@@ -26495,6 +26633,8 @@
     "LM-25": {
         "codice": "LM-25",
         "nome": "Ingegneria dell'automazione",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "PoliMi",
@@ -26645,6 +26785,8 @@
     "LM-26": {
         "codice": "LM-26",
         "nome": "Ingegneria della sicurezza",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "PoliMi",
@@ -26763,6 +26905,8 @@
     "LM-27": {
         "codice": "LM-27",
         "nome": "Ingegneria delle telecomunicazioni",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniPr",
@@ -26969,6 +27113,8 @@
     "LM-28": {
         "codice": "LM-28",
         "nome": "Ingegneria elettrica",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -27127,6 +27273,8 @@
     "LM-29": {
         "codice": "LM-29",
         "nome": "Ingegneria elettronica",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniCt",
@@ -27437,6 +27585,8 @@
     "LM-3": {
         "codice": "LM-3",
         "nome": "Architettura del paesaggio",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "PoliTo",
@@ -27499,6 +27649,8 @@
     "LM-30": {
         "codice": "LM-30",
         "nome": "Ingegneria energetica e nucleare",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniGe",
@@ -27682,6 +27834,8 @@
     "LM-31": {
         "codice": "LM-31",
         "nome": "Ingegneria gestionale",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniBg",
@@ -27992,6 +28146,8 @@
     "LM-32": {
         "codice": "LM-32",
         "nome": "Ingegneria informatica",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -28478,6 +28634,8 @@
     "LM-33": {
         "codice": "LM-33",
         "nome": "Ingegneria meccanica",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniMoRe",
@@ -29012,6 +29170,8 @@
     "LM-34": {
         "codice": "LM-34",
         "nome": "Ingegneria navale",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -29058,6 +29218,8 @@
     "LM-35": {
         "codice": "LM-35",
         "nome": "Ingegneria per l'ambiente e il territorio",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "UniBs",
@@ -29384,6 +29546,8 @@
     "LM-36": {
         "codice": "LM-36",
         "nome": "Lingue e letterature dell'Africa e dell'Asia",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Linguistico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -29422,6 +29586,8 @@
     "LM-37": {
         "codice": "LM-37",
         "nome": "Lingue e letterature moderne europee e americane",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Linguistico",
         "offerte": [
             {
                 "universita": "UniTo",
@@ -29772,6 +29938,8 @@
     "LM-38": {
         "codice": "LM-38",
         "nome": "Lingue moderne per la comunicazione e la cooperazione internazionale",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Linguistico",
         "offerte": [
             {
                 "universita": "UniPv",
@@ -30034,6 +30202,8 @@
     "LM-39": {
         "codice": "LM-39",
         "nome": "Linguistica",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Linguistico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -30200,6 +30370,8 @@
     "LM-4": {
         "codice": "LM-4",
         "nome": "Architettura e ingegneria edile-architettura",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "UniGe",
@@ -30439,6 +30611,8 @@
     "LM-40": {
         "codice": "LM-40",
         "nome": "Matematica",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniSi",
@@ -30757,6 +30931,8 @@
     "LM-41": {
         "codice": "LM-41",
         "nome": "Medicina e chirurgia",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -31483,6 +31659,8 @@
     "LM-42": {
         "codice": "LM-42",
         "nome": "Medicina veterinaria",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Agrario-Forestale e Veterinario",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -31609,6 +31787,8 @@
     "LM-43": {
         "codice": "LM-43",
         "nome": "Metodologie informatiche per le discipline umanistiche",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniVe",
@@ -31743,6 +31923,8 @@
     "LM-44": {
         "codice": "LM-44",
         "nome": "Modellistica matematico-fisica per l'ingegneria",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniVe",
@@ -31845,6 +32027,8 @@
     "LM-45": {
         "codice": "LM-45",
         "nome": "Musicologia e beni musicali",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Arte e Design",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -31899,6 +32083,8 @@
     "LM-46": {
         "codice": "LM-46",
         "nome": "Odontoiatria e protesi dentaria",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -32235,6 +32421,8 @@
     "LM-47": {
         "codice": "LM-47",
         "nome": "Organizzazione e gestione dei servizi per lo sport e le attività motorie",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Scienze motorie e sportive",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -32321,6 +32509,8 @@
     "LM-48": {
         "codice": "LM-48",
         "nome": "Pianificazione territoriale urbanistica e ambientale",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "UniMi",
@@ -32399,6 +32589,8 @@
     "LM-49": {
         "codice": "LM-49",
         "nome": "Progettazione e gestione dei sistemi turistici",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Economico",
         "offerte": [
             {
                 "universita": "UniTo",
@@ -32605,6 +32797,8 @@
     "LM-4cu": {
         "codice": "LM-4cu",
         "nome": "Architettura e ingegneria edile-architettura (quinquennale)",
+        "area": "STEM",
+        "gruppo": "Architettura e Ingegneria civile",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -32851,6 +33045,8 @@
     "LM-5": {
         "codice": "LM-5",
         "nome": "Archivistica e biblioteconomia",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -32929,6 +33125,8 @@
     "LM-50": {
         "codice": "LM-50",
         "nome": "Programmazione e gestione dei servizi educativi",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Educazione e Formazione",
         "offerte": [
             {
                 "universita": "UniSalento",
@@ -33073,6 +33271,8 @@
     "LM-51": {
         "codice": "LM-51",
         "nome": "Psicologia",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Psicologico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -33815,6 +34015,8 @@
     "LM-52": {
         "codice": "LM-52",
         "nome": "Relazioni internazionali",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniTs",
@@ -34173,6 +34375,8 @@
     "LM-53": {
         "codice": "LM-53",
         "nome": "Ingegneria dei materiali",
+        "area": "STEM",
+        "gruppo": "Ingegneria industriale e dell'informazione",
         "offerte": [
             {
                 "universita": "UniMoRe",
@@ -34267,6 +34471,8 @@
     "LM-54": {
         "codice": "LM-54",
         "nome": "Scienze chimiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -34601,6 +34807,8 @@
     "LM-55": {
         "codice": "LM-55",
         "nome": "Scienze cognitive",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Psicologico",
         "offerte": [
             {
                 "universita": "UniTn",
@@ -34671,6 +34879,8 @@
     "LM-56": {
         "codice": "LM-56",
         "nome": "Scienze dell'economia",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Economico",
         "offerte": [
             {
                 "universita": "UniMoRe",
@@ -35341,6 +35551,8 @@
     "LM-57": {
         "codice": "LM-57",
         "nome": "Scienze dell'educazione degli adulti e della formazione continua",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Educazione e Formazione",
         "offerte": [
             {
                 "universita": "UniSob",
@@ -35419,6 +35631,8 @@
     "LM-58": {
         "codice": "LM-58",
         "nome": "Scienze dell'universo",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -35465,6 +35679,8 @@
     "LM-59": {
         "codice": "LM-59",
         "nome": "Scienze della comunicazione pubblica, d'impresa e pubblicità",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniPv",
@@ -35671,6 +35887,8 @@
     "LM-6": {
         "codice": "LM-6",
         "nome": "Biologia",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniCa",
@@ -36453,6 +36671,8 @@
     "LM-60": {
         "codice": "LM-60",
         "nome": "Scienze della natura",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniCal",
@@ -36619,6 +36839,8 @@
     "LM-61": {
         "codice": "LM-61",
         "nome": "Scienze della nutrizione umana",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniMi",
@@ -36841,6 +37063,8 @@
     "LM-62": {
         "codice": "LM-62",
         "nome": "Scienze della politica",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniMi",
@@ -37135,6 +37359,8 @@
     "LM-63": {
         "codice": "LM-63",
         "nome": "Scienze delle pubbliche amministrazioni",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniGe",
@@ -37397,6 +37623,8 @@
     "LM-64": {
         "codice": "LM-64",
         "nome": "Scienze delle religioni",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Letterario-Umanistico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -37459,6 +37687,8 @@
     "LM-65": {
         "codice": "LM-65",
         "nome": "Scienze dello spettacolo e produzione multimediale",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Arte e Design",
         "offerte": [
             {
                 "universita": "Iuav",
@@ -37673,6 +37903,8 @@
     "LM-66": {
         "codice": "LM-66",
         "nome": "Sicurezza informatica",
+        "area": "STEM",
+        "gruppo": "Informatica e Tecnologie ICT",
         "offerte": [
             {
                 "universita": "PoliTo",
@@ -37759,6 +37991,8 @@
     "LM-67": {
         "codice": "LM-67",
         "nome": "Scienze e tecniche delle attivita' motorie preventive e adattate",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniCa",
@@ -38061,6 +38295,8 @@
     "LM-68": {
         "codice": "LM-68",
         "nome": "Scienze e tecniche dello sport",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Scienze motorie e sportive",
         "offerte": [
             {
                 "universita": "UniRoma2",
@@ -38235,6 +38471,8 @@
     "LM-69": {
         "codice": "LM-69",
         "nome": "Scienze e tecnologie agrarie",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Agrario-Forestale e Veterinario",
         "offerte": [
             {
                 "universita": "UniPv",
@@ -38586,6 +38824,8 @@
     "LM-7": {
         "codice": "LM-7",
         "nome": "Biotecnologie agrarie",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniPg",
@@ -38704,6 +38944,8 @@
     "LM-70": {
         "codice": "LM-70",
         "nome": "Scienze e tecnologie alimentari",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Agrario-Forestale e Veterinario",
         "offerte": [
             {
                 "universita": "UniCatt",
@@ -38991,6 +39233,8 @@
     "LM-71": {
         "codice": "LM-71",
         "nome": "Scienze e tecnologie della chimica industriale",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -39133,6 +39377,8 @@
     "LM-72": {
         "codice": "LM-72",
         "nome": "Scienze e tecnologie della navigazione",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniMe",
@@ -39155,6 +39401,8 @@
     "LM-73": {
         "codice": "LM-73",
         "nome": "Scienze e tecnologie forestali ed ambientali",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Agrario-Forestale e Veterinario",
         "offerte": [
             {
                 "universita": "UniTus",
@@ -39313,6 +39561,8 @@
     "LM-74": {
         "codice": "LM-74",
         "nome": "Scienze e tecnologie geologiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniPd",
@@ -39575,6 +39825,8 @@
     "LM-75": {
         "codice": "LM-75",
         "nome": "Scienze e tecnologie per l'ambiente e il territorio",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UnivAq",
@@ -39789,6 +40041,8 @@
     "LM-76": {
         "codice": "LM-76",
         "nome": "Scienze economiche per l'ambiente e la cultura",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Economico",
         "offerte": [
             {
                 "universita": "UniTus",
@@ -39891,6 +40145,8 @@
     "LM-77": {
         "codice": "LM-77",
         "nome": "Scienze economico-aziendali",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Economico",
         "offerte": [
             {
                 "universita": "UniBz",
@@ -41416,6 +41672,8 @@
     "LM-78": {
         "codice": "LM-78",
         "nome": "Scienze filosofiche",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Letterario-Umanistico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -41750,6 +42008,8 @@
     "LM-79": {
         "codice": "LM-79",
         "nome": "Scienze geofisiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniPi",
@@ -41820,6 +42080,8 @@
     "LM-8": {
         "codice": "LM-8",
         "nome": "Biotecnologie industriali",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniBa",
@@ -42050,6 +42312,8 @@
     "LM-80": {
         "codice": "LM-80",
         "nome": "Scienze geografiche",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniMi",
@@ -42128,6 +42392,8 @@
     "LM-81": {
         "codice": "LM-81",
         "nome": "Scienze per la cooperazione allo sviluppo",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniTo",
@@ -42286,6 +42552,8 @@
     "LM-82": {
         "codice": "LM-82",
         "nome": "Scienze statistiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniMiB",
@@ -42412,6 +42680,8 @@
     "LM-83": {
         "codice": "LM-83",
         "nome": "Scienze statistiche attuariali e finanziarie",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniCatt",
@@ -42498,6 +42768,8 @@
     "LM-84": {
         "codice": "LM-84",
         "nome": "Scienze storiche",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Letterario-Umanistico",
         "offerte": [
             {
                 "universita": "UniMoRe",
@@ -42752,6 +43024,8 @@
     "LM-85": {
         "codice": "LM-85",
         "nome": "Scienze pedagogiche",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Educazione e Formazione",
         "offerte": [
             {
                 "universita": "UniSob",
@@ -43022,6 +43296,8 @@
     "LM-85 bis": {
         "codice": "LM-85 bis",
         "nome": "Scienze della formazione primaria",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Educazione e Formazione",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -43415,6 +43691,8 @@
     "LM-86": {
         "codice": "LM-86",
         "nome": "Scienze zootecniche e tecnologie  animali",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Agrario-Forestale e Veterinario",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -43557,6 +43835,8 @@
     "LM-87": {
         "codice": "LM-87",
         "nome": "Servizio sociale e politiche sociali",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniRoma3",
@@ -43851,6 +44131,8 @@
     "LM-88": {
         "codice": "LM-88",
         "nome": "Sociologia e ricerca sociale",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniMiB",
@@ -44057,6 +44339,8 @@
     "LM-89": {
         "codice": "LM-89",
         "nome": "Storia dell'arte",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Arte e Design",
         "offerte": [
             {
                 "universita": "UniCatt",
@@ -44399,6 +44683,8 @@
     "LM-9": {
         "codice": "LM-9",
         "nome": "Biotecnologie mediche, veterinarie e farmaceutiche",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniCa",
@@ -44918,6 +45204,8 @@
     "LM-90": {
         "codice": "LM-90",
         "nome": "Studi europei",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniUd",
@@ -45036,6 +45324,8 @@
     "LM-91": {
         "codice": "LM-91",
         "nome": "Tecniche e metodi per la societa dell'informazione",
+        "area": "STEM",
+        "gruppo": "Informatica e Tecnologie ICT",
         "offerte": [
             {
                 "universita": "UniCatt",
@@ -45186,6 +45476,8 @@
     "LM-92": {
         "codice": "LM-92",
         "nome": "Teorie della comunicazione",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniMe",
@@ -45360,6 +45652,8 @@
     "LM-93": {
         "codice": "LM-93",
         "nome": "Teorie e metodologie dell'e-learning e della media education",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Educazione e Formazione",
         "offerte": [
             {
                 "universita": "UniRoma3",
@@ -45414,6 +45708,8 @@
     "LM-94": {
         "codice": "LM-94",
         "nome": "Traduzione specialistica e interpretariato",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Linguistico",
         "offerte": [
             {
                 "universita": "UnInt",
@@ -45532,6 +45828,8 @@
     "LM-Data": {
         "codice": "LM-Data",
         "nome": "Data Science",
+        "area": "STEM",
+        "gruppo": "Informatica e Tecnologie ICT",
         "offerte": [
             {
                 "universita": "UniBs",
@@ -45706,6 +46004,8 @@
     "LM-Sc.Mat.": {
         "codice": "LM-Sc.Mat.",
         "nome": "Scienze dei Materiali",
+        "area": "STEM",
+        "gruppo": "Scientifico",
         "offerte": [
             {
                 "universita": "UniPr",
@@ -45776,6 +46076,8 @@
     "LM/DS": {
         "codice": "LM/DS",
         "nome": "Scienze della difesa e della sicurezza",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Politico-Sociale e Comunicazione",
         "offerte": [
             {
                 "universita": "UniGe",
@@ -45830,6 +46132,8 @@
     "LM/GASTR": {
         "codice": "LM/GASTR",
         "nome": "Scienze economiche e sociali della gastronomia",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Economico",
         "offerte": [
             {
                 "universita": "UniPa",
@@ -45868,6 +46172,8 @@
     "LM/SC-GIUR": {
         "codice": "LM/SC-GIUR",
         "nome": "Scienze Giuridiche",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Giuridico",
         "offerte": [
             {
                 "universita": "UniMe",
@@ -46066,6 +46372,8 @@
     "LM/SNT1": {
         "codice": "LM/SNT1",
         "nome": "Scienze infermieristiche e ostetriche",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -46444,6 +46752,8 @@
     "LM/SNT2": {
         "codice": "LM/SNT2",
         "nome": "Scienze riabilitative delle professioni sanitarie",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniCh",
@@ -46651,6 +46961,8 @@
     "LM/SNT3": {
         "codice": "LM/SNT3",
         "nome": "Scienze delle professioni sanitarie tecniche",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniRoma1",
@@ -46849,6 +47161,8 @@
     "LM/SNT4": {
         "codice": "LM/SNT4",
         "nome": "Scienze delle professioni sanitarie della prevenzione",
+        "area": "Sanitaria e Agro-Veterinaria",
+        "gruppo": "Medico-Sanitario e Farmaceutico",
         "offerte": [
             {
                 "universita": "UniBo",
@@ -46951,6 +47265,8 @@
     "LMG/01": {
         "codice": "LMG/01",
         "nome": "Magistrali in giurisprudenza",
+        "area": "Economica, Giuridica e Sociale",
+        "gruppo": "Giuridico",
         "offerte": [
             {
                 "universita": "UniCatt",
@@ -47616,6 +47932,8 @@
     "LMR/02": {
         "codice": "LMR/02",
         "nome": "Conservazione e restauro dei beni culturali",
+        "area": "Artistica, Letteraria ed Educazione",
+        "gruppo": "Letterario-Umanistico",
         "offerte": [
             {
                 "universita": "UniBo",

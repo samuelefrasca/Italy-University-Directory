@@ -113,11 +113,11 @@ def genera_righe(categoria):
     righe = []
     mostra_studenti = categoria != "ssml"
     for n, uni in enumerate(lista, start=1):
-        link = uni.get("link") or "#"
-        nolink = "" if uni.get("link") else 'onclick=\'alert("Sito non trovato"); return false;\''
+        sigla = uni.get("sigla") or "----"
+        slug = sigla.lower().replace(" ", "_")
+        link = f"../atenei/{slug}.html"
         studenti = uni.get("studenti")
         studenti_display = f"{studenti:,}".replace(",", ".") if studenti else "----"
-        sigla = uni.get("sigla") or "----"
 
         # Serializza uni come data attribute per il JS
         data_uni = json.dumps(uni, ensure_ascii=False).replace('"', "&quot;")
@@ -126,7 +126,7 @@ def genera_righe(categoria):
 
         righe.append(f"""        <tr data-uni="{data_uni}">
                 <td class="num">{n}</td>
-                <td><a class="uni" href="{link}" {nolink} target="_blank">{uni["nome"]}</a></td>
+                <td><a class="uni" href="{link}">{uni["nome"]}</a></td>
                 <td>{sigla}</td>
                 <td>{uni.get("citta", "----")}</td>
                 <td>{uni.get("regione", "----")}</td>{col_studenti}

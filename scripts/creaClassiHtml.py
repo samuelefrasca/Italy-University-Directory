@@ -180,18 +180,19 @@ def genera_righe_html(codice):
     righe = []
     for offerta in corso["offerte"]:
         uni = mappa_universita.get(offerta["universita"], {})
-        link = uni.get("link", "#")
+        sigla = offerta["universita"]
+        slug = sigla.lower().replace(" ", "_")
+        link = f"../atenei/{slug}.html"
         nome_uni = uni.get("nome", offerta["universita"])
         regione = offerta.get("regione", uni.get("regione", "----"))
         accesso = "✅ Accesso Libero" if offerta["accessoLibero"] else "🔒 Accesso Programmato"
-        nolink = "" if uni.get("link") else 'onclick=\'alert("Sito non trovato"); return false;\''
         
         # Serializza l'offerta come data attribute per il JS
         data_offerta = json.dumps(offerta, ensure_ascii=False).replace('"', '&quot;')
         
         righe.append(f"""
                     <tr class="riga-principale" data-offerta="{data_offerta}">
-                        <td><a class="uni" href="{link}" {nolink} target="_blank">{nome_uni}</a></td>
+                        <td><a class="uni" href="{link}">{nome_uni}</a></td>
                         <td colspan="4"><strong>{offerta["nomeCorso"]}</strong></td>
                     </tr>
                     <tr class="riga-dettagli">

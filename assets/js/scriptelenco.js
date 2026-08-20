@@ -35,10 +35,10 @@ function renderizzaTabella(lista) {
     corpoTabella.innerHTML = "";
     let n = 1;
     for (let uni of lista) {
-        let link = uni.link ? uni.link : "#";
-        let nolink = uni.link ? "" : "onclick='alert(\"Sito non trovato\"); return false;'";
         if (!uni.studenti) { uni.studenti = "----" }
         if (!uni.sigla) { uni.sigla = "----" }
+            let slug = uni.sigla.toLowerCase().replace(/ /g, "_");
+            let link = `../atenei/${slug}.html`;
         let studenti_display = typeof uni.studenti === "number"
             ? uni.studenti.toLocaleString("it-IT", { useGrouping: "always" })
             : uni.studenti;
@@ -47,7 +47,7 @@ function renderizzaTabella(lista) {
             : "";
         let riga = `<tr data-uni="${JSON.stringify(uni).replace(/"/g, '&quot;"')}">
                 <td class="num">${n}</td>
-                <td><a class="uni" href="${link}" ${nolink} target="_blank">${uni.nome}</a></td>
+                <td><a class="uni" href="${link}">${uni.nome}</a></td>
                 <td>${uni.sigla}</td>
                 <td>${uni.citta}</td>
                 <td>${uni.regione}</td>
