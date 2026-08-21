@@ -122,20 +122,40 @@ a {
     cursor: pointer;
 }
 
+.introduction {
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.introduction h3 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.introduction p {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 1.3;
+}
+
 /* Riquadri per andare nelle varie pagine */
 
 .home-cards {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
     flex-wrap: wrap;
 }
 
 .square-card {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
     text-align: center;
     width: 160px;
     height: 160px;
@@ -154,6 +174,19 @@ a {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     background-color: #f8f9fa;
+}
+
+.square-card a {
+    text-decoration: none;
+}
+
+.square-card img {
+    height: 60px;
+}
+
+.square-card p {
+    color: #0d1b3d;
+    margin: 0;
 }
 
 .navul {
@@ -407,10 +440,17 @@ footer p {
         margin: 0 10px;
     }
 
+    .introduction h3 {
+        font-size: 18px;
+    }
+
+    .introduction p {
+        font-size: 14px;
+    }
+
     .home-cards {
         flex-direction: column;
         gap: 15px;
-        margin-top: 15px;
     }
 
     .square-card {
