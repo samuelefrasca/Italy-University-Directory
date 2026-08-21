@@ -123,6 +123,7 @@ a {
 }
 
 .introduction {
+    color: #0d1b3d;
     max-width: 750px;
     margin: 0 auto;
     margin-top: 10px;
@@ -312,7 +313,7 @@ a.cardlink:hover {
 }
 
 .main-subtitle {
-    margin: 12px;
+    margin: 20px 0px;
     text-align: center;
 }
 
@@ -460,6 +461,7 @@ footer p {
     }
 
     .main-subtitle {
+        margin: 10px 0px;
         font-size: 16pt;
     }
 
