@@ -315,7 +315,7 @@ template = """<!DOCTYPE html>
                 <tbody id="tabellauni">{{RIGHE}}</tbody>
             </table>
             <p class="data-note">
-                Dati corsi dal MUR. Per i corsi privi dell’indicazione della lingua nei dati di riferimento, la lingua viene assegnata automaticamente e potrebbe risultare imprecisa.
+                Dati dei corsi dal MUR (USTAT), aggiornati al 2025 ed elaborati automaticamente. Eventuali errori possono dipendere dai dati di origine.
             </p>
         </div>
     </main>
