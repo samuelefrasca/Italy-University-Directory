@@ -393,11 +393,6 @@ footer p {
     text-decoration: underline;
 }
 
-.github-logo {
-    height: 16px;
-    margin-right: 5px;
-}
-
 @media (max-width: 850px) {
 
     .header {
