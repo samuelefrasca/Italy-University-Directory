@@ -167,7 +167,7 @@ def genera_html(cat):
     <script>
         if (window.location.hostname === 'samuelefrasca.github.io' || window.location.hostname === 'unidirectory.pages.dev') {{
             const path = window.location.pathname
-                .replace('/Italy-University-Directory', '')
+                .replace('/unidirectory', '')
                 .replace(/\\.html$/, '');
             window.location.replace('https://unidirectory.it' + path + window.location.search);
         }}

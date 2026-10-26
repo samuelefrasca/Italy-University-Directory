@@ -494,7 +494,7 @@ def genera_html_ateneo(uni: dict, corsi: list) -> str:
     <script>
         if (window.location.hostname === 'samuelefrasca.github.io' || window.location.hostname === 'unidirectory.pages.dev') {{
             const path = window.location.pathname
-                .replace('/Italy-University-Directory', '')
+                .replace('/unidirectory', '')
                 .replace(/\\.html$/, '');
             window.location.replace('https://unidirectory.it' + path + window.location.search);
         }}
